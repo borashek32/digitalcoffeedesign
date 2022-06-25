@@ -1,0 +1,73 @@
+@import variables
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    letter-spacing: none
+
+body
+    font-family: 'Raleway', sans-serif
+    font-size: 1rem
+    transition: all 0.4s ease-in-out
+
+a
+    display: inline-block
+    text-decoration: none
+    color: inherit
+    font-family: inherit
+
+.header
+    height: 100px
+    z-index: 101
+    display: flex
+    flex-direction: row
+    color: #ffffff
+    position: fixed
+    top: 0
+    .header__item
+        color: var(--color-grey-4)
+        margin-right: 20px
+        margin-top: 30px
+    .header__item:hover
+        color: var(--color-brown)
+    .header__item:active
+        color: var(--color-brown)
+
+.home
+    margin-top: 100px
+    transition: all 0.4s ease-in-out
+    background-image: url('/img/coffee.jpg')
+    background-size: cover
+    height: 100vh
+    .home__text
+        color: var(--color-grey-5)
+
+.sidebar
+    position: fixed
+    top: 50%
+    right: 3%
+    display: flex
+    flex-direction: column
+    transform: translateY(-50%)
+    align-items: center
+    justify-content: center
+    .sidebar__button
+        padding: 1rem
+        cursor: pointer
+        background-color: var(--color-grey-4)
+        width: 55px
+        height: 55px
+        border-radius: 50%
+        display: flex
+        align-content: center
+        align-items: center
+        margin: .7rem 0
+        box-shadow: var(--box-shadow-1)
+        .sidebar__button:active
+            background-color: var(--color-brown) !important
+            transition: all .4s easy-in-out
+        i
+            font-style: 1.2rem
+            color: var(--color-grey-2)
+            pointer-events: none
