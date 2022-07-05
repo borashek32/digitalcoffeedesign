@@ -1,0 +1,458 @@
+@import url('http://fonts.cdnfonts.com/css/gilroy-medium')
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold')
+@import variables
+
+*,
+*:before,
+*:after
+    padding: 0
+    margin: 0
+    border: 0
+    box-sizing: border-box
+
+a
+    text-decoration: none
+a:after
+    text-decoration: none
+    color: var(--color-black)
+
+ol,
+ul,
+li
+    list-style: none
+
+img
+    vertical-align: top
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    font-weight: inherit
+    font-size: inherit
+
+html,
+body
+    height: 100%
+    line-height: 1
+    font-size: 14px
+    background-color: var(--color-white)
+    font-family: var(--font-bold)
+    color: var(--color-black)
+
+@media (max-width: 768px)
+    body.lock
+        overflow: hidden
+
+.wrapper
+    min-height: 100%
+    display: flex
+    flex-direction: column
+
+.main
+    flex: 1 1 auto
+
+._container
+    max-width: 934px
+    margin: 0px auto
+
+    @media (max-width: 1200px)
+        max-width: 80%
+    @media (max-width: 768px)
+        max-width: 80%
+
+.title
+    color: var(--color-light-black)
+    font-size: 34px
+    line-height: 42px
+    font-family: var(--font-bold)
+
+.description p
+    font-size: 18px
+    line-height: 22px
+    margin-bottom: 50px
+    font-family: var(--font-medium)
+
+.description p:last-child
+    margin-bottom: 0px
+
+// HEADER -------------------------------
+.nav
+    position: fixed
+    width: 100%
+    left: 0
+    top: 0
+    z-index: 50
+
+.nav:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: var(--color-white)
+    z-index: 51
+
+.nav__container
+
+.nav__row
+    position: relative
+    height: 76px
+
+    @media (max-width: 768px)
+        border-bottom: none
+        height: 50px
+        display: flex
+        justify-content: end
+        padding: 20px 0px 20px 0px
+
+.nav__list
+    padding: 21px 0px 32px 0px
+    border-bottom: 1px solid var(--color-grey)
+    position: relative
+    z-index: 53
+    display: flex
+    justify-content: space-between
+
+@media (max-width: 768px)
+    .nav__list
+        padding: 66px 28px 57px 28px
+        position: fixed
+        top: -100%
+        left: 0
+        width: 100%
+        height: 100%
+        flex-direction: column
+        background-color: var(--color-white)
+        transition: all 0.5s ease-in-out 0s
+        border-bottom: none
+        z-index: 49
+        overflow: auto
+    .nav__list.active
+        top: 0
+
+.nav__item
+
+@media (max-width: 768px)
+    .nav__item
+        margin: 0px 0px 57px 0px
+    .nav__item:not(:last-child)
+        margin: 0px 0px 57px 0px
+
+.nav__item a
+    font-size: 18px
+    line-height: 22px
+    color: var(--color-grey)
+
+.nav__item a:hover
+    color: var(--color-light-black)
+
+.nav__item a::after
+    color: var(--color-light-black)
+
+// MOBILE MENU --------------------------
+.nav__burger
+    display: none
+
+@media (max-width: 768px)
+    .nav__burger
+        margin-right: 0
+        z-index: 52
+        display: flex
+        position: relative
+        width: 33px
+        height: 20px
+    .nav__burger span
+        position: absolute
+        background-color: var(--color-black)
+        margin-right: 10%
+        width: 100%
+        height: 3px
+        top: 14px
+        z-index: 1000
+        transition: all 0.3s ease-in-out 0s
+    .nav__burger:before,
+    .nav__burger:after
+        content: ''
+        position: absolute
+        background-color: var(--color-black)
+        width: 100%
+        height: 3px
+        transition: all 0.3s ease-in-out 0s
+        margin-top: 20px
+    .nav__burger:before
+        top: -12px
+    .nav__burger:after
+        bottom: -3px
+
+    .nav__burger.active:before
+        transform: rotate(45deg)
+        color: var(--color-grey)
+        bottom: -12px
+
+    .nav__burger.active:after
+        transform: rotate(-45deg)
+        color: var(--color-grey)
+        top: -12px
+
+    .nav__burger.active span
+        transform: scale(0)
+
+// MAIN ---------------------------------
+// POROMO -------------------------------
+.promo__container
+    padding: 105px 0px 105px 0px
+
+    @media (max-width: 768px)
+        padding: 30px 0px 50px 0px
+
+.promo__row
+    display: flex
+    align-items: flex-end
+    padding: 0px 0px 50px 0px
+
+    @media (max-width: 768px)
+        flex-direction: column
+        justify-content: left
+
+.promo__name
+    width: 50%
+    font-size: 47.3392px
+    line-height: 59px
+    color: var(--color-light-black)
+    margin-bottom: -15px
+
+    @media (max-width: 768px)
+        width: 100%
+        margin: 25px 0px 23px 0px
+
+.promo__profession
+    width: 50%
+    color: var(--color-light-black)
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25%)
+    text-align: left
+
+    @media (max-width: 768px)
+        width: 100%
+
+.promo__lang
+    display: flex
+    font-size: 16px
+    line-height: 20px
+    writing-mode: tb-rl
+    transform: rotate(-180deg)
+
+    @media (max-width: 920px)
+        font-size: 14px
+    @media (max-width: 768px)
+        display: none
+
+.promo__lang_ru
+    color: var(--color-grey)
+    margin: 0px 0px 5px 0px
+
+.promo__photo
+    @media (max-width: 768px)
+        display: none
+
+.promo__photo img
+    max-width: 100%
+
+.promo__photo_mobile
+    display: none
+
+    @media (max-width: 768px)
+        display: block
+
+.promo__photo_mobile img
+    object-fit: cover
+    width: 100%
+    height: 100%
+
+// ABOUT --------------------------------
+.main__about
+
+.about
+    background-color: var(--color-more-light-grey)
+
+.about__container
+    padding: 120px 0px 107px 0px
+
+    @media (max-width: 768px)
+        padding: 50px 30px 50px 30px
+
+.about__title
+    padding-bottom: 17px
+    text-align: center
+
+.about__description p
+    text-align: center
+
+// SKILLS -------------------------------
+.main__skills
+
+.skills
+
+.skills__container
+    padding: 91px 0px 110px 0px
+
+    @media (max-width: 768px)
+        padding: 50px 0px 50px 0px
+
+.skills__title
+    text-align: center
+
+.skills__description
+    text-align: center
+    margin: 70px 0px 83px 0px
+
+    @media (max-width: 960px)
+        margin: 30px 0px 0px 0px
+
+.skills__row
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+.skills__column
+    display: flex
+    flex: 0 1 25%
+    justify-content: space-around
+
+    @media (max-width: 960px)
+        flex: 0 1 50%
+        margin: 80px 0px 0px 0px
+
+    @media (max-width: 500px)
+        flex: 0 1 100%
+
+.skills__item
+    width: 166px
+    display: flex
+    flex-direction: column
+    min-height: 100%
+
+.skills__img
+    text-align: center
+
+.skills__name
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+    color: var(--color-grey)
+    font-family: var(--font-bold)
+    padding: 23px 0px 41px 0px
+    flex: 1 1 auto
+
+.skills__level
+
+.stars
+
+.stars__row
+    display: flex
+    justify-content: space-between
+
+.stars__star
+
+// PORTFOLIO ----------------------------
+.main__portfolio
+
+.portfolio
+    background-color: var(--color-more-light-grey)
+
+.portfolio__container
+    padding: 81px 0px 64px 0px
+
+    @media (max-width: 768px)
+        padding: 50px 0px 20px 0px
+
+.portfolio__title
+    text-align: center
+    margin: 0px 0px 47px 0px
+
+    @media (max-width: 768px)
+        margin: 0px 0px 30px 0px
+
+.portfolio__list
+
+.portfolio__item
+
+.portfolio__link
+    margin: 45px 0px 100px 0px
+
+    @media (max-width: 768px)
+        margin: 30px 0px 50px 0px
+
+.portfolio__description
+    color: var(--color-black)
+    text-decoration: underline
+    text-align: center
+
+.portfolio__item img
+    object-fit: cover
+    width: 100%
+
+// FOOTER -------------------------------
+.footer
+    background-color: var(--color-white)
+
+.footer__container
+    padding: 114px 0px 135px 0px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    @media (max-width: 768px)
+        padding: 50px 0px 70px 0px
+
+.footer__title
+    text-align: center
+
+.footer__description
+    text-align: center
+    margin: 20px 0px 30px 0px
+
+.footer__button-container
+    display: flex
+    align-items: center
+
+.footer__button
+    background-color: var(--color-black)
+    color: var(--color-white)
+    min-height: 42px
+    justify-content: center
+    align-items: center
+    border-radius: 37px
+    font-family: var(--font-bold)
+    font-size: 18px
+    line-height: 22px
+    padding: 10px 34px 6px 34px
+    display: flex
+
+    @media (max-wigth: 400px)
+        flex: 1 1 auto
+
+.footer__row
+    display: flex
+    flex-direction: row
+    justify-content: center
+    flex-wrap: wrap
+
+.footer__item
+    margin: 86px 61px 45px 0px
+
+    @media (max-width: 440px)
+        margin: 86px 51px 45px 0px
+
+    @media (max-width: 392px)
+        margin: 86px 21px 45px 0px
+
+.footer__item:last-child
+    margin: 86px 0px 45px 0px
+
+.footer__likeme
+    color: var(--color-grey)
+    text-align: center

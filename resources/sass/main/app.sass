@@ -1,73 +1,244 @@
 @import variables
 
-*
-    margin: 0
+*,
+*:before,
+*:after
     padding: 0
+    margin: 0
+    border: 0
     box-sizing: border-box
-    letter-spacing: none
 
 body
-    font-family: 'Raleway', sans-serif
-    font-size: 1rem
-    transition: all 0.4s ease-in-out
+    background-color: #eddebf3b
 
 a
-    display: inline-block
     text-decoration: none
-    color: inherit
-    font-family: inherit
 
-.header
-    height: 100px
-    z-index: 101
-    display: flex
-    flex-direction: row
-    color: #ffffff
-    position: fixed
-    top: 0
-    .header__item
-        color: var(--color-grey-4)
-        margin-right: 20px
-        margin-top: 30px
-    .header__item:hover
-        color: var(--color-brown)
-    .header__item:active
-        color: var(--color-brown)
+ol,
+ul,
+li
+    list-style: none
 
-.home
-    margin-top: 100px
-    transition: all 0.4s ease-in-out
-    background-image: url('/img/coffee.jpg')
-    background-size: cover
-    height: 100vh
-    .home__text
-        color: var(--color-grey-5)
+img
+    vertical-align: top
 
-.sidebar
-    position: fixed
-    top: 50%
-    right: 3%
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    font-weight: inherit
+    font-size: inherit
+
+html,
+body
+    height: 100%
+    line-height: 1
+    font-size: 16px
+    font-weight: 500
+    color: #181515
+
+.wrapper
+    min-height: 100%
+    overflow: hidden
     display: flex
     flex-direction: column
-    transform: translateY(-50%)
+
+.title-block
+    text-align: center
+    padding: 50px 0px 30px 0px
+
+.title-block__title
+    font-size: 40px
+    line-height: calc( 46/40*100% )
+    letter-spacing: 2px
+    margin-bottom: 15px
+
+.title-block__subtitle
+    font-size: 20px
+    line-height: calc( 26/20*100% )
+    letter-spacing: 1px
+
+._container
+    max-width: 1024px
+    box-sizing: content-box
+    margin: 0 auto // put every block at horizontal center
+
+// ---------------------------------------HEDADER--------------------------------------
+.header
+    position: fixed
+    width: 100%
+    left: 0
+    top: 0
+    z-index: 50
+    background-color: white
+    box-shadow: 0px 13px 19px rgb(0, 0, 0, 0.07)
+
+.header__container
+    padding: 15px 60px 15px 60px
+
+    @media (max-width: 540px)
+        padding: 15px 10px 15px 10px
+
+.header__row
+    display: flex
+    justify-content: space-between
+
+.header__item
+    display: flex
     align-items: center
-    justify-content: center
-    .sidebar__button
-        padding: 1rem
-        cursor: pointer
-        background-color: var(--color-grey-4)
-        width: 55px
-        height: 55px
-        border-radius: 50%
-        display: flex
-        align-content: center
+
+.header__logo
+    width: 40px
+
+.header__menu
+    margin: 0px 0px 0px 0px
+
+.menu__list
+    flex-wrap: wrap
+    display: flex
+
+@media (max-width: 540px)
+    .menu__list
+        display: none
+
+.menu__item
+    margin: 0px 0px 0px 21px
+
+.menu__item:not(:last-child)
+    margin: 0px 0px 0px 21px
+
+.menu__link
+    color: var(--color-grey-3)
+
+.menu__link:hover
+    color: var(--color-blue)
+
+// ---------------------------------------PAGE--------------------------------------
+.page
+    flex: 1 1 auto
+
+.main-block__container
+    display: flex
+    padding: 60px 60px 0px 60px
+    justify-content: space-between
+
+    @media (max-width: 920px)
+        flex-direction: column
+        padding: 100px 60px 0px 60px
         align-items: center
-        margin: .7rem 0
-        box-shadow: var(--box-shadow-1)
-        .sidebar__button:active
-            background-color: var(--color-brown) !important
-            transition: all .4s easy-in-out
-        i
-            font-style: 1.2rem
-            color: var(--color-grey-2)
-            pointer-events: none
+
+.main-block__body
+    display: flex
+    max-width: 500px
+    justify-content: center
+    flex-direction: column
+    align-items: left
+
+    @media (max-width: 920px)
+        align-items: center
+
+.main-block__body > *:not(:last-child) // objects with class .main-block__body from the first level
+    margin-bottom: 25px
+
+.main-block__title
+    font-size: 38px
+    line-height: calc(80/58 * 100%)
+    font-weight: 800
+    line-height: calc(42/38 * 100%)
+
+    @media (max-width: 540px)
+        font-size: 28px
+
+    @media (max-width: 408px)
+        font-size: 20px
+
+    @media (max-width: 330px)
+        font-size: 20px
+        font-weight: 600
+
+.main-block__text
+    font-weight: 500
+    font-size: 16px
+    color: #737373
+    line-height: calc(30/20 * 100%)
+
+    @media (max-width: 920px)
+        text-align: center
+
+    @media (max-width: 650px)
+        color: var(--color-grey-5)
+
+.main-block__buttons
+    display: flex
+    flex-wrap: wrap
+    margin: -10px 0
+
+.main-block__button
+    border-radius: 37px
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 10px 36px
+    letter-spacing: 0.2px
+    min-height: 48px
+    font-weight: 700
+    font-size: 14px
+    line-height: calc(28/14 * 100%)
+    text-align: center
+    margin: 10px 0
+    transition: all 0.5s ease-in-out 0s
+
+@media (max-width: 500px)
+    .main-block__button
+        flex: 1 1 100%
+
+@media (min-width: 500px)
+    .main-block__button:not(:last-child)
+        margin-right: 10px
+
+.main-block__button_green
+    color: #fff
+    background: var(--color-blue)
+
+.main-block__button_green:hover
+    color: var(--color-blue)
+    background-color: #fff
+    border: 1px solid var(--color-blue)
+
+.main-block__button_border
+    color: var(--color-blue)
+    border: 1px solid var(--color-blue)
+
+.main-block__button_border:hover
+    color: #fff
+    background-color: var(--color-blue)
+
+.main-block__image
+    padding: 40px 0px 40px 40px
+
+    @media (max-width: 920px)
+        padding: 25px 0px 0px 0px
+
+
+// ---------------------------------------PORTFOLIO---------------------------------
+.portfolio
+    background-color: #fff
+
+.portfolio__container
+    padding: 15px 60px 40px 60px
+
+    @media (max-width: 920px)
+        flex-direction: column
+        padding: 100px 60px 0px 60px
+        align-items: center
+
+.portfolio__body
+
+.portfolio__title
+
+
+// ---------------------------------------CONTACT ME--------------------------------
+
+// ---------------------------------------FOOTER------------------------------------

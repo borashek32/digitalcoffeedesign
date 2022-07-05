@@ -1,0 +1,895 @@
+*,
+*:before,
+*:after
+    padding: 0
+    margin: 0
+    border: 0
+    box-sizing: border-box
+
+a
+    text-decoration: none
+
+a:before
+    color: #252B42
+
+a:after
+    color: #252B42
+
+a:visited
+    color: #252B42
+
+ol,
+ul,
+li
+    list-style: none
+
+img
+    vertical-align: top
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    font-weight: inherit
+    font-size: inherit
+
+html,
+body
+    height: 100%
+    line-height: 1
+    font-size: 14px
+    color: #252B42
+    font-weight: 500
+    font-family: Montserrat
+    background-color: #fafafa
+
+.wrapper
+    min-height: 100%
+    overflow: hidden
+    display: flex
+    flex-direction: column
+
+._container
+    max-width: 1046px
+    padding: 15px 15px
+    box-sizing: content-box
+    margin: 0 auto // put every block at horizontal center
+
+._ibg
+    position: relative
+
+._ibg img
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    object-fit: cover
+
+// HEADER ------------------------------------------------
+.header
+    position: absolute
+    width: 100%
+    left: 0
+    top: 0
+    z-index: 100
+
+.header__container
+    display: flex
+    min-height: 104px
+    align-items: center
+
+@media (max-width: 479px)
+    .header__container
+        min-height: 80px
+
+.header__logo
+    font-weight: 700
+    font-size: 24px
+    color: inherit
+
+.header__menu
+    margin: 0px 0px 0px 133px
+    padding: 5px 0px
+
+@media (max-width: 992px)
+    .header__menu
+        margin: 0px 0px 0px 80px
+
+@media (max-width: 768px)
+    .header__menu
+        margin: 0px 0px 0px 40px
+
+@media (max-width: 479px)
+    .header__menu
+        margin: 0px 0px 0px 20px
+
+.menu
+
+
+.menu__list
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+
+.menu__item
+
+.menu__link
+    font-size: 14px
+    color: #737373
+    line-height: 171%
+    font-weight: 600
+    display: flex
+    margin: 0px 0px 0px 21px
+    .menu__link:not(last-child)
+        margin: 0px 0px 0px 21px
+
+@media (max-width: 479px)
+    .menu__link
+        font-size: 16px
+// PAGE -------------------------------------------------
+.page
+    flex: 1 1 auto
+
+.page__main-block
+
+.page__services
+    margin-top: -111px
+    position: relative
+    z-index: 2
+
+.page__experience
+
+// TITLE-BLOCK ------------------------------------------
+.title-block
+    color: #252B42
+    font-size: 40px
+    font-weight: 700px
+    line-height: 142%
+    letter-spacing: 0.2px
+    text-align: center
+
+.subtitle-block
+    font-weight: 500
+    font-size: 14px
+    line-height: calc( 20/14*100% )
+    text-align: center
+    letter-spacing: 0.2px
+    color: #737373
+
+// MAIN -------------------------------------------------
+.main-block__title
+    font-size: 58px
+    letter-spacing: 0.2px
+    font-weight: 800
+
+.page__main-block
+
+.main-block
+    position: relative
+
+.main-block__body
+    padding: 184px 0px 191px 0px
+    position: relative
+    z-index: 2
+    max-width: 400px
+
+@media (max-width: 992px)
+    .main-block__body
+        padding: 124px 0px 191px 0px
+
+.main-block__body > *:not(:last-child) // objects with class .main-block__body from the first level
+    margin-bottom: 35px
+
+.main-block__container
+
+.main-block__title
+    font-size: 58px
+    line-height: calc(80/58 * 100%)
+    font-weight: 800
+
+@media (max-width: 500px)
+    .main-block__title
+        font-size: 40px
+
+.main-block__text
+    font-weight: 500
+    font-size: 20px
+    color: #737373
+    line-height: calc(30/20 * 100%)
+
+.main-block__buttons
+    display: flex
+    flex-wrap: wrap
+    margin: -20px 0
+
+.main-block__button
+    border-radius: 37px
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 10px 36px
+    letter-spacing: 0.2px
+    min-height: 48px
+    font-weight: 700
+    font-size: 14px
+    line-height: calc(28/14 * 100%)
+    text-align: center
+    margin-right: 10px
+    transition: all 0.3s ease 0s
+    margin-top: 10px
+
+@media (max-width: 500px)
+    .main-block__button
+        flex: 1 1 100%
+
+@media (min-width: 500px)
+    .main-block__button:not(:last-child)
+        // margin-right: 10px
+
+.main-block__button_orange
+    color: #fff
+    background: #FF7B47
+
+.main-block__button_orange:hover
+    color: #FF7B47
+    background: #fff
+    border: 1px solid #FF7B47
+
+.main-block__button_border
+    color: #0D5C63
+    border: 1px solid #0D5C63
+
+.main-block__button_border:hover
+    color: #fff
+    background-color: #0D5C63
+
+.main-block__image
+    object-position: bottom
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+
+@media (max-width: 1300px)
+    .main-block__image img
+        object-position: right
+
+@media (max-width: 992px)
+    .main-block__image img
+        opacity: 0.5
+
+// SERVICES -----------------------------------------------
+.services__container
+    margin: 0px auto
+    @media (max-width: 1050px)
+        max-width: 80%
+
+.services__body
+    display: flex
+
+.services__row
+    padding: 0px 15px
+    display: flex
+    flex-wrap: wrap
+
+.services__column
+    flex: 0 1 33.333%
+    padding: 15px
+    display: flex
+
+@media (max-width: 1050px)
+    .services__column
+        flex: 0 1 50%
+    .services__column:last-child
+        flex: 1 0 100%
+
+@media (max-width: 750px)
+    .services__column
+        flex: 1 0 100%
+
+.services__item
+    flex: 1 0 100%
+    box-shadow: 0px 13px 19px rgb(0, 0, 0, 0.07)
+    background-color: #fff
+    display: flex
+    flex-direction: column
+    padding: 35px
+    margin: 0px 30px 0px 0px
+
+.item-service
+
+.item-service_green
+    background-color: #0D5C63
+
+.item-service_green .item-service__title
+    color: #fff
+
+.item-service_green .item-service__text
+    color: #fff
+
+.item-service:last-child
+    margin: 0px 0px 0px 0px
+
+.item-service__icon
+    margin-bottom: 20px
+
+.item-service__title
+    font-weight: 700
+    letter-spacing: 0.1px
+    font-size: 24px
+    line-height: calc( 32/24*100% )
+    margin-bottom: 15px
+
+@media (max-width: 500px)
+    .item-service__title
+        font-weight: 700
+        letter-spacing: 0.1px
+        font-size: 16px
+
+.item-service__text
+    color: #737373
+    font-size: 14px
+    line-height: calc( 20/14*100% )
+
+
+// EXPERIENCE -------------------------------------------
+.experience
+
+.experience__container
+    padding: 65px 0px 0px 0px
+    width: 70%
+
+    @media (max-width: 1200px)
+        padding: 25px 0px 0px 0px
+
+.experience__title
+    margin-bottom: 10px
+    margin-top: 20px
+
+    @media (max-width: 600px)
+        padding: 0px 10px
+
+.experience__text
+    padding: 0px 269.5px
+
+    @media (max-width: 1015px)
+        padding: 0px 120px
+
+    @media (max-width: 600px)
+        padding: 0px 10px
+
+.experience__row
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+.experience__column
+    display: flex
+    flex: 0 1 25%
+    justify-content: space-around
+
+@media (max-width: 1200px)
+    .experience__column
+        flex: 0 1 50%
+        justify-content: space-around
+
+.item-card
+    width: 200px
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 50px
+    background-color: #fff
+
+.item-card__body
+
+.item-card__img
+    display: flex
+    min-height: 48px
+    justify-items: center
+
+.item-card__number
+    color: #252B42
+    font-size: 40px
+    font-weight: 700px
+    line-height: calc( 57/40*100% )
+    letter-spacing: 0.2px
+    text-align: center
+
+.item-card__title
+    font-weight: 700
+    font-size: 16px
+    line-height: calc( 24/16*100% )
+    text-align: center
+    letter-spacing: 0.1px
+    color: #737373
+
+// PRACTICE ---------------------------------------------
+.practice__container
+    width: 90%
+    padding-bottom: 50px
+
+    @media (max-width: 1200px)
+        padding: 25px 0px 0px 0px
+
+.practice__title
+    margin-top: 181px
+
+    @media (max-width: 1200px)
+        margin-top: 41px
+
+.practice__text
+    padding: 0px 269.5px
+
+    @media (max-width: 1015px)
+        padding: 0px 120px
+
+    @media (max-width: 600px)
+        padding: 0px 10px
+
+.practice__row
+    margin-top: 25px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+.practice__column
+    padding: 0px 10px
+    display: flex
+    flex: 0 1 25%
+    justify-content: space-around
+
+    @media (max-width: 1160px)
+        flex: 1 0 50%
+        justify-content: space-around
+
+.practice-card
+    background-color: #fff
+    width: 230px
+    margin-bottom: 30px
+    display: flex
+    flex-direction: column
+    min-height: 341px
+
+    @media (max-width: 1160px)
+        width: 400px
+        padding-bottom: 30px
+
+    @media (max-width: 450px)
+        width: 230px
+
+.practice-card__header
+    font-weight: 700
+    font-size: 16px
+    line-height: 24px
+    letter-spacing: calc( 20/16*100% )
+    margin: 30px 30px 15px 30px
+
+.practice-card__text
+    font-weight: 500
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: calc( 20/14*100% )
+    margin: 15px 30px 30px 30px
+    color: #737373
+    flex: 1 0 auto
+
+.practice-card__img
+    text-align: center
+
+// ABOUT ------------------------------------------------
+.about
+    background-color: #FFFFFF
+    padding-bottom: 145px
+    padding-top: 100px
+
+    @media (max-width: 1200px)
+        padding-bottom: 50px
+
+.about__container
+    width: 80%
+    padding-bottom: 136px
+    padding-top: 181px
+    padding-left: 100px
+    padding-right: 100px
+
+    @media (max-width: 1200px)
+        padding: 0px 0px 0px 0px
+
+.about__title-first
+
+    @media (max-width: 1200px)
+        padding: 25px 0px 0px 0px
+
+.about__title
+    color: #252B42
+    font-size: 40px
+    font-weight: 700px
+    line-height: 142%
+    letter-spacing: 0.2px
+    text-align: left
+    margin-bottom: 10px
+
+    @media (max-width: 1143px)
+        text-align: center
+
+.about__text
+    font-weight: 500
+    font-size: 14px
+    line-height: calc( 20/14*100% )
+    text-align: left
+    letter-spacing: 0.2px
+    color: #737373
+    margin-bottom: 50px
+
+.about__row
+    margin-top: 100px
+    display: flex
+    flex-direction: row
+
+    @media (max-width: 1141px)
+        flex-direction: column
+        margin-top: 50px
+        align-items: center
+
+.about__column_second
+    padding-left: 120px
+
+    @media (max-width: 1143px)
+        padding-left: 0px
+
+.experience__text_about
+    text-align: left
+
+.about__list
+
+.about-list__row
+    display: flex
+    flex-direction: row
+    padding-bottom: 30px
+
+    .about-list__row:last-child
+        padding-bottom: 0px
+
+.about__img
+
+.about__img iframe
+
+.about-list__desc
+    padding-left: 20px
+
+.about-list__desc h6
+    color: #252B42
+    font-weight: 700
+    font-size: 16px
+    line-height: 24px
+
+.about-list__desc p
+    color: #737373
+    font-weight: 600
+    font-size: 14px
+    line-height: 24px
+
+// ADVS --------------------------------------------------
+.advs
+    background-color: #FAFAFA
+    padding: 38px 0px
+    margin-bottom: 10px
+
+.advs__container
+
+.advs__row
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-around
+
+.advs__item
+    padding: 10px 20px 10px 10px
+    flex: 0 1 16.6667%
+    text-align: center
+
+// SUBSCRIBE --------------------------------------------
+.page__suscribe
+
+.subscribe
+    position: relative
+
+.subscribe::before
+    content: ''
+    position: absolute
+    bottom: 0
+    width: 100%
+    background-color: #252B42
+    height: 77px
+    left: 0
+
+.subscribe__container
+
+.subscribe__body
+    position: relative
+    z-index: 2
+    margin: 0px 30px
+    padding: 30px 50px
+    align-items: center
+    background-color: #17213c
+    justify-content: space-between
+    border-radius: 2px
+
+    @media ( min-width: 1070px )
+        margin: 0px 30px
+
+    @media ( min-width: 788px )
+        display: flex
+        justify-content: space-between
+
+    @media (max-width: 788px)
+        margin: 0px -15px
+
+    @media (max-width: 400px)
+        padding: 10px 20px
+
+.subscribe__title
+    display: flex
+    color: #fff
+    font-weight: 700
+    font-size: 24px
+    line-height: 32px
+
+    @media ( min-width: 788px )
+        max-width: 266px
+
+    @media ( max-width: 788px )
+        margin-bottom: 20px
+
+.subscribe__form
+    flex: 0 1 50%
+    display: flex
+    align-items: center
+
+.subscribe__input
+    flex: 1 1 auto
+    background: #F9F9F9
+    border: 1px solid #E6E6E6
+    border-radius: 5px 0px 0px 5px
+    padding: 0px 22px
+    min-height: 58px
+    border-right: 0
+
+.subscribe__button
+    background: #FF7B47
+    border: 1px solid #E6E6E6
+    border-radius: 0px 5px 5px 0px
+    min-height: 58px
+    justify-content: center
+    text-align: center
+    align-items: center
+    color: #fff
+    padding: 0px 22px
+    cursor: pointer
+
+.subscribe__button:hover
+    background: #fff
+    border: 1px solid #FF7B47
+    color: #FF7B47
+
+// GET IN TOUCH -----------------------------------------
+.getintouch
+    padding: 80px 80px 178px 80px
+    background-color: #FAFAFA
+
+    @media ( max-width: 1300px )
+        padding: 30px 0px 100px 0px
+
+.getintouch__container
+
+.getintouch__header
+    margin: 0px 0px 10px 0px
+
+.getintouch__subheader
+    margin-bottom: 80px
+
+.getintouch__items
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin: 0px auto
+
+    @media ( max-width: 1100px )
+        display: flex
+        flex-direction: column
+        align-items: center
+
+.item-getintouch
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: #fff
+    padding: 50px 52px 52px 50px
+
+
+.item-getintouch_active
+    background: #252B42
+    color: #fff
+    padding: 80px 52px 52px 80px
+
+.item-getintouch_active .item-getintouch__button
+    border: 1px solid #fff
+    color: #fff
+
+.item-getintouch_active .item-getintouch__button:hover
+
+
+.item-getintouch > *:not(:last-child)
+    margin: 0px 0px 15px 0px
+
+.item-getintouch__icon
+
+.item-getintouch__emails
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.item-getintouch__email
+    color: inherit
+    font-weight: 600
+    line-height: calc( 24/14*100% )
+    font-size: 14px
+
+.item-getintouch__email:hover
+    text-decoration: underline
+
+.item-getintouch__label
+    font-weight: 700
+    line-height: calc( 24/14*100% )
+    font-size: 14px
+
+.item-getintouch__button
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 160px
+    height: 44px
+    border: 1px solid #FF7B47
+    border-radius: 5px
+    transition: all 0.3s ease 0s
+    color: #FF7B47
+
+.item-getintouch__button:hover
+    border: 1px solid #FF7B47
+    background-color: #FF7B47
+    color: #fff
+
+// CONTACT ----------------------------------------------
+.contact
+    padding: 40px 0px 40px 0px
+    background-color: #fff
+
+.contact__row
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+    @media (max-width: 480px)
+        flex-direction: column
+
+.contact__column
+
+.contact__header
+    font-weight: 700
+    font-size: 24px
+    line-height: calc( 32/24*100% )
+    letter-spacing: 0.1px
+    color: #252B42
+    margin-bottom: 10px
+
+.contact__subheader
+    font-weight: 500
+    font-size: 14px
+    line-height: calc( 20/14*100% )
+    letter-spacing: 0.2px
+    color: #737373
+
+    @media (max-width: 480px)
+        margin-bottom: 20px
+
+.contact__btn
+    padding: 15px 40px
+    width: 162px
+    height: 58px
+    background: #FF7B47
+    border-radius: 5px
+    display: flex
+    align-items: center
+    justify-items: center
+    color: #fff
+    border: 1px solid #fff
+    transition: all 0.3s ease 0s
+
+.contact__btn:hover
+    color: #FF7B47
+    background-color: #fff
+    border: 1px solid #FF7B47
+
+// FOOTER -----------------------------------------------
+.footer
+    padding: 30px 50px 50px 50px
+    background-color: #17213c
+    color: #fff
+
+.footer a
+    color: #fff
+
+.footer__row
+    display: flex
+    flex-direction: row
+    align-items: left
+    flex-wrap: wrap
+
+.footer__column
+    min-width: 148px
+    padding-right: 30px
+    display: flex
+    flex-direction: column
+    align-items: left
+
+.footer-column__title
+    font-weight: 700
+    margin-top: 20px
+    font-size: 16px
+    line-height: calc( 24/16*100% )
+    letter-spacing: 0.1px
+    margin-bottom: 20px
+
+.footer-column__item
+    font-weight: 600
+    font-size: 14px
+    line-height: calc( 24/16*100% )
+    letter-spacing: 0.2px
+    margin-bottom: 10px
+
+.footer-column__line
+    display: flex
+    flex-direction: row
+    align-items: center
+
+.footer-column__line_last
+    margin-bottom: 10px
+
+.footer-column__item_last
+    padding-left: 10px
+
+// FOOTER-END -------------------------------------------
+.footer-end
+    padding: 0px 25px
+
+.footer-end__row
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.footer-end__text
+    font-weight: 600
+    font-size: 14px
+    line-height: 24px
+    letter-spacing: 0.2px
+    color: #737373
+
+.footer-end__item
+    display: flex
+    align-items: center
+    justify-content: space-around
+
+.footer-end__img
+    margin-right: 20px
+    flex: 1 0 flex
+
+.footer-end__item img:not(:last-child)
+    margin-right: 20px

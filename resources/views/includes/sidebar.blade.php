@@ -1,14 +1,14 @@
 <div class="sidebar">
-    <div class="sidebar__button active">
-        <i class="fa-regular fa-house-heart"></i>
+    <div class="sidebar__button active-btn" data-id="home" >
+        <i class="fas fa-home"></i>
     </div>
-    <div class="sidebar__button">
-        <i class="fa-solid fa-list-check"></i>
+    <div class="sidebar__button" data-id="portfolio">
+        <i class="fas fa-briefcase"></i>
     </div>
-    <div class="sidebar__button">
-        <i class="fa-regular fa-address-card"></i>
+    <div class="sidebar__button" data-id="about">
+        <i class="fas fa-user"></i>
     </div>
-    <div class="sidebar__button">
-        <i class="fa-regular fa-pen-to-square"></i>
+    <div class="sidebar__button" data-id="contact">
+        <i class="fas fa-envelope-open"></i>
     </div>
 </div>

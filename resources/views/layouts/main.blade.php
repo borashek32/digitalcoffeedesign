@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body>
-    @include('includes.navbar')
-
-    @yield('content')
-
-    @include('includes.sidebar')
-
-    @include('includes.footer')
+    <div class="wrapper">
+        @include('includes.navbar')
+        @yield('content')
+        {{-- @include('includes.sidebar') --}}
+        @include('includes.footer')
+    </div>
+    <script src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>

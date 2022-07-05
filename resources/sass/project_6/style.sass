@@ -1,0 +1,332 @@
+*,
+*:before,
+*:after
+    padding: 0
+    margin: 0
+    border: 0
+    box-sizing: border-box
+
+a
+    text-decoration: none
+
+ol,
+ul,
+li
+    list-style: none
+
+img
+    vertical-align: top
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    font-weight: inherit
+    font-size: inherit
+
+html,
+body
+    height: 100%
+    line-height: 1
+    font-size: 14px
+    color: #252B42
+    font-weight: 500
+    font-family: Montserrat
+    background-color: #fafafa
+
+.wrapper
+    min-height: 100%
+    overflow: hidden
+    display: flex
+    flex-direction: column
+
+._container
+    max-width: 80%
+    margin: 0px auto
+
+    @media (max-width: 600px)
+        max-width: 90%
+
+.title
+    color: #445161
+    font-size: 30px
+    line-height: 36px
+
+    @media ( max-width: 760px )
+        font-size: 24px
+        line-height: 30px
+
+/* HEADER */
+.header
+    background-color: #445162
+    padding: 50px 0px
+
+.header__row
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+    @media ( max-width: 760px )
+        flex-direction: column
+        align-items: center
+
+.header__body
+    color: #fff
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: right
+    margin-right: 20px
+
+.header__title
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.3)
+    font-size: 40px
+    margin-bottom: 28px
+
+    @media (max-width: 440px)
+        font-size: 28px
+        text-align: center
+
+.header__list li
+    list-style: none
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.3)
+    font-size: 16px
+    line-height: 18px
+    margin-bottom: 7px
+
+    @media (max-width: 760px)
+        font-size: 14px
+        line-height: 16px
+        text-align: center
+
+.header__img
+    @media (max-width: 760px)
+        margin-top: 30px
+
+.header__list li:last-child
+    margin-bottom: 0px
+
+/* CONTENT */
+.content
+    flex: 1 0 auto
+
+/* ABOUT */
+.about__row
+    display: flex
+    padding-top: 50px
+    padding-bottom: 50px
+    align-items: center
+
+    @media ( max-width: 760px )
+        flex-direction: column
+        align-items: center
+
+.about__img
+    flex: 0 0 340px // блоку нельзя увеличиваться и уменьшаться и фиксированная width
+
+    @media (max-width: 760px)
+        flex: 0 0 auto
+        margin-bottom: 30px
+
+.about__img img
+    max-width: 100%
+
+.about__body
+    flex: 1 1 auto // блоку можно увеличиваться и уменьшаться и width устанавливается автоматически
+    margin: 0px 0px 0px 38px
+
+    @media (max-width: 760px)
+        margin: 0px 0px 0px 0px
+        text-align: center
+
+.about__title
+    margin-bottom: 33px
+
+    @media (max-width: 760px)
+        margin-bottom: 10px
+
+.about__text p
+    color: #333333
+    font-size: 16px
+    line-height: 24px
+    margin: 15px 0px 0px 0px
+
+/* SECTION 4 ITEMS */
+.columns
+    background-color: #f5f5f5
+    padding: 50px 0px 20px 0px
+
+.columns__title
+    text-align: center
+    margin-bottom: 30px
+
+    @media ( max-width: 900px )
+        margin-bottom: 20px
+
+.columns__row
+    display: flex
+    flex-wrap: wrap
+    margin: 0px -8px
+
+    @media ( max-width: 900px )
+        flex-direction: column
+
+.columns__column
+    padding: 0px 8px
+    flex: 0 1 50% // нельзя увеличиваться, можно уменьшаться и замимеат пол контейнера-родителя
+    margin: 0px 0px 30px 0px
+
+.item__row
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+    @media (max-width: 420px)
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+
+.item__img
+    flex: 0 0 150px
+
+    @media ( max-width: 420px)
+        display: flex
+        justify-content: center
+
+.item__body
+    flex: 1 1 auto
+    padding: 0px 0px 0px 15px
+
+.item__title
+    color: #446151
+    font-size: 24px
+    line-height: 30px
+    margin-bottom: 13px
+
+    @media ( max-width: 840px)
+        margin-top: 10px
+        font-size: 18px
+        line-height: 24px
+        margin-bottom: 10px
+
+    @media ( max-width: 420px)
+        text-align: center
+
+.item__text
+    color: #333
+    font-size: 12px
+    line-height: 16px
+
+    @media ( max-width: 840px)
+        line-height: 14px
+
+    @media ( max-width: 420px)
+        text-align: center
+
+/* VERTICAL */
+.vertical
+    padding: 50px 0px
+
+.vertical__body
+    width: 80%
+    margin: 0px auto
+
+.vertical__title
+    text-align: center
+    margin: 0px 0px 30px 0px
+
+.vertical__row
+    display: flex
+    margin: 0px -10px
+    flex-wrap: wrap
+
+    @media (max-width: 800px)
+        flex-direction: column
+
+.vertical__column
+    display: flex
+    padding: 10px 10px
+    flex: 0 1 33.333% // нельзя увеличиваться, можно уменьшаться и выстроиться в 2 колонки
+
+    @media (max-width: 1150px)
+        .vertical__column
+            flex: 0 1 50%
+            margin-bottom: 50px
+        .vertical__column:last-child
+            flex: 1 0 100%
+
+.vertical__column_1
+    order: 1
+
+.vertical__column_2
+    order: 2
+
+.vertical__column_3
+    order: 3
+
+.vertical__item
+    display: flex
+    flex-direction: column
+    background-color: #445161
+    color: #fff
+    border-radius: 5px
+    border: 1px solid #445161
+    padding-bottom: 20px
+
+
+.vertical__subtitle
+    text-align: center
+    font-size: 24px
+    line-height: 30px
+    text-transform: uppercase
+    padding: 18px 12px
+
+.vertical__label
+    text-align: center
+    background-color: #fff
+    color: #445161
+    padding: 15px 0px
+    font-size: 24px
+
+.vertical__text
+    font-size: 14px
+    line-height: 24px
+    padding: 20px
+    flex: 1 1 auto
+
+.vertical__text p
+    padding: 0px 0px 15px 0px
+
+.vertical__text p:last-child
+    padding: 0px 0px 0px 0px
+
+.vertical__btn
+    display: block
+    height: 40px
+    line-height: 40px
+    background-color: #fff
+    margin: 0px 20px
+    color: #445161
+    border-radius: 5px
+    font-weight: 700
+    text-align: center
+    font-size: 18px
+    text-transform: uppercase
+
+/* FOOTER */
+.footer
+    background-color: #f5f5f5
+
+.footer__row
+    height: 65px
+    display: flex
+    justify-content: center
+    align-items: center
+
+.footer__text
+    font-size: 12px
+    letter-spacing: 0.3px
+    color: #445162

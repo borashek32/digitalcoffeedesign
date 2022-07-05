@@ -41,4 +41,19 @@ class ProjectController extends Controller
     {
         return view('projects.project_4.index');
     }
+
+    public function project5()
+    {
+        return view('projects.project_5.index');
+    }
+
+    public function project6()
+    {
+        return view('projects.project_6.index');
+    }
+
+    public function project7()
+    {
+        return view('projects.project_7.index');
+    }
 }

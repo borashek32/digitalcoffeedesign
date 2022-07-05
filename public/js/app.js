@@ -22226,6 +22226,32 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
+/***/ "./resources/sass/project_7/style.sass":
+/*!*********************************************!*\
+  !*** ./resources/sass/project_7/style.sass ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/app.css":
+/*!*******************************!*\
+  !*** ./resources/css/app.css ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/sass/main/app.sass":
 /*!**************************************!*\
   !*** ./resources/sass/main/app.sass ***!
@@ -22265,10 +22291,23 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/css/app.css":
-/*!*******************************!*\
-  !*** ./resources/css/app.css ***!
-  \*******************************/
+/***/ "./resources/sass/project_5/style.sass":
+/*!*********************************************!*\
+  !*** ./resources/sass/project_5/style.sass ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/sass/project_6/style.sass":
+/*!*********************************************!*\
+  !*** ./resources/sass/project_6/style.sass ***!
+  \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22618,8 +22657,11 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
+/******/ 			"assets/project_7/css/style": 0,
 /******/ 			"assets/project_4/css/style": 0,
 /******/ 			"css/app": 0,
+/******/ 			"assets/project_6/css/style": 0,
+/******/ 			"assets/project_5/css/style": 0,
 /******/ 			"assets/project_3/css/style": 0
 /******/ 		};
 /******/ 		
@@ -22670,11 +22712,14 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["assets/project_4/css/style","css/app","assets/project_3/css/style"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["assets/project_4/css/style","css/app","assets/project_3/css/style"], () => (__webpack_require__("./resources/sass/main/app.sass")))
-/******/ 	__webpack_require__.O(undefined, ["assets/project_4/css/style","css/app","assets/project_3/css/style"], () => (__webpack_require__("./resources/sass/project_3/style.sass")))
-/******/ 	__webpack_require__.O(undefined, ["assets/project_4/css/style","css/app","assets/project_3/css/style"], () => (__webpack_require__("./resources/sass/project_4/style.sass")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/project_4/css/style","css/app","assets/project_3/css/style"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["assets/project_7/css/style","assets/project_4/css/style","css/app","assets/project_6/css/style","assets/project_5/css/style","assets/project_3/css/style"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["assets/project_7/css/style","assets/project_4/css/style","css/app","assets/project_6/css/style","assets/project_5/css/style","assets/project_3/css/style"], () => (__webpack_require__("./resources/sass/main/app.sass")))
+/******/ 	__webpack_require__.O(undefined, ["assets/project_7/css/style","assets/project_4/css/style","css/app","assets/project_6/css/style","assets/project_5/css/style","assets/project_3/css/style"], () => (__webpack_require__("./resources/sass/project_3/style.sass")))
+/******/ 	__webpack_require__.O(undefined, ["assets/project_7/css/style","assets/project_4/css/style","css/app","assets/project_6/css/style","assets/project_5/css/style","assets/project_3/css/style"], () => (__webpack_require__("./resources/sass/project_4/style.sass")))
+/******/ 	__webpack_require__.O(undefined, ["assets/project_7/css/style","assets/project_4/css/style","css/app","assets/project_6/css/style","assets/project_5/css/style","assets/project_3/css/style"], () => (__webpack_require__("./resources/sass/project_5/style.sass")))
+/******/ 	__webpack_require__.O(undefined, ["assets/project_7/css/style","assets/project_4/css/style","css/app","assets/project_6/css/style","assets/project_5/css/style","assets/project_3/css/style"], () => (__webpack_require__("./resources/sass/project_6/style.sass")))
+/******/ 	__webpack_require__.O(undefined, ["assets/project_7/css/style","assets/project_4/css/style","css/app","assets/project_6/css/style","assets/project_5/css/style","assets/project_3/css/style"], () => (__webpack_require__("./resources/sass/project_7/style.sass")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/project_7/css/style","assets/project_4/css/style","css/app","assets/project_6/css/style","assets/project_5/css/style","assets/project_3/css/style"], () => (__webpack_require__("./resources/css/app.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
