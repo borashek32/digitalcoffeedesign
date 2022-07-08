@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project_7</title>
-    <link rel="stylesheet" href="{{ asset('assets/project_7/css/style.css') }}">
+    <title>UX|UI designer</title>
+    <link rel="stylesheet" href="{{ asset('assets/projects/project_7/css/style.css') }}">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="http://fonts.cdnfonts.com/css/gilroy-medium" rel="stylesheet">
-    <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/gilroy-medium&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/gilroy-bold&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -53,15 +53,15 @@
                             <p>UX | UI designer<br>24 years old, Minsk</p>
                         </div>
                         <div class="promo__lang">
-                            <a href="#">RU </a>
-                            <a href="#"> | ENG</a>
+                            <a href="#">RU</a>|
+                            <a href="#">ENG</a>
                         </div>
                     </div>
                     <div class="promo__photo">
-                        <img src="img/project_7/promo/promo.jpg" alt="photo of me">
+                        <img src="img/projects/project_7/promo/promo.jpg" alt="photo of me">
                     </div>
                     <div class="promo__photo_mobile">
-                        <img src="img/project_7/promo/promo-mobile.jpg" alt="photo of me">
+                        <img src="img/projects/project_7/promo/promo-mobile.jpg" alt="photo of me">
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                         <div class="skills__column">
                             <div class="skills__item">
                                 <div class="skills__img">
-                                    <img src="img/project_7/skills/photoshop.png" alt="photoshop">
+                                    <img src="img/projects/project_7/skills/photoshop.png" alt="photoshop">
                                 </div>
                                 <div class="skills__name">
                                     Adobe<br>Photoshop
@@ -108,19 +108,19 @@
                                 <div class="skills__level stars">
                                     <div class="stars__row">
                                         <div class="stars__star">
-                                            <img src="img/project_7/star.png" alt="level star">
+                                            <img src="img/projects/project_7/star.png" alt="level star">
                                         </div>
                                         <div class="stars__star">
-                                            <img src="img/project_7/star.png" alt="level star">
+                                            <img src="img/projects/project_7/star.png" alt="level star">
                                         </div>
                                         <div class="stars__star">
-                                            <img src="img/project_7/star.png" alt="level star">
+                                            <img src="img/projects/project_7/star.png" alt="level star">
                                         </div>
                                         <div class="stars__star">
-                                            <img src="img/project_7/star.png" alt="level star">
+                                            <img src="img/projects/project_7/star.png" alt="level star">
                                         </div>
                                         <div class="stars__star">
-                                            <img src="img/project_7/star-grey.png" alt="level star">
+                                            <img src="img/projects/project_7/star-grey.png" alt="level star">
                                         </div>
                                     </div>
                                 </div>
@@ -129,7 +129,7 @@
                         <div class="skills__column">
                             <div class="skills__item">
                                 <div class="skills__img">
-                                    <img src="img/project_7/skills/illustrator.png" alt="illustrator">
+                                    <img src="img/projects/project_7/skills/illustrator.png" alt="illustrator">
                                 </div>
                                 <div class="skills__name">
                                     Adobe<br>Illustrator
@@ -137,19 +137,19 @@
                                 <div class="skills__level stars">
                                     <div class="stars__row">
                                         <div class="stars__star">
-                                            <img src="img/project_7/star.png" alt="level star">
+                                            <img src="img/projects/project_7/star.png" alt="level star">
                                         </div>
                                         <div class="stars__star">
-                                            <img src="img/project_7/star.png" alt="level star">
+                                            <img src="img/projects/project_7/star.png" alt="level star">
                                         </div>
                                         <div class="stars__star">
-                                            <img src="img/project_7/star.png" alt="level star">
+                                            <img src="img/projects/project_7/star.png" alt="level star">
                                         </div>
                                         <div class="stars__star">
-                                            <img src="img/project_7/star-grey.png" alt="level star">
+                                            <img src="img/projects/project_7/star-grey.png" alt="level star">
                                         </div>
                                         <div class="stars__star">
-                                            <img src="img/project_7/star-grey.png" alt="level star">
+                                            <img src="img/projects/project_7/star-grey.png" alt="level star">
                                         </div>
                                     </div>
                                 </div>
@@ -158,7 +158,7 @@
                         <div class="skills__column">
                             <div class="skills__item">
                                 <div class="skills__img">
-                                    <img src="img/project_7/skills/effects.png" alt="after effect">
+                                    <img src="img/projects/project_7/skills/effects.png" alt="after effect">
                                 </div>
                                 <div class="skills__name">
                                     Adobe<br>After Effect
@@ -166,19 +166,19 @@
                                 <div class="skills__level stars">
                                     <div class="stars__row">
                                         <div class="stars__star">
-                                            <img src="img/project_7/star.png" alt="level star">
+                                            <img src="img/projects/project_7/star.png" alt="level star">
                                         </div>
                                         <div class="stars__star">
-                                            <img src="img/project_7/star.png" alt="level star">
+                                            <img src="img/projects/project_7/star.png" alt="level star">
                                         </div>
                                         <div class="stars__star">
-                                            <img src="img/project_7/star.png" alt="level star">
+                                            <img src="img/projects/project_7/star.png" alt="level star">
                                         </div>
                                         <div class="stars__star">
-                                            <img src="img/project_7/star.png" alt="level star">
+                                            <img src="img/projects/project_7/star.png" alt="level star">
                                         </div>
                                         <div class="stars__star">
-                                            <img src="img/project_7/star-grey.png" alt="level star">
+                                            <img src="img/projects/project_7/star-grey.png" alt="level star">
                                         </div>
                                     </div>
                                 </div>
@@ -187,7 +187,7 @@
                         <div class="skills__column">
                             <div class="skills__item">
                                 <div class="skills__img">
-                                    <img src="img/project_7/skills/figma.png" alt="figma">
+                                    <img src="img/projects/project_7/skills/figma.png" alt="figma">
                                 </div>
                                 <div class="skills__name">
                                     Figma
@@ -195,19 +195,19 @@
                                 <div class="skills__level stars">
                                     <div class="stars__row">
                                         <div class="stars__star">
-                                            <img src="img/project_7/star.png" alt="level star">
+                                            <img src="img/projects/project_7/star.png" alt="level star">
                                         </div>
                                         <div class="stars__star">
-                                            <img src="img/project_7/star.png" alt="level star">
+                                            <img src="img/projects/project_7/star.png" alt="level star">
                                         </div>
                                         <div class="stars__star">
-                                            <img src="img/project_7/star.png" alt="level star">
+                                            <img src="img/projects/project_7/star.png" alt="level star">
                                         </div>
                                         <div class="stars__star">
-                                            <img src="img/project_7/star.png" alt="level star">
+                                            <img src="img/projects/project_7/star.png" alt="level star">
                                         </div>
                                         <div class="stars__star">
-                                            <img src="img/project_7/star-grey.png" alt="level star">
+                                            <img src="img/projects/project_7/star-grey.png" alt="level star">
                                         </div>
                                     </div>
                                 </div>
@@ -224,7 +224,7 @@
                     <div class="portfolio__list">
                         <div class="portfolio__item">
                             <a href="#">
-                                <img src="img/project_7/works/0.jpg" class="portfolio_img" alt="fasion store">
+                                <img src="img/projects/project_7/works/0.jpg" class="portfolio_img" alt="fasion store">
                             </a>
                             <div class="portfolio__link">
                                 <a href="#" class="portfolio__description description">
@@ -234,7 +234,7 @@
                         </div>
                         <div class="portfolio__item">
                             <a href="#">
-                                <img src="img/project_7/works/01.jpg" class="portfolio_img" alt="reebok">
+                                <img src="img/projects/project_7/works/01.jpg" class="portfolio_img" alt="reebok">
                             </a>
                             <div class="portfolio__link">
                                 <a href="#" class="portfolio__description description">
@@ -244,7 +244,7 @@
                         </div>
                         <div class="portfolio__item">
                             <a href="#">
-                                <img src="img/project_7/works/02.jpg" class="portfolio_img" alt="braun">
+                                <img src="img/projects/project_7/works/02.jpg" class="portfolio_img" alt="braun">
                             </a>
                             <div class="portfolio__link">
                                 <a href="#" class="portfolio__description description">
@@ -272,22 +272,22 @@
                 <div class="footer__row">
                     <div class="footer__item">
                         <a href="#">
-                            <img src="img/project_7/social/social.png" width="40px" alt="in">
+                            <img src="img/projects/project_7/social/social.png" width="40px" alt="in">
                         </a>
                     </div>
                     <div class="footer__item">
                         <a href="#">
-                            <img src="img/project_7/social/social1.png" width="40px" alt="ig">
+                            <img src="img/projects/project_7/social/social1.png" width="40px" alt="ig">
                         </a>
                     </div>
                     <div class="footer__item">
                         <a href="#">
-                            <img src="img/project_7/social/social2.png" width="40px" alt="be">
+                            <img src="img/projects/project_7/social/social2.png" width="40px" alt="be">
                         </a>
                     </div>
                     <div class="footer__item">
                         <a href="#">
-                            <img src="img/project_7/social/social3.png" width="40px" alt="ball">
+                            <img src="img/projects/project_7/social/social3.png" width="40px" alt="ball">
                         </a>
                     </div>
                 </div>
@@ -298,6 +298,6 @@
         </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-    <script src="{{ asset('assets/project_7/js/script.js') }}"></script>
+    <script src="{{ asset('assets/projects/project_7/js/script.js') }}"></script>
 </body>
 </html>

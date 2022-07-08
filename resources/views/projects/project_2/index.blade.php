@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset('assets/project_2/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/projects/project_2/css/style.css') }}">
     <title>Creative Agency</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
     </header>
 
     <section class="home">
-        <img src="{{ asset('assets/project_2/img/home-img.jpg') }}" alt="home" class="home-img">
+        <img src="{{ asset('img/projects/project_2/home-img.jpg') }}" alt="home" class="home-img">
 
         <div class="home-content">
             <h1>We help to achieve <br>
@@ -50,6 +50,6 @@
         </div>
     </section>
 
-    <script src="{{ asset('assets/project_2/js/script.js') }}"></script>
+    <script src="{{ asset('assets/projects/project_2/js/script.js') }}"></script>
 </body>
 </html>

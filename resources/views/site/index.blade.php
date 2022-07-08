@@ -22,40 +22,58 @@
                     </div>
                 </div>
                 <div class="main-block__image">
-                    <img src="{{ asset('img/coffee_green.jpg') }}" width="400px" alt="digitalcoffeedesign.com">
+                    <img src="{{ asset('img/main/coffee_green.jpg') }}" width="400px" alt="digitalcoffeedesign.com">
                 </div>
             </div>
         </section>
         <div class="page__portfolio portfolio">
             <div class="portfolio__container _container">
                 <div class="portfolio__body">
-                    <div class="title-block">
-                        <h2 class="title-block__title">Portfolio</h2>
-                        <h4 class="title-block__subtitle">There are some of my frontend projects with small descriptions below</h4>
+                    <h2 class="portfolio__title title">Portfolio</h2>
+                    <h4 class="portfolio__subtitle subtitle">There are some of my frontend projects with small descriptions below</h4>
+
+                    <div class="portfolio__row">
+                        <div class="portfolio__column">
+                            <h2>Projects</h2>
+                            <ul class="portfolio__list">
+                                <li class="portfolio__item item">
+                                    <div class="item__row">
+                                        <img src="#" alt="">
+                                        <a href="{{ route('project1') }}">Project 1</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="{{ route('project2') }}">Project 2</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('project3') }}">Project 3</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('project4') }}">Project 4</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('project5') }}">Project 5</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('project6') }}">Project 6</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('project7') }}">Project 7</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="portfolio__column">
+                            <h2>Elements</h2>
+                            <ul class="portfolio__list">
+                                <li>
+                                    <a href="{{ route('element1') }}">Flex practice</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('element2') }}">Menu burger</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="portfolio__list">
-                        <li class="portfolio__item">
-                            <a href="{{ route('project1') }}">Project 1</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('project2') }}">Project 2</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('project3') }}">Project 3</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('project4') }}">Project 4</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('project5') }}">Project 5</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('project6') }}">Project 6</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('project7') }}">Project 7</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>

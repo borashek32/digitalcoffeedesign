@@ -1,10 +1,10 @@
 <header class="header">
     <div class="header__container _container">
         <div class="header__row">
+            <a href="#" class="header__link">
+                <img src="{{ asset('img/logo0.png') }}" alt="logo" class="header__logo">
+            </a>
             <div class="header__item">
-                <a href="#" class="header__link">
-                    <img src="{{ asset('img/logo0.png') }}" alt="logo" class="header__logo">
-                </a>
                 <nav class="header__menu menu">
                     <ul class="menu__list">
                         <li class="menu__item">
@@ -40,6 +40,9 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="header__burger">
+                <span></span>
             </div>
         </div>
     </div>

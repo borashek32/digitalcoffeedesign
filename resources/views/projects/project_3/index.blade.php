@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project_3</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="{{ asset('assets/project_3/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/projects/project_3/css/style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -45,6 +45,6 @@
         </div>
     </div>
 
-    <script src="{{ asset('assets/project_3/js/script.js') }}"></script>
+    <script src="{{ asset('assets/projects/project_3/js/script.js') }}"></script>
 </body>
 </html>

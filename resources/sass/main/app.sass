@@ -45,17 +45,13 @@ body
     display: flex
     flex-direction: column
 
-.title-block
-    text-align: center
-    padding: 50px 0px 30px 0px
-
-.title-block__title
+.title
     font-size: 40px
     line-height: calc( 46/40*100% )
     letter-spacing: 2px
     margin-bottom: 15px
 
-.title-block__subtitle
+.subtitle
     font-size: 20px
     line-height: calc( 26/20*100% )
     letter-spacing: 1px
@@ -85,29 +81,33 @@ body
     display: flex
     justify-content: space-between
 
+    // @media (max-width: 768px)
+    //     flex-direction: column
+
 .header__item
     display: flex
     align-items: center
 
+.header__burger
+    display: none
+
 .header__logo
     width: 40px
-
-.header__menu
-    margin: 0px 0px 0px 0px
 
 .menu__list
     flex-wrap: wrap
     display: flex
 
-@media (max-width: 540px)
+@media (max-width: 768px)
     .menu__list
-        display: none
+        display: flex
+        flex-direction: col
 
 .menu__item
-    margin: 0px 0px 0px 21px
+    margin: 0px 21px 0px 0px
 
-.menu__item:not(:last-child)
-    margin: 0px 0px 0px 21px
+.menu__item:last-child
+    margin: 0px 0px 0px 0px
 
 .menu__link
     color: var(--color-grey-3)
@@ -121,13 +121,13 @@ body
 
 .main-block__container
     display: flex
-    padding: 60px 60px 0px 60px
+    padding: 60px 60px 5px 60px
     justify-content: space-between
 
     @media (max-width: 920px)
         flex-direction: column
-        padding: 100px 60px 0px 60px
         align-items: center
+        margin-top: 60px
 
 .main-block__body
     display: flex
@@ -221,22 +221,31 @@ body
     @media (max-width: 920px)
         padding: 25px 0px 0px 0px
 
-
 // ---------------------------------------PORTFOLIO---------------------------------
 .portfolio
     background-color: #fff
 
 .portfolio__container
-    padding: 15px 60px 40px 60px
+    padding: 60px 60px 60px 60px
 
-    @media (max-width: 920px)
+    @media (max-width: 768px)
+        display: flex
         flex-direction: column
-        padding: 100px 60px 0px 60px
         align-items: center
 
 .portfolio__body
 
 .portfolio__title
+    text-align: center
+    margin-bottom: 30px
+
+.portfolio__subtitle
+    text-align: center
+    margin-bottom: 30px
+
+.portfolio__row
+    display: flex
+    justify-content: space-around
 
 
 // ---------------------------------------CONTACT ME--------------------------------

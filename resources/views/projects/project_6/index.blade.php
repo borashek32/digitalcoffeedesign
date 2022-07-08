@@ -4,212 +4,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project_6</title>
-    <link rel="stylesheet" href="{{ asset('assets/project_6/css/style.css') }}">
+    <title>GoCorona</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:regular,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ asset('assets/projects/project_6/css/style.css') }}">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap" rel="stylesheet" />
 </head>
 <body>
     <div class="wrapper">
-        <div class="content">
-            <header class="header">
-                <div class="_container">
-                    <div class="header__row">
-                        <div class="header__body">
-                            <div class="header__title">Hello, my friend!</div>
-                            <ul class="header__list">
-                                <li>Never give up!</li>
-                                <li>You can do everything you wanna</li>
-                                <li>Today you have known more than yesterday</li>
-                                <li>Thank you for your support</li>
-                            </ul>
-                        </div>
-                        <div class="header__img">
-                            <img src="{{ asset('img/coffee4.jpg') }}" width="300px" alt="coffee_flex">
+        {{-- header --}}
+        <header class="header">
+            <div class="header__container">
+                <a href="#" class="header__logo">
+                    <img src="img/projects/project_6/logo.svg" alt="GoCorona">
+                </a>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#home" class="menu__link">HOME</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#features" class="menu__link">FEATURES</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#support" class="menu__link">SUPPORT</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contact_us" class="menu__link">CONTACT US</a>
+                        </li>
+                    </ul>
+                    <div class="header__button">
+                        <a href="#" class="button button_blue">DOWNLOAD</a>
+                    </div>
+                </nav>
+                <div class="header__burger">
+                    <span class="span1"></span>
+                    <span class="span2"></span>
+                    <span class="span3"></span>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="promo">
+                <div class="promo__container">
+                    <div class="promo__content">
+                        <div class="promo__block-text block-text">
+                            <h1 class="block-text__title">
+                                Take care of yours<br>family’s <span>health.</span>
+                            </h1>
+                            <div class="block-text__text">
+                                All in one destination for COVID-19 health queries.<br>Consult 10,000+ health workers about your concerns.
+                            </div>
+                            <a href="#" class="block-text__button button">GET STARTED</a>
                         </div>
                     </div>
+                    <div class="promo__img">
+                        <img src="img/projects/project_6/main/promo.svg" alt="GET STARTED">
+                    </div>
+                    <div class="promo__video">
+                        <a class="video-promo">
+                            <div class="video-promo__icon">
+                                <img src="img/projects/project_6/main/video-icon.svg" alt="video-icon">
+                            </div>
+                            <div class="video-promo__text">
+                                <div class="video-promo__first-line">
+                                    Stay safe with GoCorona
+                                </div>
+                                <div class="video-promo__second-line">
+                                    Watch Video
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </header>
-            <section class="about">
-                <div class="_container">
-                    <div class="about__row">
-                        <div class="about__img">
-                            <img src="img/coffee3.jpg" width="300px" alt="coffee">
+            </section>
+            <section class="stay-safe">
+                <div class="stay-safe__container">
+                    <div class="stay-safe__media">
+                        <div class="media-stay-safe">
+                            <div class="media-stay-safe__image">
+                                <img src="img/projects/project_6/main/stay-safe.png" alt="FEATURES">
+                            </div>
+                            <div class="media-stay-safe__item media-stay-safe__item_1"></div>
+                            <div class="media-stay-safe__item media-stay-safe__item_2"></div>
+                            <div class="media-stay-safe__item media-stay-safe__item_3"></div>
                         </div>
-                        <div class="about__body">
-                            <div class="about__title title">
-                                Lorem ipsum dolor
+                    </div>
+                    <div class="stay-safe__content">
+                        <div class="stay-safe__block-text block-text">
+                            <h2 class="stay-safe__block-text__title block-text__title">
+                                Stay safe with<br>
+                                Go<span>Corona.</span>
+                            </h2>
+                            <div class="block-text__text">
+                                24x7 Support and user friendly mobile platform to bring<br>healthcare to your fingertips. Signup and be a part of<br>the new health culture.
                             </div>
-                            <div class="about__text">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit sint voluptatibus id hic quibusdam voluptate amet nostrum aut repellat fugit quas corporis aperiam perferendis aliquam, adipisci quos ea. Iure!
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit sint voluptatibus id hic quibusdam voluptate amet nostrum aut repellat fugit quas corporis aperiam perferendis aliquam, adipisci quos ea. Iure!
-                                </p>
-                            </div>
+                            <a href="#" class="stay-safe__button block-text__button button">Features</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="columns">
-                <div class="_container">
-                    <div class="columns__title title">
-                        Lorem ipsum dolor
+            <section class="experts">
+                <div class="experts__container">
+                    <div class="experts__statistics statistics-experts">
+                        <div class="statistics-experts__body body-statistics-experts">
+                            <div class="body-statistics-experts__item">
+                                <div class="body-statistics-experts__value">2m</div>
+                                <div class="body-statistics-experts__text">Users</div>
+                            </div>
+                            <div class="body-statistics-experts__item">
+                                <div class="body-statistics-experts__value">78</div>
+                                <div class="body-statistics-experts__text">Countries</div>
+                            </div>
+                            <div class="body-statistics-experts__item">
+                                <div class="body-statistics-experts__value">10,000+</div>
+                                <div class="body-statistics-experts__text">Medical experts</div>
+                            </div>
+                        </div>
+                        <div class="statistics-experts__decor statistics-experts__decor_item_1"></div>
+                        <div class="statistics-experts__decor statistics-experts__decor_item_2"></div>
+                        <div class="statistics-experts__decor statistics-experts__decor_item_3"></div>
                     </div>
-                    <div class="columns__row">
-                        <div class="columns__column">
-                            <div class="columns__item item">
-                                <div class="item__row">
-                                    <div class="item__img">
-                                        <img src="img/coffee.jpg" alt="item_coffee" width="150px">
-                                    </div>
-                                    <div class="item__body">
-                                        <div class="item__title">
-                                            Lorem ipsum dolor
-                                        </div>
-                                        <div class="item__text">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, consequatur distinctio quod assumenda officia praesentium cum. Aliquid quibusdam praesentium accusantium cumque enim veritatis nemo iure doloribus temporibus soluta? Id, eos!
-                                        </div>
-                                    </div>
+                    <div class="experts__body">
+                        <div class="experts__content">
+                            <div class="experts__block-text block-text">
+                                <h1 class="block-text__title">
+                                    Talk to <span>experts.</span>
+                                </h1>
+                                <div class="block-text__text">
+                                    Book appointments or submit queries into thousands of<br>forums concerning health issues and prevention<br>against noval Corona Virus.
                                 </div>
+                                <a href="#" class="block-text__button button">GET STARTED</a>
                             </div>
                         </div>
-                        <div class="columns__column">
-                            <div class="columns__item item">
-                                <div class="item__row">
-                                    <div class="item__img">
-                                        <img src="img/coffee.jpg" alt="item_coffee" width="150px">
-                                    </div>
-                                    <div class="item__body">
-                                        <div class="item__title">
-                                            Lorem ipsum dolor
-                                        </div>
-                                        <div class="item__text">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, consequatur distinctio quod assumenda officia praesentium cum. Aliquid quibusdam praesentium accusantium cumque enim veritatis nemo iure doloribus temporibus soluta? Id, eos!
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="columns__column">
-                            <div class="columns__item item">
-                                <div class="item__row">
-                                    <div class="item__img">
-                                        <img src="img/coffee.jpg" alt="item_coffee" width="150px">
-                                    </div>
-                                    <div class="item__body">
-                                        <div class="item__title">
-                                            Lorem ipsum dolor
-                                        </div>
-                                        <div class="item__text">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, consequatur distinctio quod assumenda officia praesentium cum. Aliquid quibusdam praesentium accusantium cumque enim veritatis nemo iure doloribus temporibus soluta? Id, eos!
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="columns__column">
-                            <div class="columns__item item">
-                                <div class="item__row">
-                                    <div class="item__img">
-                                        <img src="img/coffee.jpg" alt="item_coffee" width="150px">
-                                    </div>
-                                    <div class="item__body">
-                                        <div class="item__title">
-                                            Lorem ipsum dolor
-                                        </div>
-                                        <div class="item__text">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, consequatur distinctio quod assumenda officia praesentium cum. Aliquid quibusdam praesentium accusantium cumque enim veritatis nemo iure doloribus temporibus soluta? Id, eos!
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="experts__video">
+                            <iframe src="https://www.youtube.com/embed/rJBhGdTf3uQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="vertical">
-                    <div class="_container">
-                        <div class="vertical__title title">
-                            Lorem ipsum dolor
+            <section class="healthcare">
+                <div class="healthcare__container">
+                    <div class="healthcare__block-text block-text block-text_center">
+                        <h1 class="block-text__title stay-safe__block-text__title">
+                            <span>Healthcare</span> at your Fingertips.
+                        </h1>
+                        <div class="block-text__text">
+                            Bringing premium healthcare features to your fingertips. User friendly mobile platform to<br>bring healthcare to your fingertips. Signup and be a part of the new health culture.
                         </div>
-                        <div class="vertical__body">
-                            <div class="vertical__row">
-                                <div class="vertical__column vertical__column_1">
-                                    <div class="vertical__item">
-                                        <div class="vertical__subtitle">
-                                            1 Lorem ipsum
-                                        </div>
-                                        <div class="vertical__label">
-                                            Lorem ipsum dolor
-                                        </div>
-                                        <div class="vertical__text">
-                                            <p>
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam omnis magnam optio quo cumque, rerum possimus voluptas expedita sequi eligendi inventore sapiente quasi! Adipisci placeat veniam hic et, nisi ducimus.
-                                            </p>
-                                        </div>
-                                        <a href="#" class="vertical__btn">
-                                            Lorem
-                                        </a>
-                                    </div>
+                    </div>
+                    <div class="healthcare__row">
+                        <div class="healthcare__column">
+                            <div class="healthcare__item item-healthcare">
+                                <div class="item-healthcare__icon">
+                                    <img src="img/projects/project_6/main/icon0.svg" alt="icon">
                                 </div>
-                                <div class="vertical__column vertical__column_2">
-                                    <div class="vertical__item">
-                                        <div class="vertical__subtitle">
-                                            2 Lorem ipsum
-                                        </div>
-                                        <div class="vertical__label">
-                                            Lorem ipsum dolor
-                                        </div>
-                                        <div class="vertical__text">
-                                            <p>
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam omnis magnam optio quo cumque, rerum possimus voluptas expedita sequi eligendi inventore sapiente quasi! Adipisci placeat veniam hic et, nisi ducimus.
-                                            </p>
-                                            <p>
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam omnis magnam optio quo cumque, rerum possimus voluptas expedita sequi eligendi inventore sapiente quasi! Adipisci placeat veniam hic et, nisi ducimus.
-                                            </p>
-                                        </div>
-                                        <a href="#" class="vertical__btn">
-                                            Lorem
-                                        </a>
-                                    </div>
+                                <div class="item-healthcare__title">
+                                    Symptom Checker
                                 </div>
-                                <div class="vertical__column vertical__column_3">
-                                    <div class="vertical__item">
-                                        <div class="vertical__subtitle">
-                                            3 Lorem ipsum
-                                        </div>
-                                        <div class="vertical__label">
-                                            Lorem ipsum dolor
-                                        </div>
-                                        <div class="vertical__text">
-                                            <p>
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam omnis magnam optio quo cumque, rerum possimus voluptas expedita sequi eligendi inventore sapiente quasi! Adipisci placeat veniam hic et, nisi ducimus.  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            </p>
-                                        </div>
-                                        <a href="#" class="vertical__btn">
-                                            Lorem
-                                        </a>
-                                    </div>
+                                <div class="item-healthcare__text">
+                                    Check if you are infected by<br>COVID-19 with our Symptom Checker
                                 </div>
                             </div>
+                            <div class="healthcare__column_1"></div>
+                            <div class="healthcare__column_2"></div>
+                        </div>
+                        <div class="healthcare__column">
+                            <div class="healthcare__item item-healthcare">
+                                <div class="item-healthcare__icon">
+                                    <img src="img/projects/project_6/main/icon1.svg" alt="icon">
+                                </div>
+                                <div class="item-healthcare__title">
+                                    24x7 Medical support
+                                </div>
+                                <div class="item-healthcare__text">
+                                    Consult with 10,000+ health<br>workers about your concerns.
+                                </div>
+                            </div>
+                            <div class="healthcare__column_3"></div>
+                        </div>
+                        <div class="healthcare__column">
+                            <div class="healthcare__item item-healthcare">
+                                <div class="item-healthcare__icon">
+                                    <img src="img/projects/project_6/main/icon2.svg" alt="icon">
+                                </div>
+                                <div class="item-healthcare__title">
+                                    Conditions
+                                </div>
+                                <div class="item-healthcare__text">
+                                    Bringing premium healthcare<br>features to your fingertips.
+                                </div>
+                            </div>
+                            <div class="healthcare__column_4"></div>
                         </div>
                     </div>
                 </div>
             </section>
-        </div>
+        </main>
         <footer class="footer">
-            <div class="_container">
+            <div class="footer__container">
                 <div class="footer__row">
-                    <div class="footer__text">
-                        DigitalCoffeeDesign.com
+                    <div class="footer__item">
+                        <img src="img/projects/project_6/google.png" alt="google">
+                    </div>
+                    <div class="footer__item">
+                        <img src="img/projects/project_6/apple.png" alt="apple">
                     </div>
                 </div>
             </div>
         </footer>
     </div>
-
-    <script src="{{ asset('assets/project_5/js/script.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="{{ asset('assets/projects/project_6/js/script.js') }}"></script>
 </body>
 </html>

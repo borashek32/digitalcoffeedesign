@@ -17,6 +17,7 @@ Route::get('/', [App\Http\Controllers\Site\MainController::class, 'main']);
 Route::get('/project_1', [App\Http\Controllers\Site\ProjectController::class, 'project1'])
     ->name('project1');
 
+// PROJECTS
 Route::get('/project_2', [App\Http\Controllers\Site\ProjectController::class, 'project2'])
     ->name('project2');
 Route::get('/project_2/contact', [App\Http\Controllers\Site\ProjectController::class, 'project2_contact'])
@@ -41,6 +42,15 @@ Route::get('/project_6', [App\Http\Controllers\Site\ProjectController::class, 'p
 Route::get('/project_7', [App\Http\Controllers\Site\ProjectController::class, 'project7'])
     ->name('project7');
 
+
+// ELEMENTS
+Route::get('/element_1', [App\Http\Controllers\Site\ElementController::class, 'element1'])
+    ->name('element1');
+
+Route::get('/element_2', [App\Http\Controllers\Site\ElementController::class, 'element2'])
+    ->name('element2');
+
+// AUTH
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

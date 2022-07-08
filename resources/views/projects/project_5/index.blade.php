@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project_5</title>
+    <title>Relvise</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="{{ asset('assets/project_5/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/projects/project_5/css/style.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap" rel="stylesheet" />
 </head>
 <body>
@@ -77,7 +77,7 @@
                             <div class="services__column">
                                 <div class="services__item item-service">
                                     <div class="item-service__icon">
-                                        <img src="img/project_5/1.svg" alt="Environmental Consulting">
+                                        <img src="img/projects/project_5/1.svg" alt="Environmental Consulting">
                                     </div>
                                     <div class="item-service__title">Environmental Consulting</div>
                                     <div class="item-service__text">We focus on ergonomics and meeting you where you work. </div>
@@ -86,7 +86,7 @@
                             <div class="services__column">
                                 <div class="services__item item-service">
                                     <div class="item-service__icon">
-                                        <img src="img/project_5/2.svg" alt="Finance and consultancy">
+                                        <img src="img/projects/project_5/2.svg" alt="Finance and consultancy">
                                     </div>
                                     <div class="item-service__title">Finance and consultancy</div>
                                     <div class="item-service__text">Just type what's on your mind and we'll get you there.</div>
@@ -95,7 +95,7 @@
                             <div class="services__column">
                                 <div class="services__item item-service item-service_green">
                                     <div class="item-service__icon">
-                                        <img src="img/project_5/3.svg" alt="Financial Services Consulting">
+                                        <img src="img/projects/project_5/3.svg" alt="Financial Services Consulting">
                                     </div>
                                     <div class="item-service__title">Financial Services Consulting</div>
                                     <div class="item-service__text">the quick fox jumps over the lazy dog</div>
@@ -120,7 +120,7 @@
                             <div class="experience__column">
                                 <div class="item-card">
                                     <div class="item-card__img">
-                                        <img src="img/project_5/4.svg" alt="Designing Better Experience">
+                                        <img src="img/projects/project_5/4.svg" alt="Designing Better Experience">
                                     </div>
                                     <div class="item-card__number">973 +</div>
                                     <div class="item-card__title">Consumer Products</div>
@@ -129,7 +129,7 @@
                             <div class="experience__column">
                                 <div class="item-card">
                                     <div class="item-card__img">
-                                        <img src="img/project_5/5.svg" alt="Financial Services">
+                                        <img src="img/projects/project_5/5.svg" alt="Financial Services">
                                     </div>
                                     <div class="item-card__number">181 +</div>
                                     <div class="item-card__title">Financial Services</div>
@@ -138,7 +138,7 @@
                             <div class="experience__column">
                                 <div class="item-card">
                                     <div class="item-card__img">
-                                        <img src="img/project_5/6.svg" alt="Environmental">
+                                        <img src="img/projects/project_5/6.svg" alt="Environmental">
                                     </div>
                                     <div class="item-card__number">98%</div>
                                     <div class="item-card__title">Environmental</div>
@@ -147,7 +147,7 @@
                             <div class="experience__column">
                                 <div class="item-card">
                                     <div class="item-card__img">
-                                        <img src="img/project_5/1.svg" alt="Business & Finance">
+                                        <img src="img/projects/project_5/1.svg" alt="Business & Finance">
                                     </div>
                                     <div class="item-card__number">746 +</div>
                                     <div class="item-card__title">Business & Finance</div>
@@ -178,7 +178,7 @@
                                 </div>
                                 <a href="#">
                                     <div class="practice-card__img">
-                                        <img src="img/project_5/7.jpg" width="230px" alt="A single source of truth">
+                                        <img src="img/projects/project_5/7.jpg" width="230px" alt="A single source of truth">
                                     </div>
                                 </a>
                             </div>
@@ -193,7 +193,7 @@
                                 </div>
                                 <a href="#">
                                     <div class="practice-card__img">
-                                        <img src="img/project_5/8.jpg" width="230px" alt="Fastest way to organize">
+                                        <img src="img/projects/project_5/8.jpg" width="230px" alt="Fastest way to organize">
                                     </div>
                                 </a>
                             </div>
@@ -208,7 +208,7 @@
                                 </div>
                                 <a href="#">
                                     <div class="practice-card__img">
-                                        <img src="img/project_5/9.jpg" width="230px" alt="Fastest way to take action">
+                                        <img src="img/projects/project_5/9.jpg" width="230px" alt="Fastest way to take action">
                                     </div>
                                 </a>
                             </div>
@@ -223,7 +223,7 @@
                                 </div>
                                 <a href="#">
                                     <div class="practice-card__img">
-                                        <img src="img/project_5/10.jpg" alt="Work better together">
+                                        <img src="img/projects/project_5/10.jpg" alt="Work better together">
                                     </div>
                                 </a>
                             </div>
@@ -258,7 +258,7 @@
                         <div class="about__list about-list">
                             <div class="about-list__row">
                                 <div class="about-list__img">
-                                    <img src="img/project_5/11.svg" alt="Most trusted">
+                                    <img src="img/projects/project_5/11.svg" alt="Most trusted">
                                 </div>
                                 <div class="about-list__desc">
                                     <h6>the quick fox jumps over the lazy dog</h6>
@@ -267,7 +267,7 @@
                             </div>
                             <div class="about-list__row">
                                 <div class="about-list__img">
-                                    <img src="img/project_5/12.svg" alt="Most trusted">
+                                    <img src="img/projects/project_5/12.svg" alt="Most trusted">
                                 </div>
                                 <div class="about-list__desc">
                                     <h6>the quick fox jumps over the lazy dog</h6>
@@ -283,22 +283,22 @@
                 <div class="advs__container _container">
                     <div class="advs__row">
                         <div class="advs__item">
-                            <img src="img/project_5/11.png" alt="hooli">
+                            <img src="img/projects/project_5/11.png" alt="hooli">
                         </div>
                         <div class="advs__item">
-                            <img src="img/project_5/12.png" alt="lya">
+                            <img src="img/projects/project_5/12.png" alt="lya">
                         </div>
                         <div class="advs__item">
-                            <img src="img/project_5/13.png" alt="img">
+                            <img src="img/projects/project_5/13.png" alt="img">
                         </div>
                         <div class="advs__item">
-                            <img src="img/project_5/14.png" alt="stripe">
+                            <img src="img/projects/project_5/14.png" alt="stripe">
                         </div>
                         <div class="advs__item">
-                            <img src="img/project_5/15.png" alt="aws">
+                            <img src="img/projects/project_5/15.png" alt="aws">
                         </div>
                         <div class="advs__item">
-                            <img src="img/project_5/16.png" alt="img">
+                            <img src="img/projects/project_5/16.png" alt="img">
                         </div>
                     </div>
                 </div>
@@ -328,7 +328,7 @@
                     <div class="getintouch__items">
                         <div class="getintouch__item item-getintouch">
                             <div class="item-getintouch__icon">
-                                <img src="img/project_5/17.png" alt="Get In Touch">
+                                <img src="img/projects/project_5/17.png" alt="Get In Touch">
                             </div>
                             <div class="item-getintouch__emails">
                                 <a href="mailto:georgia.young@example.com" class="item-getintouch__email">georgia.young@example.com</a>
@@ -343,7 +343,7 @@
                         </div>
                         <div class="getintouch__item item-getintouch item-getintouch_active">
                             <div class="item-getintouch__icon">
-                                <img src="img/project_5/18.png" alt="Get In Touch">
+                                <img src="img/projects/project_5/18.png" alt="Get In Touch">
                             </div>
                             <div class="item-getintouch__emails">
                                 <a href="mailto:georgia.young@example.com" class="item-getintouch__email">georgia.young@example.com</a>
@@ -358,7 +358,7 @@
                         </div>
                         <div class="getintouch__item item-getintouch">
                             <div class="item-getintouch__icon">
-                                <img src="img/project_5/19.png" alt="Get In Touch">
+                                <img src="img/projects/project_5/19.png" alt="Get In Touch">
                             </div>
                             <div class="item-getintouch__emails">
                                 <a href="mailto:georgia.young@example.com" class="item-getintouch__email">georgia.young@example.com</a>
@@ -435,15 +435,15 @@
                     <div class="footer__column footer-column">
                         <div class="footer-column__title">Get In Touch</div>
                         <div class="footer-column__line footer-column__line_last">
-                            <img src="img/project_5/17.png" alt="phone" width="23px">
+                            <img src="img/projects/project_5/17.png" alt="phone" width="23px">
                             <a href="tel:+84805550103" class="footer-column__item_last">(480) 555-0103</a>
                         </div>
                         <div class="footer-column__line footer-column__line_last">
-                            <img src="img/project_5/20.png" alt="address" width="24px">
+                            <img src="img/projects/project_5/20.png" alt="address" width="24px">
                             <a href="#" class="footer-column__item_last">4517 Washington Ave. </a>
                         </div>
                         <div class="footer-column__line footer-column__line_last">
-                            <img src="img/project_5/19.png" alt="email" width="23px">
+                            <img src="img/projects/project_5/19.png" alt="email" width="23px">
                             <a href="mailto:debra.holt@example.com" class="footer-column__item_last">debra.holt@example.com</a>
                         </div>
                     </div>
@@ -461,22 +461,22 @@
                             <img src="img/logo.png" alt="digitalcoffeedesign.com" width="24">
                         </div>
                         <div class="footer-end__img">
-                            <img src="img/project_5/21.png" alt="facebook">
+                            <img src="img/projects/project_5/21.png" alt="facebook">
                         </div>
                         <div class="footer-end__img">
-                            <img src="img/project_5/22.png" alt="instagram">
+                            <img src="img/projects/project_5/22.png" alt="instagram">
                         </div>
                         <div class="footer-end__img">
-                            <img src="img/project_5/23.png" alt="tweeter">
+                            <img src="img/projects/project_5/23.png" alt="tweeter">
                         </div>
                         <div class="footer-end__img">
-                            <img src="img/project_5/24.png" alt="youtube">
+                            <img src="img/projects/project_5/24.png" alt="youtube">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="{{ asset('assets/project_5/js/script.js') }}"></script>
+    <script src="{{ asset('assets/projects/project_5/js/script.js') }}"></script>
 </body>
 </html>

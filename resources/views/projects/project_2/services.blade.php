@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset('assets/project_2/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/projects/project_2/css/style.css') }}">
     <title>Creative Agency</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
@@ -46,7 +46,7 @@
         <div class="services">
             <div class="service">
                 <div class="icon">
-                    <img src="img/001.png" alt="">
+                    <img src="img/projects/project_2/001.png" alt="">
                 </div>
                 <h2>Design</h2>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at corporis
@@ -55,7 +55,7 @@
 
             <div class="service">
                 <div class="icon">
-                    <img src="img/002.png" alt="">
+                    <img src="img/projects/project_2/002.png" alt="">
                 </div>
                 <h2>Development</h2>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at corporis
@@ -64,7 +64,7 @@
 
             <div class="service">
                 <div class="icon">
-                    <img src="img/003.png" alt="">
+                    <img src="img/projects/project_2/003.png" alt="">
                 </div>
                 <h2>SEO</h2>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at corporis
@@ -73,7 +73,7 @@
 
             <div class="service">
                 <div class="icon">
-                    <img src="img/004.png" alt="">
+                    <img src="img/projects/project_2/004.png" alt="">
                 </div>
                 <h2>Marketing</h2>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at corporis
@@ -82,7 +82,7 @@
 
             <div class="service">
                 <div class="icon">
-                    <img src="img/005.png" alt="">
+                    <img src="img/projects/project_2/005.png" alt="">
                 </div>
                 <h2>App Development</h2>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at corporis
@@ -91,7 +91,7 @@
 
             <div class="service">
                 <div class="icon">
-                    <img src="img/006.png" alt="">
+                    <img src="img/projects/project_2/006.png" alt="">
                 </div>
                 <h2>Error Fixing</h2>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at corporis
@@ -101,6 +101,6 @@
     </div>
 </section>
 
-<script src="{{ asset('assets/project_2/js/script.js') }}"></script>
+<script src="{{ asset('assets/projects/project_2/js/script.js') }}"></script>
 </body>
 </html>
