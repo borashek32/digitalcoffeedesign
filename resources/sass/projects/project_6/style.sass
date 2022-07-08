@@ -633,9 +633,12 @@ html, body
         flex-wrap: wrap
 
 .healthcare__column
-    // flex: 0 1 33.33%
+    flex: 0 1 33.33%
     padding: 0 36px
     position: relative
+
+    @media (max-width: 1078px)
+        flex: 1 1 50%
 
 .healthcare__column_1
     position: absolute
@@ -742,9 +745,9 @@ html, body
     display: flex
     justify-content: center
     align-items: center
-    gap: 50px
+    column-gap: 50px
 
     @media (max-width: 550px)
         flex-direction: column
         align-items: center
-        gap: 10px
+        row-gap: 10px

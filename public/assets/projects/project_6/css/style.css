@@ -800,8 +800,14 @@ html, body {
 }
 
 .healthcare__column {
+  flex: 0 1 33.33%;
   padding: 0 36px;
   position: relative;
+}
+@media (max-width: 1078px) {
+  .healthcare__column {
+    flex: 1 1 50%;
+  }
 }
 
 .healthcare__column_1 {
@@ -918,12 +924,13 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
 }
 @media (max-width: 550px) {
   .footer__row {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    row-gap: 10px;
   }
 }
