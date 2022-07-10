@@ -10,6 +10,9 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
+        <!-- Aside plugins styles -->
+        <link href="{{ asset('css/colorbox.css') }}" rel="stylesheet">
+
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
@@ -35,12 +38,22 @@
 
             <!-- Page Content -->
             <main>
-                {{ $slot }}
+                @if(isset($slot))
+                    {{ $slot }}
+                @else
+                    @yield('content')
+                @endif
             </main>
         </div>
 
         @stack('modals')
 
         @livewireScripts
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        @yield('scripts')
+
+        <script src="{{ asset('js/script.js') }}"></script>
     </body>
 </html>

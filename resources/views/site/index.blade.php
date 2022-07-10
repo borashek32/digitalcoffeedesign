@@ -31,47 +31,148 @@
                 <div class="portfolio__body">
                     <h2 class="portfolio__title title">Portfolio</h2>
                     <h4 class="portfolio__subtitle subtitle">There are some of my frontend projects with small descriptions below</h4>
-
                     <div class="portfolio__row">
                         <div class="portfolio__column">
-                            <h2>Projects</h2>
-                            <ul class="portfolio__list">
-                                <li class="portfolio__item item">
-                                    <div class="item__row">
-                                        <img src="#" alt="">
-                                        <a href="{{ route('project1') }}">Project 1</a>
+                            @foreach ($projects as $project)
+                                @if($project->category_id == 2)
+                                    <div class="portfolio__item item">
+                                        <small>*веб-приложение</small>
+                                        <div class="item__title">
+                                            @if($project->link)
+                                                <a href="{{ $project->link}}">
+                                                    {{ $project->title }}
+                                                </a>
+                                            @endif
+                                            @if(empty($project->link))
+                                                <a href="{{ route($project->slug) }}">
+                                                    {{ $project->title }}
+                                                </a>
+                                            @endif
+                                        </div>
+                                        <div class="item__body">
+                                            <div class="item__img">
+                                                @if($project->link)
+                                                    <a href="{{ $project->link}}">
+                                                        <img src="{{ $project->img }}" alt="{{ $project->title }}" width="200px">
+                                                    </a>
+                                                @endif
+                                                @if(empty($project->link))
+                                                    <a href="{{ route($project->slug) }}">
+                                                        <img src="{{ $project->img }}" alt="{{ $project->title }}" width="200px">
+                                                    </a>
+                                                @endif
+                                            </div>
+                                            <div class="item__description">
+                                                <div class="item__text">{{ $project->description }}</div>
+                                                @if($project->link)
+                                                    <a href="{{ $project->link}}">
+                                                        Перейти...
+                                                    </a>
+                                                @endif
+                                                @if(empty($project->link))
+                                                    <a href="{{ route($project->slug) }}">
+                                                        Перейти...
+                                                    </a>
+                                                @endif
+                                            </div>
+                                        </div>
                                     </div>
-                                </li>
-                                <li>
-                                    <a href="{{ route('project2') }}">Project 2</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('project3') }}">Project 3</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('project4') }}">Project 4</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('project5') }}">Project 5</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('project6') }}">Project 6</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('project7') }}">Project 7</a>
-                                </li>
-                            </ul>
+                                @endif
+                            @endforeach
                         </div>
                         <div class="portfolio__column">
-                            <h2>Elements</h2>
-                            <ul class="portfolio__list">
-                                <li>
-                                    <a href="{{ route('element1') }}">Flex practice</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('element2') }}">Menu burger</a>
-                                </li>
-                            </ul>
+                            @foreach ($projects as $project)
+                                @if($project->category_id == 1)
+                                    <div class="portfolio__item item">
+                                        <small>*лэндинг</small>
+                                        <div class="item__title">
+                                            @if($project->link)
+                                                <a href="{{ $project->link}}">
+                                                    {{ $project->title }}
+                                                </a>
+                                            @endif
+                                            @if(empty($project->link))
+                                                <a href="{{ route($project->slug) }}">
+                                                    {{ $project->title }}
+                                                </a>
+                                            @endif
+                                        </div>
+                                        <div class="item__img">
+                                            @if($project->link)
+                                                <a href="{{ $project->link}}">
+                                                    <img src="{{ $project->img }}" alt="{{ $project->title }}" width="200px">
+                                                </a>
+                                            @endif
+                                            @if(empty($project->link))
+                                                <a href="{{ route($project->slug) }}">
+                                                    <img src="{{ $project->img }}" alt="{{ $project->title }}" width="200px">
+                                                </a>
+                                            @endif
+                                        </div>
+                                        <div class="item__description">
+                                            <div class="item__text">{{ $project->description }}</div>
+                                            @if($project->link)
+                                                <a href="{{ $project->link}}">
+                                                    Перейти...
+                                                </a>
+                                            @endif
+                                            @if(empty($project->link))
+                                                <a href="{{ route($project->slug) }}">
+                                                    Перейти...
+                                                </a>
+                                            @endif
+                                        </div>
+                                    </div>
+                                @endif
+                            @endforeach
+                        </div>
+                        <div class="portfolio__column">
+                            @foreach ($projects as $project)
+                                @if($project->category_id == 3)
+                                    <div class="portfolio__item item">
+                                        <small>*элемент'</small>
+                                        <div class="item__title">
+                                            @if($project->link)
+                                                <a href="{{ $project->link}}">
+                                                    {{ $project->title }}
+                                                </a>
+                                            @endif
+                                            @if(empty($project->link))
+                                                <a href="{{ route($project->slug) }}">
+                                                    {{ $project->title }}
+                                                </a>
+                                            @endif
+                                        </div>
+                                        <div class="item__body">
+                                            <div class="item__img">
+                                                @if($project->link)
+                                                    <a href="{{ $project->link}}">
+                                                        <img src="{{ $project->img }}" alt="{{ $project->title }}" width="200px">
+                                                    </a>
+                                                @endif
+                                                @if(empty($project->link))
+                                                    <a href="{{ route($project->slug) }}">
+                                                        <img src="{{ $project->img }}" alt="{{ $project->title }}" width="200px">
+                                                    </a>
+                                                @endif
+                                            </div>
+                                            <div class="item__description">
+                                                <div class="item__text">{{ $project->description }}</div>
+                                                @if($project->link)
+                                                    <a href="{{ $project->link}}">
+                                                        Перейти...
+                                                    </a>
+                                                @endif
+                                                @if(empty($project->link))
+                                                    <a href="{{ route($project->slug) }}">
+                                                        Перейти...
+                                                    </a>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endif
+                            @endforeach
                         </div>
                     </div>
                 </div>

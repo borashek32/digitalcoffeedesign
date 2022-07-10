@@ -1,0 +1,74 @@
+// ---------------------------------------PORTFOLIO---------------------------------
+.portfolio
+    background-color: #fff
+
+.portfolio__container
+    padding: 60px 60px 60px 60px
+
+    @media (max-width: 768px)
+        display: flex
+        flex-direction: column
+        align-items: center
+
+.portfolio__body
+
+.portfolio__title
+    text-align: center
+    margin-bottom: 30px
+
+.portfolio__subtitle
+    text-align: center
+    margin-bottom: 30px
+
+.portfolio__row
+    display: flex
+    justify-content: space-between
+
+.portfolio__column
+    flex: 1 1 33,333%
+
+.portfolio__item
+    border: 1px solid var(--color-pink)
+
+.item
+    padding: 15px
+    margin-right: 20px
+    max-width: 300px
+    margin-bottom: 20px
+
+.item:last-child
+    margin-right: 0
+    margin-bottom: 0
+
+.item__img
+    width: 200px
+    filter: grayscale(1)
+    border: 1px solid var(--color-grey)
+    margin: 0 auto
+
+.item__img:hover
+    filter: grayscale(0)
+
+.item__body
+    display: flex
+    flex-direction: column
+    max-width: 300px
+
+.item__description
+
+.item__text
+    margin-top: 10px
+    font-size: 14px
+    margin-bottom: 10px
+
+.item__title
+    font-size: 16px
+    font-weight: 700
+    text-align: center
+    margin-bottom: 20px
+
+.item__link
+    font-size: 12px
+    text-decoration: underline
+
+.item__link:hover

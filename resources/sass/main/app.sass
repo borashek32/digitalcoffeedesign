@@ -1,4 +1,5 @@
 @import variables
+@import parts/portfolio
 
 *,
 *:before,
@@ -11,8 +12,13 @@
 body
     background-color: #eddebf3b
 
+
 a
+    color: var(--color-grey-3)
     text-decoration: none
+
+a:hover
+    color: var(--color-grey)
 
 ol,
 ul,
@@ -98,22 +104,17 @@ body
     flex-wrap: wrap
     display: flex
 
-@media (max-width: 768px)
-    .menu__list
+    @media (max-width: 768px)
         display: flex
         flex-direction: col
+    @media (max-width: 675px)
+        margin-left: 30px
 
 .menu__item
     margin: 0px 21px 0px 0px
 
 .menu__item:last-child
     margin: 0px 0px 0px 0px
-
-.menu__link
-    color: var(--color-grey-3)
-
-.menu__link:hover
-    color: var(--color-blue)
 
 // ---------------------------------------PAGE--------------------------------------
 .page
@@ -221,31 +222,7 @@ body
     @media (max-width: 920px)
         padding: 25px 0px 0px 0px
 
-// ---------------------------------------PORTFOLIO---------------------------------
-.portfolio
-    background-color: #fff
 
-.portfolio__container
-    padding: 60px 60px 60px 60px
-
-    @media (max-width: 768px)
-        display: flex
-        flex-direction: column
-        align-items: center
-
-.portfolio__body
-
-.portfolio__title
-    text-align: center
-    margin-bottom: 30px
-
-.portfolio__subtitle
-    text-align: center
-    margin-bottom: 30px
-
-.portfolio__row
-    display: flex
-    justify-content: space-around
 
 
 // ---------------------------------------CONTACT ME--------------------------------

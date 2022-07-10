@@ -21,7 +21,7 @@ class UserSeeder extends Seeder
       [
         'name'              => 'Nataly Zueva',
         'email'             => 'borashek@inbox.ru',
-        'password'          => Hash::make('raid17ec1099nat33'),
+        'password'          => Hash::make('11111111'),
         'email_verified_at' => '10.05.2022',
         'remember_token'    => Str::random(10),
       ]

@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\Admin\Categories;
+use App\Http\Controllers\Admin\ProjectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,50 +15,56 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [App\Http\Controllers\Site\MainController::class, 'main']);
-Route::get('/project_1', [App\Http\Controllers\Site\ProjectController::class, 'project1'])
-    ->name('project1');
+// Route::get('/', [App\Http\Controllers\Site\MainController::class, 'main']);
+Route::get('/', [App\Http\Controllers\Site\ProjectController::class, 'index']);
+Route::get('/freelance-camp', [App\Http\Controllers\Site\ProjectController::class, 'freelanceCamp'])
+    ->name('freelance-camp');
 
 // PROJECTS
-Route::get('/project_2', [App\Http\Controllers\Site\ProjectController::class, 'project2'])
-    ->name('project2');
-Route::get('/project_2/contact', [App\Http\Controllers\Site\ProjectController::class, 'project2_contact'])
-    ->name('project2_contact');
-Route::get('/project_2/servives', [App\Http\Controllers\Site\ProjectController::class, 'project2_services'])
-    ->name('project2_services');
-Route::get('/project_2/work', [App\Http\Controllers\Site\ProjectController::class, 'project2_work'])
-    ->name('project2_work');
+// Route::get('/{slug}', [App\Http\Controllers\Site\ProjectController::class, 'project'])->name('project');
+Route::get('/creative-agency', [App\Http\Controllers\Site\ProjectController::class, 'creativeAgency'])
+    ->name('creative-agency');
+Route::get('/creative-agency/contact', [App\Http\Controllers\Site\ProjectController::class, 'creativeAgencyContact'])
+    ->name('creative-agency_contact');
+Route::get('/creative-agency/servives', [App\Http\Controllers\Site\ProjectController::class, 'creativeAgencyServices'])
+    ->name('creative-agency_services');
+Route::get('/creative-agency/work', [App\Http\Controllers\Site\ProjectController::class, 'creativeAgencyWork'])
+    ->name('creative-agency_work');
 
-Route::get('/project_3', [App\Http\Controllers\Site\ProjectController::class, 'project3'])
-    ->name('project3');
+Route::get('/some-portfolio-site', [App\Http\Controllers\Site\ProjectController::class, 'somePortfolioSite'])
+    ->name('some-portfolio-site');
 
-Route::get('/project_4', [App\Http\Controllers\Site\ProjectController::class, 'project4'])
-    ->name('project4');
+Route::get('/choose-your-colors', [App\Http\Controllers\Site\ProjectController::class, 'chooseYourColors'])
+    ->name('choose-your-colors');
 
-Route::get('/project_5', [App\Http\Controllers\Site\ProjectController::class, 'project5'])
-    ->name('project5');
+Route::get('/relvise', [App\Http\Controllers\Site\ProjectController::class, 'relvise'])
+    ->name('relvise');
 
-Route::get('/project_6', [App\Http\Controllers\Site\ProjectController::class, 'project6'])
-    ->name('project6');
+Route::get('/go-corona', [App\Http\Controllers\Site\ProjectController::class, 'gocorona'])
+    ->name('go-corona');
 
-Route::get('/project_7', [App\Http\Controllers\Site\ProjectController::class, 'project7'])
-    ->name('project7');
+Route::get('/designer-portfolio-site', [App\Http\Controllers\Site\ProjectController::class, 'designerPortfolioSite'])
+    ->name('designer-portfolio-site');
 
 
 // ELEMENTS
-Route::get('/element_1', [App\Http\Controllers\Site\ElementController::class, 'element1'])
-    ->name('element1');
+Route::get('/flex-box', [App\Http\Controllers\Site\ProjectController::class, 'flexBox'])
+    ->name('flex-box');
 
-Route::get('/element_2', [App\Http\Controllers\Site\ElementController::class, 'element2'])
-    ->name('element2');
+Route::get('/menu-burger', [App\Http\Controllers\Site\ProjectController::class, 'menuBurger'])
+    ->name('menu-burger');
 
 // AUTH
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+Route::group(['middleware' => ['role:admin']], function () {
+    Route::prefix('admin')->group(function () {
+
+        // ADMIN
+        Route::get('/dashboard', function () { return view('dashboard'); })
+            ->name('dashboard');
+        Route::get('/categories', Categories::class)
+            ->name('cats');
+        Route::resource('/projects', ProjectController::class);
+        Route::post('/projects/project_status', [ProjectController::class, 'updateStatus'])
+            ->name('projects.status');
+    });
 });

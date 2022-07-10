@@ -23,10 +23,10 @@
 
         <div class="navigation">
             <ul>
-                <li><a href="{{ route('project2') }}">Home</a></li>
-                <li><a href="{{ route('project2_services') }}">Services</a></li>
-                <li><a href="{{ route('project2_work') }}">Work</a></li>
-                <li><a href="{{ route('project2_contact') }}">Contact</a></li>
+                <li><a href="{{ route('creative-agency') }}">Home</a></li>
+                <li><a href="{{ route('creative-agency_services') }}">Services</a></li>
+                <li><a href="{{ route('creative-agency_work') }}">Work</a></li>
+                <li><a href="{{ route('creative-agency_contact') }}">Contact</a></li>
             </ul>
 
             @include('projects.project_2.social-bar')
