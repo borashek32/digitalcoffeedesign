@@ -1,33 +1,22 @@
 @if (Route::has('login'))
-    <div class="header__item">
-        <div class="header__menu menu">
-            <ul class="menu__list">
-                @auth
-                    <li class="menu__item">
-                        <div>
-                            <a href="{{ route('dashboard') }}" class="menu__link">
-                                Личный кабинет
-                            </a>
-                        </div>
-                    </li>
-                @else
-                    <li class="menu__item">
-                        <div style="margin-top:-4px">
-                            <a href="{{ route('login') }}" class="menu__link">
-                                Вход
-                            </a>
-                        </div>
-
-                        <div>
-                            @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class="menu__link">
-                                    Регистрация
-                                </a>
-                            @endif
-                        </div>
-                    </li>
-                @endif
-            </ul>
-        </div>
-    </div>
+    @auth
+        <li class="header__item">
+            <a href="{{ route('dashboard') }}" class="header__link">
+                Личный кабинет
+            </a>
+        </li>
+    @else
+        <li class="header__item">
+            <a href="{{ route('login') }}" class="header__link">
+                Вход
+            </a>
+        </li>
+        <li class="header__item">
+            @if (Route::has('register'))
+                <a href="{{ route('register') }}" class="header__link">
+                    Регистрация
+                </a>
+            @endif
+        </li>
+    @endif
 @endif

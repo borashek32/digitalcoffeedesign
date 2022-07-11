@@ -68,7 +68,7 @@
                                     Ссылка на сайт:
                                 </label>
 
-                                <input type="text" value="{{ old('title') }}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
+                                <input type="text" value="{{ $project->link }}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
                                     leading-tight focus:outline-none focus:shadow-outline @error('link') border-red-500
                                     @enderror" id="link" name="link">
 

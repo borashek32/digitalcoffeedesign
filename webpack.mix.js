@@ -1,6 +1,5 @@
 const mix = require('laravel-mix');
 
-
 mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/script.js', 'public/js')
     .sass('resources/sass/main/app.sass', 'public/css')
@@ -26,9 +25,12 @@ mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/elements/element_2/script.js', 'public/assets/elements/element_2/js')
     .sass('resources/sass/elements/element_2/style.sass', 'public/assets/elements/element_2/css')
 
-    .postCss('resources/css/app.css', 'public/css', [
-        require('tailwindcss'),
-    ]);
+
+    .sass('resources/sass/elements/element_3/style.sass', 'public/assets/elements/element_3/css')
+
+.postCss('resources/css/app.css', 'public/css', [
+    require('tailwindcss'),
+]);
 
 if (mix.inProduction()) {
     mix.version();

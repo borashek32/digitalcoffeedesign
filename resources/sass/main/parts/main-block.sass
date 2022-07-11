@@ -1,0 +1,55 @@
+.main-block__container
+    display: flex
+    padding: 0px 60px 5px 60px
+    justify-content: space-between
+
+    @media (max-width: 920px)
+        flex-direction: column
+        align-items: center
+        margin-top: 60px
+
+.main-block__body
+    display: flex
+    max-width: 500px
+    justify-content: center
+    flex-direction: column
+    align-items: left
+
+    @media (max-width: 920px)
+        align-items: center
+
+.main-block__body > *:not(:last-child) // objects with class .main-block__body from the first level
+    margin-bottom: 25px
+
+.main-block__title
+    font-size: 38px
+    line-height: calc(80/58 * 100%)
+    font-weight: 800
+    line-height: calc(42/38 * 100%)
+
+    @media (max-width: 540px)
+        font-size: 28px
+
+    @media (max-width: 408px)
+        font-size: 20px
+
+    @media (max-width: 330px)
+        font-size: 20px
+        font-weight: 600
+
+.main-block__text
+    font-weight: 500
+    font-size: 16px
+    color: #737373
+    line-height: calc(30/20 * 100%)
+
+    @media (max-width: 920px)
+        text-align: center
+
+    @media (max-width: 650px)
+        color: var(--color-grey-5)
+
+.main-block__buttons
+    display: flex
+    flex-wrap: wrap
+    margin: -10px 0

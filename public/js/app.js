@@ -22265,6 +22265,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/elements/element_3/style.sass":
+/*!******************************************************!*\
+  !*** ./resources/sass/elements/element_3/style.sass ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/css/app.css":
 /*!*******************************!*\
   !*** ./resources/css/app.css ***!
@@ -22689,6 +22702,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			"assets/projects/project_6/css/style": 0,
 /******/ 			"assets/projects/project_5/css/style": 0,
 /******/ 			"assets/projects/project_3/css/style": 0,
+/******/ 			"assets/elements/element_3/css/style": 0,
 /******/ 			"assets/elements/element_2/css/style": 0,
 /******/ 			"assets/elements/element_1/css/style": 0
 /******/ 		};
@@ -22740,16 +22754,17 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/sass/main/app.sass")))
-/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/sass/projects/project_3/style.sass")))
-/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/sass/projects/project_4/style.sass")))
-/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/sass/projects/project_5/style.sass")))
-/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/sass/projects/project_6/style.sass")))
-/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/sass/projects/project_7/style.sass")))
-/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/sass/elements/element_1/style.sass")))
-/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/sass/elements/element_2/style.sass")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/sass/main/app.sass")))
+/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/sass/projects/project_3/style.sass")))
+/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/sass/projects/project_4/style.sass")))
+/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/sass/projects/project_5/style.sass")))
+/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/sass/projects/project_6/style.sass")))
+/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/sass/projects/project_7/style.sass")))
+/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/sass/elements/element_1/style.sass")))
+/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/sass/elements/element_2/style.sass")))
+/******/ 	__webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/sass/elements/element_3/style.sass")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/projects/project_7/css/style","assets/projects/project_4/css/style","css/app","assets/projects/project_6/css/style","assets/projects/project_5/css/style","assets/projects/project_3/css/style","assets/elements/element_3/css/style","assets/elements/element_2/css/style","assets/elements/element_1/css/style"], () => (__webpack_require__("./resources/css/app.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

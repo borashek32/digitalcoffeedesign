@@ -4,24 +4,16 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Admin\Categories;
 use App\Http\Controllers\Admin\ProjectController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
-// Route::get('/', [App\Http\Controllers\Site\MainController::class, 'main']);
 Route::get('/', [App\Http\Controllers\Site\ProjectController::class, 'index']);
+Route::post('/', [App\Http\Controllers\Site\MainController::class, 'message'])
+    ->name('message')
+    ->middleware('auth');
+
+// PROJECTS
 Route::get('/freelance-camp', [App\Http\Controllers\Site\ProjectController::class, 'freelanceCamp'])
     ->name('freelance-camp');
 
-// PROJECTS
-// Route::get('/{slug}', [App\Http\Controllers\Site\ProjectController::class, 'project'])->name('project');
 Route::get('/creative-agency', [App\Http\Controllers\Site\ProjectController::class, 'creativeAgency'])
     ->name('creative-agency');
 Route::get('/creative-agency/contact', [App\Http\Controllers\Site\ProjectController::class, 'creativeAgencyContact'])
@@ -53,6 +45,9 @@ Route::get('/flex-box', [App\Http\Controllers\Site\ProjectController::class, 'fl
 
 Route::get('/menu-burger', [App\Http\Controllers\Site\ProjectController::class, 'menuBurger'])
     ->name('menu-burger');
+
+Route::get('/grid-layout', [App\Http\Controllers\Site\ProjectController::class, 'gridLayout'])
+    ->name('grid-layout');
 
 // AUTH
 Route::group(['middleware' => ['role:admin']], function () {

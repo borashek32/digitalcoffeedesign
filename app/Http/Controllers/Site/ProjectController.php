@@ -80,4 +80,9 @@ class ProjectController extends Controller
     {
         return view('elements.element_2.index');
     }
+
+    public function gridLayout()
+    {
+        return view('elements.element_3.index');
+    }
 }

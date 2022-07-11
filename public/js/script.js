@@ -10,13 +10,17 @@ var __webpack_exports__ = {};
 //         this.classList.add('active-btn');
 //     })
 // })
-// tinymce.init({
-//     selector: '.editor',
-//     plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
-//     toolbar_mode: 'floating',
-//     relative_urls : false,
-//     file_picker_callback : elFinderBrowser
-// });
+// show hide burger menu
+$(document).ready(function () {
+  $('.header__burger').click(function (event) {
+    $('.header__burger, .header__menu').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+  $('.header__link').click(function (event) {
+    $('.header__burger, .header__menu').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+});
 CKEDITOR.replace('description');
 
 function elFinderBrowser(callback, value, meta) {

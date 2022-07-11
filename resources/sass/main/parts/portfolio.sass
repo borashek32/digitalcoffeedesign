@@ -1,74 +1,74 @@
-// ---------------------------------------PORTFOLIO---------------------------------
+// ---------------------------------------SECTION 1---------------------------------
 .portfolio
-    background-color: #fff
+    padding: 0px 0px 50px 0px
 
 .portfolio__container
     padding: 60px 60px 60px 60px
 
-    @media (max-width: 768px)
-        display: flex
-        flex-direction: column
-        align-items: center
-
 .portfolio__body
 
-.portfolio__title
-    text-align: center
-    margin-bottom: 30px
+.portfolio__grid
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    column-gap: 30px
+    row-gap: 50px
+    gap: 3em
 
-.portfolio__subtitle
-    text-align: center
-    margin-bottom: 30px
-
-.portfolio__row
-    display: flex
-    justify-content: space-between
-
-.portfolio__column
-    flex: 1 1 33,333%
+    @media (max-width: 1210px)
+        grid-template-columns: 1fr 1fr 1fr
+    @media (max-width: 1057px)
+        grid-template-columns: 1fr 1fr
+    @media (max-width: 767.87px)
+        grid-template-columns: 1fr
 
 .portfolio__item
-    border: 1px solid var(--color-pink)
 
-.item
-    padding: 15px
-    margin-right: 20px
-    max-width: 300px
-    margin-bottom: 20px
-
-.item:last-child
-    margin-right: 0
-    margin-bottom: 0
 
 .item__img
-    width: 200px
-    filter: grayscale(1)
-    border: 1px solid var(--color-grey)
-    margin: 0 auto
 
-.item__img:hover
-    filter: grayscale(0)
-
-.item__body
-    display: flex
-    flex-direction: column
-    max-width: 300px
+.item__img img
+    align-items: end
+.item__img img:hover
+    filter: brightness(130%)
 
 .item__description
+    padding: 10px 35px
 
 .item__text
-    margin-top: 10px
-    font-size: 14px
-    margin-bottom: 10px
 
 .item__title
     font-size: 16px
     font-weight: 700
     text-align: center
-    margin-bottom: 20px
+    margin-top: 10px
 
 .item__link
     font-size: 12px
-    text-decoration: underline
 
-.item__link:hover
+.portfolio_button
+    justify-self: start
+    margin: 35px
+
+// ---------------------------------------SECTION 2---------------------------------
+.portfolio_section_2
+    background-color: var(--color-white)
+
+.portfolio__grid_section_2
+    display: grid
+    grid-template-columns: minmax(40px, auto) 1fr minmax(50px, auto) / 1fr
+    column-gap: 30px
+    row-gap: 50px
+    gap: 3em
+
+    @media (max-width: 1210px)
+        grid-template-columns: 1fr 1fr 1fr
+    @media (max-width: 1057px)
+        grid-template-columns: 1fr 1fr
+    @media (max-width: 767.87px)
+        grid-template-columns: 1fr
+
+.item__title_section_2
+    margin-bottom: -30px
+
+.item__description_section_2
+    padding: 0px 35px 10px
