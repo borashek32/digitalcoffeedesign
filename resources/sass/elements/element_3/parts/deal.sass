@@ -1,0 +1,46 @@
+.deal
+    padding: 145px 0 135px
+
+    @media (max-width: 1279.89px)
+        padding: 70px 0
+
+.deal__title
+    margin-bottom: 70px
+
+.deal__grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    gap: 30px
+    justify-items: center
+
+    @media (max-width: 1279.89px)
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(3, 1fr)
+
+    @media (max-width: 817.89px)
+        grid-template-columns: repeat(1, 1fr)
+        grid-template-rows: repeat(6, 1fr)
+
+.deal__item
+    width: 350px
+    height: 250px
+    background: var(--color-about)
+    padding: 37px 92px 59px 86px
+
+    @media (max-width: 407.89px)
+        padding: 29px 62px 29px 56px
+        width: 300px
+        height: 200px
+
+.deal__img
+    text-align: center
+
+.deal__desc
+    margin-top: 31px
+    text-transform: uppercase
+    font-size: 21px
+    line-height: calc(31/21*100%)
+    text-align: center
+    letter-spacing: 0.02em
+    color: var(--color-black)

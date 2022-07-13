@@ -37,7 +37,7 @@
                     <div class="main-project__column">
                         <div class="main-project__img item">
                             <a href="https://lemma-auto.ru/" target="_blank">
-                                <img src="img/main/la.png" alt="lemma-auto.ru">
+                                <img src="img/main/la.jpg" alt="lemma-auto.ru">
                             </a>
                         </div>
                     </div>

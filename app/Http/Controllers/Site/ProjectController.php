@@ -15,12 +15,6 @@ class ProjectController extends Controller
         return view('site.index', compact('projects'));
     }
 
-    // public function project($slug)
-    // {
-    //     $project = Project::where('slug', $slug)->first();
-    //     return view('projects.' . $project->slug . '.' . $project->slug, compact('project'));
-    // }
-
     public function freelanceCamp()
     {
         return view('projects.project_1.index');
@@ -84,5 +78,10 @@ class ProjectController extends Controller
     public function gridLayout()
     {
         return view('elements.element_3.index');
+    }
+
+    public function sliders()
+    {
+        return view('elements.element_4.index');
     }
 }

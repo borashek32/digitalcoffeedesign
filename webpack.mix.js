@@ -25,8 +25,11 @@ mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/elements/element_2/script.js', 'public/assets/elements/element_2/js')
     .sass('resources/sass/elements/element_2/style.sass', 'public/assets/elements/element_2/css')
 
-
+    .js('resources/js/elements/element_3/script.js', 'public/assets/elements/element_3/js')
     .sass('resources/sass/elements/element_3/style.sass', 'public/assets/elements/element_3/css')
+
+    .js('resources/js/elements/element_4/script.js', 'public/assets/elements/element_4/js')
+    .sass('resources/sass/elements/element_4/style.sass', 'public/assets/elements/element_4/css')
 
 .postCss('resources/css/app.css', 'public/css', [
     require('tailwindcss'),

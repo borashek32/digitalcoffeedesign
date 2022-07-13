@@ -1,0 +1,61 @@
+.header
+    min-height: 740px
+    background-image: url(/img/elements/element_3/promo.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+
+.header__nav
+    display: flex
+    justify-content: space-between
+    align-items: end
+    padding-top: 20px
+    margin-bottom: 112px
+
+    @media (max-width: 1279.89px)
+        padding-left: 10px
+        padding-right: 10px
+
+.header__logo
+    width: 60px
+    height: 60px
+
+.header__burger
+    width: 50px
+    height: 50px
+    cursor: pointer
+    background-color: var(--color-accent)
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    padding: 16px 15px
+
+.header__burger span
+    background-color: #fff
+    width: 21px
+    border-radius: 1px
+    height: 3px
+
+.header__title
+    font-size: 64px
+    line-height: cal(95/64*100%)
+    text-align: center
+    letter-spacing: 0.02em
+    text-transform: uppercase
+    color: #FFFFFF
+
+    @media (max-width: 1279.89px)
+        font-size: 50px
+
+    @media (max-width: 767.89px)
+        font-size: 32px
+
+.header__subtitle
+    font-weight: 400
+    font-size: 17px
+    line-height: 27px
+    text-align: center
+    text-transform: uppercase
+    color: var(--color-white)
+    margin-top: 16px
+

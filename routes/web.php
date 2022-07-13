@@ -46,6 +46,9 @@ Route::get('/flex-box', [App\Http\Controllers\Site\ProjectController::class, 'fl
 Route::get('/menu-burger', [App\Http\Controllers\Site\ProjectController::class, 'menuBurger'])
     ->name('menu-burger');
 
+Route::get('/sliders', [App\Http\Controllers\Site\ProjectController::class, 'sliders'])
+    ->name('sliders');
+
 Route::get('/grid-layout', [App\Http\Controllers\Site\ProjectController::class, 'gridLayout'])
     ->name('grid-layout');
 

@@ -2,7 +2,7 @@
     <div class="header__body">
         <div class="header__logo">
             <a href="#">
-                <img src="img/logo0.png" alt="logo" width="50px">
+                <img src="img/logo50px.png" alt="logo" width="50px">
             </a>
         </div>
         <div class="header__burger">

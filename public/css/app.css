@@ -4,9 +4,9 @@
   --color-orange: #FF7B47;
   --color-brown: #5e2d02;
   --color-blue: #082f46;
-  --color-blue-light: linear-gradient(#f6aee5, #fafafa);
+  --color-blue-light: linear-gradient(#f37e7e, #fafafa);
   --color-grey: #6c7983;
-  --color-pink: #F56692;
+  --color-pink: #f37e7e;
   --color-light-grey: #fafafa;
   --color-black: #000;
 }
@@ -31,7 +31,7 @@
 }
 
 .header-container {
-  padding: 0px 10% 5px 10%;
+  padding: 0px 13% 5px 13%;
 }
 @media (max-width: 1368px) {
   .header-container {
@@ -304,20 +304,25 @@
   row-gap: 50px;
   gap: 3em;
 }
-@media (max-width: 1210px) {
+@media (max-width: 1209.89px) {
   .portfolio__grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media (max-width: 1057px) {
+@media (max-width: 943.89px) {
   .portfolio__grid {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (max-width: 767.87px) {
+@media (max-width: 425.87px) {
   .portfolio__grid {
     grid-template-columns: 1fr;
   }
+}
+
+.item__img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .item__img img {
