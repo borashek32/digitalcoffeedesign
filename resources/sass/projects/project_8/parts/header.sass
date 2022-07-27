@@ -1,0 +1,114 @@
+.header
+    display: grid
+    grid-template-rows: 1fr
+    grid-template-columns: 2fr 1fr 2.5fr 0.5fr
+    grid-template-areas: '. logo nav search'
+    // grid-template: 'logo nav search' max-content / 1fr 1fr 100px - три верхних строчки
+    align-items: center
+    padding: 20px 20px
+    text-transform: uppercase
+    overflow: hidden
+    position: absolute
+    z-index: 2
+    top: 0
+    right: 0
+    width: 100%
+    @media (max-width: 1188px)
+        grid-template-rows: 1fr
+        grid-template-columns: 1fr 3.7fr 0.3fr
+        grid-template-areas: 'logo nav search'
+    @media (max-width: 705px)
+        grid-template-columns: 1fr 1fr
+        grid-template-areas: 'logo menu'
+
+
+.header__logo
+    grid-area: logo
+    justify-self: start
+    color: var(--color-pink)
+    font-weight: 700
+    font-size: 24px
+    width: 150px
+    line-height: 1
+    position: absolute
+    top: 0
+.header__logo:hover
+    color: var(--color-pink-dark)
+.header__logo:active
+    color: var(--color-pink-dark-more)
+
+@media (max-width: 705px)
+    .header__logo
+        justify-self: start
+@media (max-width: 705px)
+    .header__logo
+        font-size: 20px
+        width: 100px
+        margin-top: 3px
+
+.header__nav
+    grid-area: nav
+
+.header__nav ul
+    display: flex
+    gap: 10px
+    transform: translateX(-15px)
+    @media (max-width: 705px)
+        flex-direction: column
+        position: absolute
+        z-index: 2
+        left: 42%
+        top: 100px
+        text-align: center
+
+.header__nav a
+    padding: 15px
+    transition: color 0.4s ease
+    position: relative
+    display: inline-block
+
+@media (max-width: 1188px)
+    .header__nav
+        display: grid
+        justify-self: end
+
+.header__nav a:hover
+    color: var(--color-blue)
+.header__nav a:active
+    color: var(--color-blue-dark)
+
+.header__nav a::after
+    content: ''
+    display: block
+    width: 80%
+    height: 100%
+    background-color: var(--color-blue)
+    position: absolute
+    left: 15px
+    bottom: -200%
+    transition: bottom 0.6s, background-color 0.4s
+    @media (max-width: 705px)
+        display: none
+
+.header__nav a:hover::after
+    bottom: -90%
+.header__nav a:active::after
+    background-color: var(--color-blue-dark)
+
+.header__search
+    grid-area: search
+    justify-items: start
+    cursor: pointer
+    @media (max-width: 705px)
+        display: flex
+        position: absolute
+        left: 48%
+        bottom: 0
+
+.search__icon
+    transition: fill 0.4s
+
+.search__icon:hover
+    fill: var(--color-blue)
+.search__icon:active
+    fill: var(--color-blue-dark)

@@ -25,7 +25,7 @@
                                     @enderror" id="feature_image" value="{{ old('img') }}" name="img" readonly>
 
                                 <a href="" class="popup_selector hover:bg-blue-400 shadow appearance-none border ml-2 rounded w-40 h-9 text-center py-2 px-3 text-gray-700
-                                leading-tight focus:outline-none focus:shadow-outline bg-blue-200" data-inputid="feature_image">
+                                leading-tight focus:outline-none focus:shadow-outline bg-blue-300" data-inputid="feature_image">
                                     Выбрать фото
                                 </a>
 
@@ -144,7 +144,7 @@
 @endsection('content')
 
 @section('scripts')
-    <script src="https://cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
+    <script src="https://cdn.tiny.cloud/1/9wqo0frucj2lt7oll5gxiukpbasl97x4360r6cbcb554c7cu/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.colorbox-min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('packages/barryvdh/elfinder/js/standalonepopup.min.js') }}"></script>
 @endsection

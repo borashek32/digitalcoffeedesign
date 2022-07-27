@@ -5,45 +5,11 @@
 @import parts/portfolio
 @import parts/contacts
 @import parts/footer
+@import reset
 
-*,
-*:before,
-*:after
-    padding: 0
-    margin: 0
-    border: 0
-    box-sizing: border-box
-
-body
-    background-color: #eddebf3b
-
-
-a
-    color: var(--color-grey-3)
-    text-decoration: none
-
-a:hover
-    color: var(--color-grey)
-
-img
-    vertical-align: top
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
-    font-weight: inherit
-    font-size: inherit
-
-html,
-body
-    height: 100%
-    line-height: 1
-    font-size: 16px
-    font-weight: 500
-    color: #181515
+// ---------------------------------------COMMON--------------------------------------
+h1, h2, h3, h4, h5, h6
+    font-family: "Irish Grover"
 
 small
     color: var(--color-black)
@@ -51,9 +17,9 @@ small
     justify-self: end
 
 [class*="__container"]
-    max-width: 1087px
+    max-width: 1123px
     margin: 0 auto
-    padding: 15px
+    padding: 5px
 @media (max-width: 1057px)
     [class*="__container"]
         max-width: 900px
@@ -67,8 +33,6 @@ small
     [class*="__container"]
      max-width: 320px
 
-
-// ---------------------------------------COMMON--------------------------------------
 .wrapper
     min-height: 100%
     overflow: hidden
@@ -83,67 +47,59 @@ small
     margin-top: 35px
     text-align: center
     margin-bottom: 30px
+    font-family: "Irish Grover"
 
 .subtitle
-    font-size: 20px
+    font-size: 18px
     line-height: calc( 26/20*100% )
     letter-spacing: 1px
     margin-bottom: 45px
     text-align: center
     margin-bottom: 30px
+    font-family: "Inter"
 
 .page
-    padding-top: 60px
     flex: 1 1 auto
 
-    @media (max-width: 920px)
-        padding-top: 100px
-
-.button
-    border-radius: 37px
+.button_brown
+    border-radius: 50px
     display: flex
     justify-content: center
     align-items: center
-    padding: 10px 36px
+    padding: 5px 44px
     letter-spacing: 0.2px
-    min-height: 48px
+    min-height: 30px
     font-weight: 700
-    font-size: 14px
+    font-size: 12px
     line-height: calc(28/14 * 100%)
     text-align: center
-    margin: 10px 0
     transition: all 0.5s ease-in-out 0s
+    color: #fff
+    background: var(--color-brown)
+    box-shadow: 0px 10px 10px var(--color-brown-dark)
+    cursor: pointer
+
+@media (max-width: 660px)
+    .button_brown
+        color: var(--color-brown)
+        background-color: var(--color-white)
+        box-shadow: none
+    .button_brown:hover
+        color: var(--color-white)
 
 @media (max-width: 500px)
     .button
         flex: 1 1 100%
 
-@media (min-width: 500px)
-    .button:not(:last-child)
-        margin-right: 10px
+.button_brown
 
-.button_green
-    color: #fff
-    background: var(--color-blue)
+.button_brown:hover
+    background: var(--color-brown-dark)
 
-.button_green:hover
-    color: var(--color-blue)
+.button_brown:active
+    color: var(--color-brown)
     background-color: #fff
-    border: 1px solid var(--color-blue)
-
-.button_border
-    color: var(--color-blue)
-    border: 1px solid var(--color-blue)
-
-.button_border:hover
-    color: #fff
-    background-color: var(--color-blue)
-
-.main-block__image
-    padding: 40px 0px 40px 40px
-
-    @media (max-width: 920px)
-        padding: 25px 0px 0px 0px
+    border: 1px solid var(--color-brown)
 
 .text
     margin-top: 10px
@@ -153,5 +109,8 @@ small
 .item
     background-color: var(--color-white)
     display: grid
-    box-shadow: 1px 1px 10px var(--color-blue)
+    border-left: 1px solid #000
+    // border-right: 1px solid #000
+    padding: 20px
+    // box-shadow: 10px 15px 12px #00000052
     grid-template: minmax(50px, auto) 1fr minmax(auto, auto) / 1fr

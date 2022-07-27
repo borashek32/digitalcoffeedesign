@@ -18,6 +18,37 @@
                     <div class="header__logo">
                         <img src="img/elements/element_3/logo.svg" alt="logo" class="header__logoimg">
                     </div>
+                    <div class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#about" class="menu__link">Пункт 1</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#clever" class="menu__link">Пункт 2</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#deal" class="menu__link">Пункт 3</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#pictures" class="menu__link">Пункт 4</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#questions" class="menu__link">Пункт 5</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#partners" class="menu__link">Пункт 6</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#reviews" class="menu__link">Пункт 7</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#clever1" class="menu__link">Пункт 8</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#contacts" class="menu__link">Пункт 9</a>
+                            </li>
+                        </ul>
+                    </div>
                     <button class="header__burger">
                         <span></span>
                         <span></span>
@@ -29,7 +60,7 @@
             </div>
         </header>
         <main class="main">
-            <div class="about">
+            <div class="about" id="about">
                 <div class="container">
                     <div class="about__section">
                         <div class="about__grid">
@@ -92,7 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div class="clever">
+            <div class="clever" id="clever">
                 <div class="container">
                     <div class="clever__row">
                         <div class="clever__item">
@@ -108,7 +139,7 @@
                     </div>
                 </div>
             </div>
-            <section class="deal">
+            <section class="deal" id="deal">
                 <div class="container">
                     <div class="deal__title subtitle-black">ЧЕМ МЫ ЗАНИМАЕМСЯ?</div>
                     <div class="deal__grid">
@@ -151,7 +182,7 @@
                     </div>
                 </div>
             </section>
-            <div class="pictures">
+            <div class="pictures" id="pictures">
                 <div class="pictures__grid">
                     <div class="pictures__item">
                         <img src="img/elements/element_3/build.png" alt="build">
@@ -179,7 +210,7 @@
                     </div>
                 </div>
             </div>
-            <section class="questions">
+            <section class="questions" id="questions">
                 <div class="container">
                     <div class="questions__title subtitle-black">ОТВЕТЫ НА ВОПРОСЫ</div>
                     <div class="questions__div">
@@ -220,7 +251,7 @@
                     </div>
                 </div>
             </section>
-            <section class="partners">
+            <section class="partners" id="partners">
                 <div class="container">
                     <div class="partners__title subtitle-white">наши партнеры</div>
                     <div class="partners__grid">
@@ -239,7 +270,7 @@
                     </div>
                 </div>
             </section>
-            <section class="reviews">
+            <section class="reviews" id="reviews">
                 <div class="container">
                     <div class="reviews__title subtitle-black">отзывы о работе с нами</div>
                 <div class="reviews__grid review">
@@ -273,7 +304,7 @@
                 </div>
                 </div>
             </section>
-            <div class="clever">
+            <div class="clever" id="clever1">
                 <div class="container">
                     <div class="clever__row">
                         <div class="clever__item">
@@ -289,7 +320,7 @@
                     </div>
                 </div>
             </div>
-            <section class="contacts">
+            <section class="contacts" id="contacts">
                 <div class="container">
                     <div class="contacts__title subtitle-black">КОНТАКТЫ</div>
                     <div class="contacts__grid">

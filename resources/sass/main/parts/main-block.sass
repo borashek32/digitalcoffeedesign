@@ -1,55 +1,140 @@
-.main-block__container
-    display: flex
-    padding: 0px 60px 5px 60px
-    justify-content: space-between
+.main-block__bg
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr
+    grid-template-areas: ". bg-img"
 
-    @media (max-width: 920px)
-        flex-direction: column
-        align-items: center
-        margin-top: 60px
+    @media (max-width: 660px)
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr
+        grid-template-areas: "bg-img"
+
+.main-block__image
+    grid-area: bg-img
+
+.main-block__image img
+    width: 100%
+    height: 100%
+    object-fit: cover
 
 .main-block__body
     display: flex
-    max-width: 500px
-    justify-content: center
     flex-direction: column
-    align-items: left
+    align-items: center
+    margin-top: -550px
 
-    @media (max-width: 920px)
-        align-items: center
+    @media (max-width: 1200px)
+        margin-top: -450px
+    @media (max-width: 970px)
+        margin-top: -350px
+    @media (max-width: 850px)
+        margin-top: -300px
+    @media (max-width: 750px)
+        margin-top: -280px
+    @media (max-width: 660px)
+        margin-top: -400px
+    @media (max-width: 460px)
+        margin-top: -300px
+    @media (max-width: 390px)
+        margin-top: -250px
 
 .main-block__body > *:not(:last-child) // objects with class .main-block__body from the first level
     margin-bottom: 25px
 
-.main-block__title
-    font-size: 38px
-    line-height: calc(80/58 * 100%)
-    font-weight: 800
-    line-height: calc(42/38 * 100%)
+.main-block__title h1
+    text-align: center
+    color: var(--color-brown)
+    text-transform: uppercase
+    font-size: 84px
+    line-height: calc(112.55/84 * 100%)
+    font-weight: 400
+    letter-spacing: 3px
 
-    @media (max-width: 540px)
-        font-size: 28px
+    @media (max-width: 1200px)
+        font-size: 70px
+    @media (max-width: 970px)
+        font-size: 60px
+    @media (max-width: 880px)
+        font-size: 40px
+    @media (max-width: 660px)
+        color: var(--color-white)
 
-    @media (max-width: 408px)
-        font-size: 20px
-
-    @media (max-width: 330px)
-        font-size: 20px
-        font-weight: 600
+.main-block__title span
+    color: var(--color-white)
 
 .main-block__text
-    font-weight: 500
-    font-size: 16px
+    width: 500px
+
+    @media (max-width: 750px)
+        display: none
+
+.main-block__text p
+    font-weight: 400
+    font-size: 12px
     color: #737373
-    line-height: calc(30/20 * 100%)
+    line-height: calc(14.52/12 * 100%)
+    text-align: center
 
-    @media (max-width: 920px)
-        text-align: center
-
-    @media (max-width: 650px)
-        color: var(--color-grey-5)
-
+// BUTTONS ----------------------------------------
 .main-block__buttons
+    margin-top: 10px
+    display: inline-block
+    margin-left: 200px
+
+    @media (max-width: 1260px)
+        margin-left: 100px
+    @media (max-width: 880px)
+        margin-top: 40px
+    @media (max-width: 750px)
+        margin-top: 20px
+    @media (max-width: 670px)
+        display: flex
+        justify-items: center
+    @media (max-width: 660px)
+        margin-left: 0
+        justify-content: center
+
+// IMAGES -----------------------------------------------
+.main-block__images
     display: flex
-    flex-wrap: wrap
-    margin: -10px 0
+    justify-content: center
+    margin-top: 70px
+    gap: 55px
+
+    @media (max-width: 1200px)
+        margin-top: 50px
+    @media (max-width: 970px)
+        display: none
+
+.images__image
+    border-radius: 30px
+    width: 250px
+    box-shadow: 10px 15px 12px #00000052
+    transform: width 1s
+
+.images__image:hover
+    width: 255px
+    filter: brightness(130%)
+
+.images__item_big-shadow .images__image
+    box-shadow: none
+
+.images__item_big-shadow
+    position: relative
+    z-index: 2
+
+.images__item_big-shadow::before
+    content: ''
+    border-radius: 30px
+    width: 250px
+    height: 300px
+    background-color: #c5b0aa
+    position: absolute
+    z-index: 1
+    top: 15px
+    left: 15px
+    box-shadow: 0px 4px 4px #00000043
+
+.images__item_big-shadow img
+    position: relative
+    z-index: 3

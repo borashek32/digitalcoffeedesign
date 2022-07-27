@@ -8,8 +8,12 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-
+        <link href="https://fonts.googleapis.com/css?family=Inter:regular&display=swap" rel="stylesheet" />
+        <style>
+            * {
+                font-family: "Inter"
+            }
+        </style>
         <!-- Aside plugins styles -->
         <link href="{{ asset('css/colorbox.css') }}" rel="stylesheet">
 
@@ -50,6 +54,7 @@
 
         @livewireScripts
 
+        <script src="https://cdn.tiny.cloud/1/9wqo0frucj2lt7oll5gxiukpbasl97x4360r6cbcb554c7cu/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
         @yield('scripts')

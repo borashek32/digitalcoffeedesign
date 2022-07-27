@@ -20,8 +20,17 @@ $(document).ready(function() {
     })
 })
 
-CKEDITOR.replace( 'description' );
+// editor on admin panel
+tinymce.init({
+    selector: 'textarea',
+    plugins: 'advlist autolink lists link image charmap preview anchor pagebreak',
+    toolbar_mode: 'floating',
+    forced_root_block : "",
+});
 
+
+
+// to upload images in admin panel
 function elFinderBrowser (callback, value, meta) {
     tinymce.activeEditor.windowManager.openUrl({
         title: 'File Manager',

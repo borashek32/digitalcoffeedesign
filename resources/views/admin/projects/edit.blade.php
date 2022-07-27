@@ -148,7 +148,7 @@
 @endsection('content')
 
 @section('scripts')
-    <script src="https://cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
+    <script src="https://cdn.tiny.cloud/1/9wqo0frucj2lt7oll5gxiukpbasl97x4360r6cbcb554c7cu/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.colorbox-min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('packages/barryvdh/elfinder/js/standalonepopup.min.js') }}"></script>
 @endsection

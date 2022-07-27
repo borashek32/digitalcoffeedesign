@@ -12,12 +12,17 @@
             <ul class="header__list">
                 <li class="header__item">
                     <a href="#" class="header__link">
-                        Домой
+                        В начало
                     </a>
                 </li>
                 <li class="header__item">
                     <a href="#portfolio" class="header__link">
                         Портфолио
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#about" class="header__link">
+                        Обо мне
                     </a>
                 </li>
                 <li class="header__item">

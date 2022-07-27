@@ -38,6 +38,9 @@ Route::get('/go-corona', [App\Http\Controllers\Site\ProjectController::class, 'g
 Route::get('/designer-portfolio-site', [App\Http\Controllers\Site\ProjectController::class, 'designerPortfolioSite'])
     ->name('designer-portfolio-site');
 
+Route::get('/organic', [App\Http\Controllers\Site\ProjectController::class, 'organic'])
+    ->name('organic');
+
 
 // ELEMENTS
 Route::get('/flex-box', [App\Http\Controllers\Site\ProjectController::class, 'flexBox'])

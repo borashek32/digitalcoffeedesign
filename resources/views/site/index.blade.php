@@ -4,25 +4,39 @@
 
 @section('content')
     <main class="page">
+        {{-- promo-block --}}
         <section class="page__main-block main-block">
-            <div class="main-block__container">
-                <div class="main-block__body">
-                    <h1 class="main-block__title">
-                        Digital Coffee Design
-                    </h1>
-                    <div class="main-block__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </div>
-                    <div class="main-block__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </div>
-                    <div class="main-block__buttons">
-                        <a href="#contacts" class="button button_green">Напишите мне</a>
-                        <a href="#main-project" class="button button_border">Главный проект</a>
-                    </div>
-                </div>
+            <div class="main-block__bg">
                 <div class="main-block__image">
-                    <img src="{{ asset('img/main/coffee_green.jpg') }}" width="400px" alt="digitalcoffeedesign.com">
+                    <img src="{{ asset('img/main/promo.jpg') }}" alt="digitalcoffeedesign.com">
+                </div>
+            </div>
+            <div class="main-block__body">
+                <div class="main-block__title">
+                    <h1>Digital <span>Coffee</span><br>Des<span>ign</span></h1>
+                </div>
+                <div class="main-block__text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eum alias laboriosam commodi, facilis laborum impedit itaque velit deserunt delectus molestias, tempora qui natus reiciendis. Sed consectetur aperiam quisquam iusto.</p>
+                </div>
+            </div>
+            <div class="main-block__buttons">
+                <a href="#contacts">
+                    <button class="main-block_button button button_brown">
+                        Напишите мне
+                    </button>
+                </a>
+            </div>
+            <div class="main-block__images images">
+                <div class="images__item images__item_big-shadow">
+                    <img src="{{ asset('img/main/promo-small-1.jpg') }}" class="images__image" alt="coffee">
+                </div>
+                <a href="#about">
+                    <div class="images__item">
+                        <img src="{{ asset('img/main/me.jpg') }}" class="images__image" alt="coffee">
+                    </div>
+                </a>
+                <div class="images__item">
+                    <img src="{{ asset('img/main/promo-small-3.jpg') }}" class="images__image" alt="coffee">
                 </div>
             </div>
         </section>
@@ -64,28 +78,26 @@
         <section class="page__portfolio portfolio" id="portfolio">
             <div class="portfolio__container">
                 <div class="portfolio__body">
-                    <h2 class="portfolio__title title">Портфолио</h2>
+                    <h2 class="portfolio__title title">Portfolio</h2>
                     <h4 class="portfolio__subtitle subtitle">
-                        Лэндинги, с импользованием JavaScript, CSS, HTML.<br>Все сайты полностью адаптированы под мобильные устройства.
+                        Лэндинги, с импользованием JavaScript, CSS, HTML.<br>Все сайты полностью адаптированы под мобильные устройства.<br>Эта часть портфолио находится в постоянной разработке.
                     </h4>
                     <div class="portfolio__grid">
                         @foreach ($projects as $project)
                         @if($project->category_id == 1)
                             <div class="portfolio__item">
                                 <div class="item">
-                                    <div>
-                                        <div class="item__title">
-                                            @if($project->link)
-                                                <a href="{{ $project->link}}">
-                                                    {{ $project->title }}
-                                                </a>
-                                            @endif
-                                            @if(empty($project->link))
-                                                <a href="{{ route($project->slug) }}">
-                                                    {{ $project->title }}
-                                                </a>
-                                            @endif
-                                        </div>
+                                    <div class="item__title">
+                                        @if($project->link)
+                                            <a href="{{ $project->link}}">
+                                                {{ $project->title }}
+                                            </a>
+                                        @endif
+                                        @if(empty($project->link))
+                                            <a href="{{ route($project->slug) }}">
+                                                {{ $project->title }}
+                                            </a>
+                                        @endif
                                     </div>
                                     {{-- <div class="item__description">
                                         <div class="item__text text">{{ $project->description }}</div>
@@ -107,21 +119,22 @@
                         @endif
                         @endforeach
                     </div>
-
-
-                    {{-- <div class="portfolio__row">
-                        <div class="portfolio__column">
-                            @foreach ($projects as $project)
-                                @if($project->category_id == 2)
-                                    <small>*веб-приложение</small>
-                                @endif
-                                @if($project->category_id == 3)
-                                    <small>*элемент</small>
-                                @endif
-                                @if($project->category_id == 1)
-                                    <small>*лэндинг</small>
-                                @endif
-                                <div class="portfolio__item item">
+                </div>
+            </div>
+        </section>
+        {{-- portfolio SECTION 2 small apps --}}
+        <section class="page__portfolio portfolio portfolio_section_2">
+            <div class="portfolio__container">
+                <div class="portfolio__body">
+                    <h2 class="portfolio__title title">Small Apps</h2>
+                    <h4 class="portfolio__subtitle subtitle">
+                        Многостраничные сайты, с импользованием JavaScript, CSS, HTML.<br>Все сайты полностью адаптированы под мобильные устройства.<br>Эта часть портфолио находится в постоянной разработке.
+                    </h4>
+                    <div class="portfolio__grid">
+                        @foreach ($projects as $project)
+                        @if($project->category_id == 4)
+                            <div class="portfolio__item">
+                                <div class="item">
                                     <div class="item__title">
                                         @if($project->link)
                                             <a href="{{ $project->link}}">
@@ -133,70 +146,6 @@
                                                 {{ $project->title }}
                                             </a>
                                         @endif
-                                    </div>
-                                    <div class="item__body">
-                                        <div class="item__img">
-                                            @if($project->link)
-                                                <a href="{{ $project->link}}">
-                                                    <img src="{{ $project->img }}" alt="{{ $project->title }}" width="200px">
-                                                </a>
-                                            @endif
-                                            @if(empty($project->link))
-                                                <a href="{{ route($project->slug) }}">
-                                                    <img src="{{ $project->img }}" alt="{{ $project->title }}" width="200px">
-                                                </a>
-                                            @endif
-                                        </div>
-                                        <div class="item__description">
-                                            <div class="item__text">{{ $project->description }}</div>
-                                            @if($project->link)
-                                                <a href="{{ $project->link}}">
-                                                    Перейти...
-                                                </a>
-                                            @endif
-                                            @if(empty($project->link))
-                                                <a href="{{ route($project->slug) }}">
-                                                    Перейти...
-                                                </a>
-                                            @endif
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div> --}}
-                </div>
-            </div>
-        </section>
-        {{-- portfolio SECTION 2 --}}
-        <section class="page__portfolio portfolio portfolio_section_2">
-            <div class="portfolio__container">
-                <div class="portfolio__body">
-                    <h2 class="portfolio__title title">Блоки</h2>
-                    <h4 class="portfolio__subtitle subtitle">
-                        Элементы, без которых не обходится ни один сайт.<br>Сделаны с использованием JavaScript, CSS, HTML.<br>Все элементы полностью адаптированы под мобильные устройства.
-                    </h4>
-                    <div class="portfolio__grid">
-                        @foreach ($projects as $project)
-                        @if($project->category_id == 3)
-                            <div class="portfolio__item portfolio__grid_section_2">
-                                <div class="item">
-                                    <div>
-                                        <div class="item__title item__title_section_2">
-                                            @if($project->link)
-                                                <a href="{{ $project->link}}">
-                                                    {{ $project->title }}
-                                                </a>
-                                            @endif
-                                            @if(empty($project->link))
-                                                <a href="{{ route($project->slug) }}">
-                                                    {{ $project->title }}
-                                                </a>
-                                            @endif
-                                        </div>
-                                    </div>
-                                    <div class="item__description item__description_section_2">
-                                        <div class="item__text text">{{ $project->description }}</div>
                                     </div>
                                     <div class="item__img">
                                         @if($project->link)
@@ -218,10 +167,73 @@
                 </div>
             </div>
         </section>
+        {{-- portfolio SECTION 3 blocks --}}
+        <section class="page__portfolio portfolio portfolio_section_2">
+            <div class="portfolio__container">
+                <div class="portfolio__body">
+                    <h2 class="portfolio__title title">Blocks</h2>
+                    <h4 class="portfolio__subtitle subtitle">
+                        Элементы, без которых не обходится ни один сайт.<br>Сделаны с использованием JavaScript, CSS, HTML.<br>Все элементы адаптированы под мобильные устройства.<br>Эта часть портфолио находится в постоянной разработке.
+                    </h4>
+                    <div class="portfolio__grid">
+                        @foreach ($projects as $project)
+                        @if($project->category_id == 3)
+                            <div class="portfolio__item portfolio__grid_section_2">
+                                <div class="item">
+                                    <div>
+                                        <div class="item__title item__title_section_2">
+                                            @if($project->link)
+                                                <a href="{{ $project->link}}">
+                                                    {{ $project->title }}
+                                                </a>
+                                            @endif
+                                            @if(empty($project->link))
+                                                <a href="{{ route($project->slug) }}">
+                                                    {{ $project->title }}
+                                                </a>
+                                            @endif
+                                        </div>
+                                    </div>
+                                    <div class="item__description item__description_section_2">
+                                        <div class="item__text text">{!! $project->description !!}</div>
+                                    </div>
+                                    <div class="item__img">
+                                        @if($project->link)
+                                            <a href="{{ $project->link}}">
+                                                <img src="{{ $project->img }}" alt="{{ $project->title }}">
+                                            </a>
+                                        @endif
+                                        @if(empty($project->link))
+                                            <a href="{{ route($project->slug) }}">
+                                                <img src="{{ $project->img }}" alt="{{ $project->title }}">
+                                            </a>
+                                        @endif
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{-- separate --}}
+        <div class="separate">
+            <img src="{{ asset('img/main/separate.jpg') }}" alt="separate">
+        </div>
+        {{-- about me --}}
+        <section class="page__portfolio portfolio portfolio_section_2">
+            <div class="portfolio__container">
+                <div class="portfolio__body">
+                    <h2 class="portfolio__title title">About me</h2>
+                    <h4 class="portfolio__subtitle subtitle">Немножко обо мне, как о fullstack разработчике</h4>
+                </div>
+            </div>
+        </section>
         {{-- contacts --}}
         <section class="page__contacts" id="contacts">
             <div class="contacts contacts__container">
-                <h2 class="title">Контакты</h2>
+                <h2 class="title">Contacts</h2>
                 <h4 class="subtitle">Напишите мне письмо или позвоните:)</h4>
                 <div class="contacts__row">
                     <div class="contacts__column contacts__column_write-me">
@@ -230,12 +242,11 @@
                         <form action="{{ route('message') }}" class="contacts__form" method="POST">
                             @csrf
                             <label for="" class="contacts__label">Ваше имя</label>
-                            <input type="text" name="name" class="contacts__input name" placeholder="Введите ваше имя">
+                            <input type="text" name="name" id="name" class="contacts__input name" placeholder="Введите ваше имя">
                             <label for="" class="contacts__label">Ваш email</label>
-                            <input type="email" name="email" class="contacts__input email" placeholder="Введите ваш электронный адрес">
+                            <input type="email" name="email" id="email" class="contacts__input email" placeholder="Введите ваш электронный адрес">
                             <label for="" class="contacts__label">Ваше сообщение</label>
-                            <textarea name="message" id="" cols="1" rows="3" class="contacts__textarea contacts__input message"></textarea>
-
+                            <textarea name="message" id="message" cols="1" rows="3" class="contacts__textarea contacts__input message"></textarea>
                             <button type="submit" class="contacts_button button button_border send-message">Отправить</button>
                         </form>
                     </div>
@@ -286,24 +297,26 @@
                 success: function (response) {
                     if(response.status == 200) {
                         Swal.fire({
-                        icon: 'success',
-                        title: 'Ok',
-                        text: 'Ваше сообщение успешно отправлено'
+                            icon: 'success',
+                            title: 'Ok',
+                            text: 'Ваше сообщение успешно отправлено'
                         })
+                        $('#name').val('')
+                        $('#email').val('')
+                        $('#message').val('')
                     } else {
-                        Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...',
-                        text: 'Что-то пошло не так! Попробуйте позже'
+                            Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Что-то пошло не так! Попробуйте позже'
                         })
                     }
                 },
                 error: function(response) {
-                        console.log(data);
                         Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...',
-                        text: 'Что-то пошло не так! Проверте правильно ли заполнены поля формы'
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Что-то пошло не так! Проверте правильно ли заполнены поля формы'
                         })
                     }
                 });

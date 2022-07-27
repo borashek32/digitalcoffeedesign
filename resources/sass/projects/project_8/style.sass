@@ -1,0 +1,65 @@
+@import variables
+@import reset
+@import parts/header
+@import parts/burger
+@import parts/sliders/slider-arrows
+@import parts/sliders/slider-dots
+@import parts/sliders/slider-orange
+@import parts/articles
+@import parts/footer
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,900)
+
+// COMMON STYLES ------------------------------------
+body
+    font-family: Roboto, sans-serif
+    font-weight: 400
+    font-size: 14px
+    @media (orientation: landscape) and (max-width: 450px)
+        display: none
+
+.lock
+    overflow: hidden
+
+[class*="__container"]
+    max-width: 1920px // full-hd
+    margin: 0 auto // центрировать блочный элемент
+
+.main
+    margin-top: 86px
+    display: grid
+    grid-template-columns: 2fr 1fr 1.5fr 1.5fr
+    grid-template-rows: 3fr 1fr 3fr
+    grid-template-areas: "slider-arrows healthy thirsty thirsty" "slider-arrows healthy slider-dots orange" "freshy healthy slider-dots orange"
+    @media (max-width: 1188px)
+        grid-template-rows: auto
+        grid-template-columns: 1fr 0.5fr 0.5fr 1fr
+        grid-template-areas: "freshy freshy freshy healthy" "slider-arrows slider-arrows slider-arrows healthy" "thirsty thirsty thirsty thirsty" "slider-dots slider-dots orange orange"
+    @media (max-width: 705px)
+        grid-template-rows: auto
+        grid-template-columns: 1fr
+        grid-template-areas: "freshy" "slider-arrows" "healthy" "slider-dots" "thirsty" "orange"
+
+.btn
+    color: #fff
+    text-transform: uppercase
+    border: 2px solid #fff
+    padding: 10px 20px
+    letter-spacing: 2px
+    font-size: 16px
+    @media (max-width: 410px)
+        display: none
+
+.opacity
+    transition: opacity 0.2s ease
+    cursor: pointer
+.opacity:hover
+    opacity: 0.8
+.opacity:active
+    opacity: 0.6
+
+.slider-arrows,
+.slider-dots,
+.slider-orange
+    height: 500px
+

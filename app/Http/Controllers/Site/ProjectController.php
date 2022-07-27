@@ -65,6 +65,11 @@ class ProjectController extends Controller
         return view('projects.project_7.index');
     }
 
+    public function organic()
+    {
+        return view('projects.project_8.index');
+    }
+
     public function flexBox()
     {
         return view('elements.element_1.index');

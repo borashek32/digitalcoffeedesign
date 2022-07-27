@@ -29,7 +29,7 @@ class ProjectController extends Controller
                     ->paginate(6);
             } else {
                 $projects = Project::latest()->paginate(10);
-                $projects->withPath('/dashboard/projects');
+                $projects->withPath('/admin/projects');
             }
         return view('admin.projects.index', compact('projects', 'categories'));
         } else {

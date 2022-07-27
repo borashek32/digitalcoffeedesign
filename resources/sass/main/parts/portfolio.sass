@@ -5,8 +5,6 @@
 .portfolio__container
     padding: 60px 60px 60px 60px
 
-.portfolio__body
-
 .portfolio__grid
     display: grid
     grid-template-columns: 1fr 1fr 1fr 1fr
@@ -21,15 +19,14 @@
     @media (max-width: 425.87px)
         grid-template-columns: 1fr
 
-.portfolio__item
-
-
 .item__img
     object-fit: cover
 
 .item__img img
     align-items: end
 .item__img img:hover
+    filter: brightness(120%)
+.item__img img:active
     filter: brightness(130%)
 
 .item__description
@@ -42,6 +39,7 @@
     font-weight: 700
     text-align: center
     margin-top: 10px
+    font-family: "Irish Grover"
 
 .item__link
     font-size: 12px

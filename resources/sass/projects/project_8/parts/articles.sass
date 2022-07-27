@@ -1,0 +1,168 @@
+// COMMON STYLES ------------------------------------
+.common
+    display: grid
+    align-self: center
+    grid-template-columns: 1fr 2fr
+    grid-template-rows: 1fr
+    grid-template-areas: "title desc"
+    color: var(--color-white)
+    gap: 30px
+    padding: 30px
+    @media (max-width: 705px)
+        grid-area: desc
+        width: 370px
+        text-align: right
+    @media (max-width: 410px)
+        grid-template-columns: 1fr
+        grid-template-rows: auto
+        grid-template-areas: "title" "desc"
+        justify-self: center
+
+.common__title
+    grid-area: title
+    text-transform: uppercase
+    font-size: 24px
+    width: 140px
+    font-weight: 300
+    line-height: 1
+
+.common__title span
+    font-weight: 400
+    font-size: 60px
+    letter-spacing: 2px
+    display: block
+.common__title span::first-line
+    font-weight: 900
+
+.common__desc
+    grid-area: desc
+    hyphens: auto
+    align-self: center
+
+// SEPARATE ARTICLES ------------------------------
+.freshy
+    grid-area: freshy
+    background-color: var(--color-green)
+    display: grid
+
+.common__title_freshy
+    @media (max-width: 705px)
+        text-align: right
+    @media (max-width: 410px)
+        text-align: center
+        justify-self: center
+
+.common__desc_freshy
+    @media (max-width: 705px)
+        text-align: left
+    @media (max-width: 410px)
+        text-align: center
+
+.healthy
+    grid-area: healthy
+    background-color: var(--color-pink)
+
+.healthy__grid
+    @media (max-width: 705px)
+        align-self: center
+        justify-self: center
+        display: grid
+
+.common__healthy
+    display: grid
+    align-self: end
+    grid-template-columns: 1fr
+    grid-template-rows: 2fr 1.5fr 1.5fr
+    grid-template-areas: "." "title" "desc"
+    color: var(--color-white)
+    gap: 30px
+    padding: 30px
+    @media (max-width: 705px)
+        align-self: center
+        grid-template-columns: 1fr
+        grid-template-rows: auto
+        grid-template-areas: "title desc"
+    @media (max-width: 410px)
+        grid-template-columns: 1fr
+        grid-template-rows: auto
+        grid-template-areas: "title" "desc"
+
+.common__title_healthy
+    grid-area: title
+    @media (max-width: 705px)
+        text-align: right
+    @media (max-width: 410px)
+        text-align: center
+        justify-self: center
+
+.common__desc_healthy
+    grid-area: desc
+    @media (max-width: 705px)
+        text-align: left
+    @media (max-width: 410px)
+        text-align: center
+        justify-self: center
+
+.thirsty
+    grid-area: thirsty
+    background-color: var(--color-yellow)
+    display: grid
+
+.thirsty__grid
+    @media (max-width: 705px)
+        // align-self: center
+        // justify-self: center
+        display: grid
+
+.common__thirsty
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-areas: "desc title"
+    justify-self: center
+    align-self: center
+    @media (max-width: 705px)
+        justify-self: center
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: auto
+        grid-template-areas: "title desc"
+        gap: 40px
+    @media (max-width: 410px)
+        grid-template-columns: 1fr
+        grid-template-rows: auto
+        grid-template-areas: "title" "desc"
+
+.common__title_thirsty
+    grid-area: title
+    @media (max-width: 705px)
+        text-align: right
+    @media (max-width: 410px)
+        text-align: center
+        justify-self: center
+
+.common__desc_thirsty
+    grid-area: desc
+    text-align: right
+    @media (max-width: 705px)
+        text-align: left
+    @media (max-width: 410px)
+        text-align: center
+        justify-self: center
+
+.common__juicy
+    @media (max-width: 1120px)
+        grid-area: desc
+        width: 370px
+        text-align: right
+    @media (max-width: 410px)
+        text-align: center
+
+.common__title_juicy
+    @media (max-width: 410px)
+        text-align: center
+        justify-self: center
+
+.common__desc_juicy div
+    margin-bottom: 47px
+    @media (max-width: 410px)
+        text-align: center
+        justify-self: center

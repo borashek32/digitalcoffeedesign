@@ -19,6 +19,9 @@ mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/projects/project_7/script.js', 'public/assets/projects/project_7/js')
     .sass('resources/sass/projects/project_7/style.sass', 'public/assets/projects/project_7/css')
 
+    .js('resources/js/projects/project_8/script.js', 'public/assets/projects/project_8/js')
+    .sass('resources/sass/projects/project_8/style.sass', 'public/assets/projects/project_8/css')
+
 // ELEMENTS
     .sass('resources/sass/elements/element_1/style.sass', 'public/assets/elements/element_1/css')
 

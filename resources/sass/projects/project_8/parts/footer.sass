@@ -1,0 +1,181 @@
+.footer
+    background-color: var(--color-black)
+
+.footer__grid
+    background-color: var(--color-black)
+    display: grid
+    grid-template-columns: 2fr 1fr 1.5fr 1.5fr
+    // grid-template-rows: 2.5fr
+    grid-template-areas: "socials form logo sidebar"
+    @media (max-width: 1120px)
+        grid-template-columns: 1fr 2.5fr 0.5fr
+        grid-template-rows: auto
+        grid-template-areas: "sidebar sidebar sidebar" "socials form logo"
+        justify-self: center
+        align-self: center
+    @media (max-width: 750px)
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr
+        grid-template-areas: "sidebar sidebar" "form logo" "socials logo"
+        align-self: center
+    @media (max-width: 570px)
+        grid-template-columns: 1fr
+        grid-template-rows: auto
+        grid-template-areas: "sidebar" "socials" "form" "logo"
+        align-self: center
+        gap: 50px
+
+.socials
+    grid-area: socials
+    display: grid
+    margin-left: 20px
+    grid-template-rows: 1fr 1fr 1fr
+    grid-template-columns: 1fr
+    grid-template-areas: "." "socials__list" "."
+    @media (max-width: 750px)
+        margin-left: 0
+        grid-template-rows: 1fr
+        grid-template-columns: 1fr
+        grid-template-areas: "socials__list"
+    @media (max-width: 570px)
+        padding-top: 50px
+
+.socials__list
+    grid-area: socials__list
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    grid-template-areas: ". ." "social__links ."
+    @media (max-width: 1120px)
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr
+        grid-template-areas: "social__links"
+        margin-right: 50px
+    @media (max-width: 750px)
+        margin-left: 50px
+        margin-bottom: 50px
+    @media (max-width: 570px)
+        justify-self: center
+        margin: 0
+
+.socials__list ul
+    grid-area: social__links
+    display: flex
+    align-items: flex-end
+    gap: 10px
+
+.socials__link
+    border: 1px solid var(--color-white)
+    border-radius: 50%
+    width: 40px
+    height: 40px
+    padding: 8px
+    display: flex
+    justify-content: center
+    align-items: center
+
+.socials__link_grey
+    color: var(--color-grey)
+    border: 1px solid var(--color-grey)
+
+.form
+    grid-area: form
+    display: grid
+    grid-template-rows: 1fr 1fr 1fr
+    grid-template-columns: 1fr
+    grid-template-areas: "." "form__row" "."
+    @media (max-width: 1120px)
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: 1fr 1fr 1fr
+        grid-template-areas: ". . ." "form__row form__row form__row" ". . ."
+    @media (max-width: 750px)
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr
+        grid-template-areas: "form__row"
+
+.form__row
+    grid-area: form__row
+    @media (max-width: 750px)
+        margin-top: 50px
+    @media (max-width: 570px)
+        justify-self: center
+        margin: 0
+
+.form__row p
+    text-transform: uppercase
+    color: var(--color-white)
+    font-size: 16px
+    margin-bottom: 31px
+    @media (max-width: 800px)
+        margin-left: 50px
+    @media (max-width: 570px)
+        justify-self: center
+        margin-left: 0
+        text-align: center
+        line-height: 30px
+
+.form__div
+    display: flex
+
+.form__row input
+    padding: 10px 12px
+    width: 150px
+    @media (max-width: 800px)
+        margin-left: 50px
+    @media (max-width: 570px)
+        margin-left: 0
+
+.form__row button
+    background-color: var(--color-blue)
+    padding: 10px 13px
+    color: var(--color-white)
+
+.footer-logo
+    grid-area: logo
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    grid-template-areas: ". ." ". rights"
+    @media (max-width: 1120px)
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr
+        grid-template-areas: ". ." "rights ."
+    @media (max-width: 750px)
+        grid-template-columns: 1fr
+        grid-template-rows: auto
+        grid-template-areas: "rights"
+        justify-self: center
+        align-self: center
+
+.footer-logo__rights
+    grid-area: rights
+    display: grid
+    grid-template-rows: 1fr 1fr
+    grid-template-columns: 2fr 1fr
+    grid-template-areas: "logo-img ." "rigts-reserved ."
+    @media (max-width: 750px)
+        justify-self: center
+        grid-template-rows: 1fr 1fr
+        grid-template-columns: 1fr
+        grid-template-areas: "logo-img" "rigts-reserved"
+
+.footer-logo__logo-img
+    grid-area: logo-img
+    justify-self: center
+
+.footer-logo__reserved
+    grid-area: rigts-reserved
+    color: var(--color-grey)
+    font-size: 10px
+    align-self: center
+
+.sidebar
+    grid-area: sidebar
+    background-color: var(--color-blue)
+    display: grid
+
+.btn
+    text-transform: uppercase
+
+.btn_rounded
+    border-radius: 30px
