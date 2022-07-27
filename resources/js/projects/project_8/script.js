@@ -14,7 +14,7 @@ let offset = 0;
 const sliderLine = document.querySelector('.slider-arrows__items-wrapper');
 
 document.querySelector('.slider-arrows__arrow_next').addEventListener('click', function(){
-    offset = offset + 800;
+    offset = offset + 735;
     if (offset > 1500) {
         offset = 0;
     }

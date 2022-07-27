@@ -13,7 +13,7 @@
     <div class="container">
       <nav class="nav">
         <a href="#">
-            <img src="{{ asset('img/logo0.png') }}" alt="logo" width="70px">
+            <img src="{{ asset('img/logo100px.png') }}" alt="logo" width="70px">
             <a href="mailto:borashek@inbox.ru">borashek@inbox.ru</a>
         </a>
       </nav>
