@@ -41,6 +41,12 @@ Route::get('/designer-portfolio-site', [App\Http\Controllers\Site\ProjectControl
 Route::get('/organic', [App\Http\Controllers\Site\ProjectController::class, 'organic'])
     ->name('organic');
 
+Route::get('/velocity', [App\Http\Controllers\Site\ProjectController::class, 'velocity'])
+    ->name('velocity');
+
+Route::get('/calm', [App\Http\Controllers\Site\ProjectController::class, 'calm'])
+    ->name('calm');
+
 
 // ELEMENTS
 Route::get('/flex-box', [App\Http\Controllers\Site\ProjectController::class, 'flexBox'])

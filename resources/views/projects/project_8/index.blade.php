@@ -52,8 +52,8 @@
             <div class="slider-dots">
                 <div class="slider-dots__items-wrapper">
                     <img src="img/projects/project_8/carrots.jpg" alt="apple" class="slider-arrows__item">
-                    <img src="img/projects/project_8/carrots-1.jpg" alt="apple" class="slider-arrows__item">
-                    <img src="img/projects/project_8/carrots-2.jpg" alt="apple" class="slider-arrows__item">
+                    {{-- <img src="img/projects/project_8/carrots-1.jpg" alt="apple" class="slider-arrows__item">
+                    <img src="img/projects/project_8/carrots-2.jpg" alt="apple" class="slider-arrows__item"> --}}
                 </div>
                 <div class="slider-dots__btn-wrapper">
                     <button class="btn opacity">start drinking</button>

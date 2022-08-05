@@ -1,0 +1,53 @@
+// ---------------------------------------MAIN-----------------------------------------
+body
+    font-family: 'Georgia Regular'
+
+.wrapper
+    min-height: 100%
+    overflow: hidden
+    display: flex
+    flex-direction: column
+
+.main
+    flex: 1 1 auto
+
+._container
+    max-width: 1158px
+    padding: 0px 10px
+    margin: 0 auto // put every block at horizontal center
+
+.container
+    max-width: 767px
+    padding: 0px 10px
+    margin: 0 auto
+
+// ---------------------------------------PROMO-----------------------------------------
+.promo
+    margin-top: 80px
+    padding: 100px 0px 110px 0px
+
+    @media (max-width: 767.9px)
+        padding: 70px 0px 80px 0px
+
+    @media (max-width: 567.9px)
+        padding: 40px 0px 50px 0px
+
+.promo__logo img
+    width: 94px
+    height: 48px
+    margin-bottom: 20px
+
+.promo__description
+    color: var(--color-black-one)
+    font-size: 36px
+    line-height: calc(40/36*100%)
+
+    @media (max-width: 767.9px)
+        font-size: 26px
+
+    @media (max-width: 567.9px)
+        font-size: 20px
+
+    @media (max-width: 457.9px)
+        font-size: 16px
+

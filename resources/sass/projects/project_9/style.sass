@@ -1,0 +1,93 @@
+@import variables
+@import reset
+@import header
+@import main
+@import footer
+
+// ----------------------------------COMMON STYLES-------------------------------------
+*,
+*:before,
+*:after
+    padding: 0
+    margin: 0
+    border: 0
+    box-sizing: border-box
+    font-family: 'Open Sans', sans-serif
+    font-weight: 400
+
+a
+    text-decoration: none
+a:visited
+    text-decoration: none
+a:hover
+    text-decoration: none
+
+ol,
+ul,
+li
+    list-style: none
+
+img
+    vertical-align: top
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    font-weight: inherit
+    font-size: inherit
+
+html,
+body
+    height: 100%
+    line-height: 1
+    font-size: 16px
+    font-weight: 500
+    color: var(--color-grey)
+
+@media (max-width: 768px)
+    body.lock
+        overflow: hidden
+
+.wrapper
+    min-height: 100%
+    overflow: hidden
+    display: flex
+    flex-direction: column
+
+.block-title
+    text-align: center
+    padding-top: 80px
+    padding-bottom: 60px
+
+.block-title_white
+    color: var(--color-white)
+
+.title
+    font-size: 30px
+    line-height: calc(36/30*100%)
+    letter-spacing: 5px
+    text-transform: uppercase
+    margin-bottom: 17px
+
+.subtitle
+    font-size: 17px
+    line-height: calc(20/17*100%)
+    letter-spacing: 3px
+
+._container
+    max-width: 970px
+    padding: 0px 10px
+    margin: 0 auto // put every block at horizontal center
+
+    @media (max-width: 1000px)
+        padding: 0px 30px
+
+p
+    line-height: calc(25/14*100%)
+    font-size: 14px
+
+.hide
+    display: none !important

@@ -1,0 +1,618 @@
+@charset "UTF-8";
+:root {
+  --color-white: #fff;
+  --color-black-one: #353732;
+  --color-black-two: #45525B;
+  --color-grey-one: #E5E5E5;
+  --color-grey-two: #FAFAFA;
+}
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:visited {
+  text-decoration: none;
+  background-color: var(--color-black);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+img, svg, video {
+  vertical-align: top;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* отображаем курсор в виде руки при наведении; некоторые */
+  /* считают, что необходимо оставлять стрелочный вид для кнопок */
+  cursor: pointer;
+  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
+}
+
+div {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  z-index: 2;
+}
+
+.header__body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .header__body {
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__menu {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+    padding: 70px 0px 0px 0px;
+    top: -100%;
+  }
+  .header__menu.active {
+    top: 0;
+    transition: all 0.4s ease-in-out 0.4s;
+  }
+}
+.header__list {
+  display: flex;
+  z-index: 2;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .header__list {
+    display: block;
+    padding: 0px 20px 0px 20px;
+  }
+}
+
+.header__list li {
+  margin: 0px 0px 0px 20px;
+}
+@media (max-width: 768px) {
+  .header__list li {
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+.header__link {
+  font-size: 14px;
+  line-height: 114.2857142857%;
+  color: var(--color-black-one);
+}
+
+@media (max-width: 768px) {
+  .header__link {
+    color: var(--color-black-two);
+  }
+  .header__link:hover {
+    color: var(--color-black-one);
+  }
+}
+.header__logo {
+  flex: 0 0 80px;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+
+.header__logo img {
+  max-width: 100%;
+}
+
+.header__burger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: var(--color-black-two);
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 9px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .header__burger:before,
+.header__burger:after {
+    content: "";
+    background-color: var(--color-black-two);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .header__burger:before {
+    top: 0;
+  }
+  .header__burger:after {
+    bottom: 0;
+  }
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+}
+body {
+  font-family: "Georgia Regular";
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+._container {
+  max-width: 1158px;
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 767px;
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+
+.promo {
+  margin-top: 80px;
+  padding: 100px 0px 110px 0px;
+}
+@media (max-width: 767.9px) {
+  .promo {
+    padding: 70px 0px 80px 0px;
+  }
+}
+@media (max-width: 567.9px) {
+  .promo {
+    padding: 40px 0px 50px 0px;
+  }
+}
+
+.promo__logo img {
+  width: 94px;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+.promo__description {
+  color: var(--color-black-one);
+  font-size: 36px;
+  line-height: 111.1111111111%;
+}
+@media (max-width: 767.9px) {
+  .promo__description {
+    font-size: 26px;
+  }
+}
+@media (max-width: 567.9px) {
+  .promo__description {
+    font-size: 20px;
+  }
+}
+@media (max-width: 457.9px) {
+  .promo__description {
+    font-size: 16px;
+  }
+}
+
+.grid {
+  padding: 105px 0px 96px 0px;
+  background-color: var(--color-grey-two);
+}
+@media (max-width: 767.9px) {
+  .grid {
+    padding: 75px 0px 66px 0px;
+  }
+}
+@media (max-width: 539.9px) {
+  .grid {
+    display: none;
+  }
+}
+
+.grid__1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "travel climb" "travel photo";
+  gap: 16px;
+}
+@media (max-width: 767.9px) {
+  .grid__1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas: "travel travel" "climb photo";
+  }
+}
+@media (max-width: 539.9px) {
+  .grid__1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+    grid-template-areas: "travel" "climb" "photo";
+  }
+}
+
+.item__travel {
+  grid-area: travel;
+}
+
+.item__climb {
+  grid-area: climb;
+}
+
+.item__photo {
+  grid-area: photo;
+}
+
+.grid__2 {
+  margin-top: 17px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "helicopter ppl";
+  gap: 16px;
+}
+@media (max-width: 539.9px) {
+  .grid__2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas: "helicopter" "ppl";
+  }
+}
+
+.item__helicopter {
+  grid-area: helicopter;
+}
+
+.item__ppl {
+  grid-area: ppl;
+}
+
+.grid__3 {
+  margin-top: 17px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "pen man tv";
+  gap: 16px;
+}
+@media (max-width: 539.9px) {
+  .grid__3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+    grid-template-areas: "pen" "man" "tv";
+  }
+}
+
+.item__pen {
+  grid-area: pen;
+}
+
+.item__man {
+  grid-area: man;
+}
+
+.item__tv {
+  grid-area: tv;
+}
+
+.item {
+  background-color: var(--color-white);
+  border-radius: 10px 5%/5px 5px;
+}
+
+.item__flex {
+  padding: 17px 20px 29px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 767.9px) {
+  .item__img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+}
+
+.item__title {
+  font-family: "Poppins Regular";
+  font-size: 12px;
+  line-height: 67%;
+  letter-spacing: 2px;
+  color: var(--color-black-one);
+  text-transform: uppercase;
+}
+
+.item__subtitle {
+  font-size: 25px;
+  line-height: 134.4%;
+  color: var(--color-black-two);
+}
+
+.item__description {
+  font-family: "Georgia Regular";
+  font-size: 14px;
+  line-height: 160%;
+  color: var(--color-black-two);
+}
+
+.item__date {
+  font-family: "Georgia Regular";
+  font-size: 11px;
+  line-height: 152.7272727273%;
+  color: var(--color-black-two);
+}
+
+.know {
+  padding: 100px 0px;
+}
+@media (max-width: 767.9px) {
+  .know {
+    padding: 50px 30px;
+  }
+}
+
+.know__flex {
+  display: flex;
+  gap: 16px;
+}
+@media (max-width: 767.9px) {
+  .know__flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.know__column {
+  justify-content: center;
+}
+
+.know__title {
+  font-size: 28px;
+  line-height: 137.1428571429%;
+  color: var(--color-black-one);
+  margin-bottom: 11px;
+}
+
+.know__text {
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--color-black-one);
+}
+
+.know__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.know__label {
+  font-size: 12px;
+  line-height: 163.3333333333%;
+  color: var(--color-black-one);
+}
+
+.know__input {
+  background-color: #E5E7EB;
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 8px;
+  width: 376px;
+  height: 38px;
+  padding: 10px;
+}
+
+.know__input:first-child {
+  margin-bottom: 10px;
+}
+
+.know__button {
+  width: 82px;
+  height: 38px;
+  background-color: var(--color-black-one);
+  color: var(--color-white);
+  border-radius: 6px;
+}
+
+.blog {
+  padding: 100px 0px;
+  background-color: var(--color-grey-two);
+}
+@media (max-width: 767.9px) {
+  .blog {
+    padding: 50px 0px;
+  }
+}
+
+.post {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 539.9px) {
+  .post {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.post__img {
+  border-radius: 10px;
+  width: 200px;
+  height: 122px;
+  margin-right: 20px;
+}
+@media (max-width: 539.9px) {
+  .post__img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.post__title {
+  color: var(--color-black-two);
+  font-size: 18px;
+  line-height: 133.3333333333%;
+}
+@media (max-width: 539.9px) {
+  .post__title {
+    margin-bottom: 10px;
+  }
+}
+
+.post__description {
+  font-family: "Georgia Regular";
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--color-black-two);
+}
+
+.blog__more {
+  display: flex;
+  justify-content: center;
+}
+
+.blog__flex {
+  display: flex;
+  gap: 3px;
+  margin-top: 29px;
+}
+
+.blog__flex img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer {
+  padding: 100px 0px 80px 0px;
+}
+@media (max-width: 767.9px) {
+  .footer {
+    padding: 50px 0px;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 9px;
+}
+
+.footer__text, .footer__list {
+  font-size: 14px;
+  line-height: 160%;
+  color: var(--color-black-one);
+}
+
+.footer__list {
+  margin: 19px 0px;
+  display: flex;
+  gap: 20px;
+}
+
+.footer__link:hover {
+  color: var(--color-black-two);
+}
+
+@font-face {
+  font-family: "Georgia Regular";
+  src: url("/assets/fonts/georgia.eot");
+  src: local("☺"), url("/assets/fonts/georgia.woff") format("woff"), url("/assets/fonts/georgia.ttf") format("truetype"), url("/assets/fonts/georgia.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("/assets/fonts/poppins-regular.eot");
+  src: local("☺"), url("/assets/fonts/poppins-regular.woff") format("woff"), url("/assets/fonts/poppins-regular.ttf") format("truetype"), url("/assets/fonts/poppins-regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

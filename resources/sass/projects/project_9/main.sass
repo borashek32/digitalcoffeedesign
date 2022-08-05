@@ -1,0 +1,202 @@
+// ---------------------------------------MAIN-----------------------------------------
+.main
+    margin-top: 60px
+
+.promo
+    background-image: url('/img/projects/project_9/promo.jpeg')
+    background-size: cover
+    min-height: 600px
+    background-position: center
+    background-color: var(--color-grey)
+    justify-content: center
+    align-items: center
+    padding: 195px 0px 200px 0px
+
+    @media (max-width: 767.9px)
+        padding: 100px 0px 100px 0px
+        min-height: 400px
+
+.promo__title
+    text-transform: uppercase
+    font-size: 59px
+    line-height: 75%
+    letter-spacing: 4px
+    text-align: center
+    color: var(--color-white)
+    padding-bottom: 106px
+
+    @media (max-width: 767.9px)
+        font-size: 40px
+    @media (max-width: 439.9px)
+        line-height: 150%
+
+.promo__buttons
+    display: flex
+    justify-content: center
+    gap: 20px
+
+    @media (max-width: 385.9px)
+        flex-direction: column
+        padding: 0px 40px
+
+.buttons__button
+    padding: 12px 30px
+    border-radius: 4px
+
+.buttons__button_blue
+    background-color: var(--color-blue)
+
+.buttons__button_border
+    border: 1px solid var(--color-white)
+    border-radius: 4px
+
+.buttons__link
+    font-style: 16px
+    line-height: calc(21/16*100%)
+    text-align: center
+    letter-spacing: 2px
+    color: var(--color-white)
+    text-transform: uppercase
+
+.main__about
+
+
+// ---------------------------------------ABOUT--------------------------------------
+.about
+    padding-bottom: 80px
+
+.flex
+    display: flex
+    gap: 20px
+
+    @media (max-width: 1000px)
+        flex-wrap: wrap
+
+.item
+    padding: 36px 16px 23px 16px
+    text-align: center
+    flex: 1 1 300px
+
+.item_border
+    border: 1px solid var(--color-blue)
+    border-radius: 5px
+
+.item_white
+    color: var(--color-white)
+
+.item__img
+    margin-bottom: 19px
+
+.item__title
+    margin-bottom: 14px
+    font-size: 20px
+    text-transform: uppercase
+    line-height: 110%
+    letter-spacing: 7px
+
+.item__description
+    color: var(--color-grey-blue)
+    font-size: 14px
+    line-height: calc(25/14*100%)
+
+.item__description_white
+    color: var(--color-white)
+
+// ---------------------------------------SERVICES--------------------------------------
+.services
+    background-color: var(--color-black)
+    padding-bottom: 80px
+
+.services__buttons
+    margin-top: 17px
+
+// ---------------------------------------TAB-------------------------------------------
+.tab
+    padding-bottom: 90px
+
+.tab__flex
+    display: flex
+    gap: 16px
+    justify-content: center
+
+    @media (max-width: 711.9px)
+        flex-direction: column
+        align-items: center
+
+.item__button
+    line-height: calc(21/16*100%)
+    letter-spacing: 2px
+    text-transform: uppercase
+    width: 196px
+    height: 21px
+    background-color: #92A0AD
+    border-radius: 4px
+    color: var(--color-white)
+
+.active-btn
+    background-color: #2E80B6
+
+.tab__content
+    text-align: center
+    animation: fade 1s
+
+@keyframes fade
+    from
+        opacity: 0.3
+    to
+        opacity: 1
+
+.tab__img
+    margin-top: 52px
+    margin-bottom: 16px
+
+.tab__title
+    margin-bottom: 14px
+    font-size: 31px
+    line-height: 85%
+
+.tab__description
+    color: var(--color-grey-blue)
+
+// ---------------------------------------FOOTER----------------------------------------
+.footer
+    padding: 33px 0px 0px 0px
+
+.footer__title
+    font-size: 18px
+    line-height: calc(20/18*100%)
+    text-align: left
+    letter-spacing: 4px
+    text-transform: uppercase
+    margin-bottom: 22px
+
+.item__description_footer
+    text-align: left
+    padding-bottom: 11px
+    border-bottom: 1px solid #D9D9D9
+
+.item__description_footer_noborder
+    border-bottom: none
+
+.footer__social
+    display: flex
+    gap: 10px
+
+.footer__social img
+    width: 20px
+    height: 20px
+
+.footer__social p
+    align-self: center
+    display: flex
+    flex: 1 1 auto
+
+.footer__end
+    background-color: var(--color-black)
+    padding: 40px 0
+
+.footer__end p
+    text-align: center
+    font-size: 15px
+    line-height: calc(20/15*100%)
+    color: #9E9E9E

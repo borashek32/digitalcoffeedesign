@@ -11,13 +11,16 @@
                     <img src="{{ asset('img/main/promo.jpg') }}" alt="digitalcoffeedesign.com">
                 </div>
             </div>
+            <div class="main-block__image_small">
+                <img src="{{ asset('img/main/promo_small.jpg') }}" alt="digitalcoffeedesign.com">
+            </div>
             <div class="main-block__body">
                 <div class="main-block__title">
                     <h1>Digital <span>Coffee</span><br>Des<span>ign</span></h1>
                 </div>
-                <div class="main-block__text">
+                {{-- <div class="main-block__text">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eum alias laboriosam commodi, facilis laborum impedit itaque velit deserunt delectus molestias, tempora qui natus reiciendis. Sed consectetur aperiam quisquam iusto.</p>
-                </div>
+                </div> --}}
             </div>
             <div class="main-block__buttons">
                 <a href="#contacts">
@@ -85,6 +88,7 @@
                     </h4>
                     <div class="portfolio__grid">
                         @foreach ($projects as $project)
+                        @if ($project->status == 1)
                         @if($project->category_id == 1 || $project->category_id == 4)
                             <div class="portfolio__item">
                                 <div class="item">
@@ -117,6 +121,7 @@
                                     </div>
                                 </div>
                             </div>
+                        @endif
                         @endif
                         @endforeach
                     </div>
@@ -178,6 +183,7 @@
                     </h4>
                     <div class="portfolio__grid">
                         @foreach ($projects as $project)
+                        @if ($project->status == 1)
                         @if($project->category_id == 3)
                             <div class="portfolio__item portfolio__grid_section_2">
                                 <div class="item">
@@ -212,6 +218,7 @@
                                     </div>
                                 </div>
                             </div>
+                        @endif
                         @endif
                         @endforeach
                     </div>
@@ -252,7 +259,7 @@
                     <div class="contacts__column contacts__column_write-me">
                         <ul id="saveForm_errList"></ul>
 
-                        <form action="{{ route('message') }}" class="contacts__form" method="POST">
+                        <form action="#" class="contacts__form" method="POST">
                             @csrf
                             <label for="" class="contacts__label">Ваше имя</label>
                             <input type="text" name="name" id="name" class="contacts__input name" placeholder="Введите ваше имя">

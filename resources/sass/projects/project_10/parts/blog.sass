@@ -1,0 +1,56 @@
+.blog
+    padding: 100px 0px
+    background-color: var(--color-grey-two)
+
+    @media (max-width: 767.9px)
+        padding: 50px 0px
+
+.post
+    margin-bottom: 40px
+    display: flex
+    flex-direction: row
+
+    @media (max-width: 539.9px)
+        flex-direction: column
+        gap: 20px
+
+.post__img
+    border-radius: 10px
+    width: 200px
+    height: 122px
+    margin-right: 20px
+
+    @media (max-width: 539.9px)
+        background-size: cover
+        background-repeat: no-repeat
+        width: 100%
+        height: auto
+
+.post__title
+    color: var(--color-black-two)
+    font-size: 18px
+    line-height: calc(24/18*100%)
+
+    @media (max-width: 539.9px)
+        margin-bottom: 10px
+
+.post__description
+    font-family: 'Georgia Regular'
+    font-size: 16px
+    line-height: calc(22.4/16*100%)
+    color: var(--color-black-two)
+
+.blog__more
+    display: flex
+    justify-content: center
+
+.blog__flex
+    display: flex
+    gap: 3px
+    margin-top: 29px
+
+.blog__flex img
+    width: 20px
+    height: 20px
+
+.blog__archive

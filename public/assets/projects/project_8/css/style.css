@@ -299,18 +299,17 @@ div {
   grid-area: slider-arrows;
   position: relative;
   overflow: hidden;
+  height: 1fr;
+  width: 1fr;
 }
 
 .slider-arrows__items-wrapper {
   filter: brightness(80%);
   display: flex;
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 1500px;
-  height: 500px;
-  display: flex;
+  width: 100%;
+  height: 100%;
   position: relative;
   transition: all ease 1s;
 }
@@ -790,6 +789,7 @@ div {
 
 .form__row {
   grid-area: form__row;
+  border-radius: none;
 }
 @media (max-width: 750px) {
   .form__row {

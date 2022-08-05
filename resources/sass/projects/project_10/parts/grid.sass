@@ -1,0 +1,121 @@
+// ---------------------------------------1-----------------------------------------
+.grid
+    padding: 105px 0px 96px 0px
+    background-color: var(--color-grey-two)
+
+    @media (max-width: 767.9px)
+        padding: 75px 0px 66px 0px
+
+    @media (max-width: 539.9px)
+        display: none
+
+.grid__1
+    display: grid
+    grid-template-columns: 2fr 1fr
+    grid-template-rows: 1fr 1fr
+    grid-template-areas: 'travel climb' 'travel photo'
+    gap: 16px
+
+    @media (max-width: 767.9px)
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 0.5fr
+        grid-template-areas: 'travel travel' 'climb photo'
+
+    @media (max-width: 539.9px)
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 0.5fr 0.5fr
+        grid-template-areas: 'travel' 'climb' 'photo'
+
+.item__travel
+    grid-area: travel
+
+.item__climb
+    grid-area: climb
+
+.item__photo
+    grid-area: photo
+
+// ---------------------------------------2-----------------------------------------
+.grid__2
+    margin-top: 17px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr
+    grid-template-areas: 'helicopter ppl'
+    gap: 16px
+
+    @media (max-width: 539.9px)
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 0.5fr
+        grid-template-areas: 'helicopter' 'ppl'
+
+.item__helicopter
+    grid-area: helicopter
+
+.item__ppl
+    grid-area: ppl
+
+// ---------------------------------------3-----------------------------------------
+.grid__3
+    margin-top: 17px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr
+    grid-template-areas: 'pen man tv'
+    gap: 16px
+
+    @media (max-width: 539.9px)
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 0.5fr 0.5fr
+        grid-template-areas: 'pen' 'man' 'tv'
+
+.item__pen
+    grid-area: pen
+
+.item__man
+    grid-area: man
+
+.item__tv
+    grid-area: tv
+
+// ---------------------------------------COMMON STYLES-----------------------------
+.item
+    background-color: var(--color-white)
+    border-radius: 10px 5% / 5px 5px
+
+.item__flex
+    padding: 17px 20px 29px 20px
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+.item__img
+    @media (max-width: 767.9px)
+        background-size: cover
+        background-repeat: no-repeat
+        width: 100%
+
+.item__title
+    font-family: 'Poppins Regular'
+    font-size: 12px
+    line-height: 67%
+    letter-spacing: 2px
+    color: var(--color-black-one)
+    text-transform: uppercase
+
+.item__subtitle
+    font-size: 25px
+    line-height: calc(33.6/25*100%)
+    color: var(--color-black-two)
+
+.item__description
+    font-family: 'Georgia Regular'
+    font-size: 14px
+    line-height: calc(22.4/14*100%)
+    color: var(--color-black-two)
+
+.item__date
+    font-family: 'Georgia Regular'
+    font-size: 11px
+    line-height: calc(16.8/11*100%)
+    color: var(--color-black-two)
