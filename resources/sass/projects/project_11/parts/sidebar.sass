@@ -1,0 +1,61 @@
+.sidebar
+    position: fixed
+    z-index: var(--z-index-sidebar)
+    top: 0
+    left: 0
+
+    width: var(--width-sidebar)
+    height: 100vh
+
+    background-color: var(--color-black-three)
+    box-shadow: 5px 0px 15px rgba(#050505, .1)
+
+    @media (max-width: 767.9px)
+        display: none
+
+.sidebar__header
+    height: 180px
+
+    img
+        display: block
+        height: 100%
+        width: 100%
+        object-fit: cover
+
+.sidebar__content
+    margin-top: -5rem
+
+.sidebar__footer
+    margin-top: 30px
+    padding: 0px 15px
+    display: flex
+    justify-content: center
+    gap: 20px
+
+.buttons
+
+.buttons__button
+    font-size: 10px
+    font-family: inherit
+    color: var(--color-white)
+
+    background-color: var(--color-black-two)
+    border: none
+    cursor: pointer
+
+    padding: 1em 2em
+    border-radius: 2em
+    box-shadow: 0 7px 17px -10px rgba(#000000, .25)
+
+.button__link
+    color: var(--color-white)
+
+.button_red
+    background-color: var(--color-red)
+.button_red:hover
+    background-color: darken(#ED3024, 5%)
+
+.button_blue
+    background-color: var(--color-blue-two)
+.button_blue:hover
+    background-color: darken(#3137C9, 5%)

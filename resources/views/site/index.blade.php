@@ -5,41 +5,27 @@
 @section('content')
     <main class="page">
         {{-- promo-block --}}
-        <section class="page__main-block main-block">
-            <div class="main-block__bg">
-                <div class="main-block__image">
-                    <img src="{{ asset('img/main/promo.jpg') }}" alt="digitalcoffeedesign.com">
-                </div>
-            </div>
+        <section class="page__main-block main-block" id="home">
             <div class="main-block__image_small">
                 <img src="{{ asset('img/main/promo_small.jpg') }}" alt="digitalcoffeedesign.com">
             </div>
-            <div class="main-block__body">
-                <div class="main-block__title">
-                    <h1>Digital <span>Coffee</span><br>Des<span>ign</span></h1>
-                </div>
-                {{-- <div class="main-block__text">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eum alias laboriosam commodi, facilis laborum impedit itaque velit deserunt delectus molestias, tempora qui natus reiciendis. Sed consectetur aperiam quisquam iusto.</p>
-                </div> --}}
-            </div>
-            <div class="main-block__buttons">
-                <a href="#contacts">
-                    <button class="main-block_button button button_brown">
-                        Напишите мне
-                    </button>
-                </a>
-            </div>
-            <div class="main-block__images images">
-                <div class="images__item images__item_big-shadow">
-                    <img src="{{ asset('img/main/promo-small-1.jpg') }}" class="images__image" alt="coffee">
-                </div>
-                <a href="#about">
-                    <div class="images__item">
-                        <img src="{{ asset('img/main/me.jpg') }}" class="images__image" alt="coffee">
+            <div class="main-block__container">
+                <div class="main-block__body">
+                    <div class="main-block__title">
+                        <h2>Портфолио проекта</h2>
+                        <br>
+                        <h1>Digital Coffee Design</h1>
+                        <h3>Digital<br>Coffee Design</h3>
+                        <h4>Digital<br>Coffee<br>Design</h4>
                     </div>
-                </a>
-                <div class="images__item">
-                    <img src="{{ asset('img/main/promo-small-3.jpg') }}" class="images__image" alt="coffee">
+                    <div class="main-block__desc">
+                        <a href="#about" class="main-block__me">
+                            <img src="{{ asset('img/main/me.jpg') }}" class="main-block__img" alt="coffee">
+                        </a>
+                        <div class="main-block__text">
+                            <p>fullstack developer portfolio</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -47,7 +33,7 @@
         <section class="page__main-project main-project" id="main-project">
             <div class="main-project__container">
                 <a href="https://lemma-auto.ru/" target="_blank">
-                    <h2 class="title">lemma-auto.ru</h2>
+                    <h2 class="title main-project_title">lemma-auto.ru</h2>
                 </a>
                 <h4 class="subtitle">Действующий проет, интернет-магазин автозавпчастей</h4>
                 <div class="main-project__row">
@@ -79,17 +65,17 @@
             </div>
         </section>
         {{-- portfolio SECTION 1 --}}
-        <section class="page__portfolio portfolio" id="portfolio">
+        <section class="page__portfolio portfolio portfolio_section_2" id="portfolio">
             <div class="portfolio__container">
                 <div class="portfolio__body">
-                    <h2 class="portfolio__title title">Portfolio</h2>
+                    <h2 class="portfolio__title title">Одностраничные лэндинги</h2>
                     <h4 class="portfolio__subtitle subtitle">
-                        Лэндинги и многостраничные примеры сайтов, с импользованием JavaScript, CSS, HTML.<br>Все страницы адаптированы под мобильные устройства.
+                        Лэндинги, JavaScript, CSS, HTML.<br>Все страницы адаптированы под мобильные устройства.
                     </h4>
                     <div class="portfolio__grid">
                         @foreach ($projects as $project)
                         @if ($project->status == 1)
-                        @if($project->category_id == 1 || $project->category_id == 4)
+                        @if($project->category_id == 1)
                             <div class="portfolio__item">
                                 <div class="item">
                                     <div class="item__title">
@@ -129,12 +115,12 @@
             </div>
         </section>
         {{-- portfolio SECTION 2 small apps --}}
-        {{-- <section class="page__portfolio portfolio portfolio_section_2">
+        <section class="page__portfolio portfolio portfolio_section_2">
             <div class="portfolio__container">
                 <div class="portfolio__body">
-                    <h2 class="portfolio__title title">Small Apps</h2>
+                    <h2 class="portfolio__title title">Многостраничная верстка</h2>
                     <h4 class="portfolio__subtitle subtitle">
-                        Многостраничные сайты, с импользованием JavaScript, CSS, HTML.<br>Все сайты полностью адаптированы под мобильные устройства.<br>Эта часть портфолио находится в постоянной разработке.
+                        Многостраничные сайты, JavaScript, CSS, HTML.<br>Все сайты полностью адаптированы под мобильные устройства.
                     </h4>
                     <div class="portfolio__grid">
                         @foreach ($projects as $project)
@@ -172,14 +158,14 @@
                     </div>
                 </div>
             </div>
-        </section> --}}
+        </section>
         {{-- portfolio SECTION 3 blocks --}}
         <section class="page__portfolio portfolio portfolio_section_2">
             <div class="portfolio__container">
                 <div class="portfolio__body">
-                    <h2 class="portfolio__title title">Blocks</h2>
+                    <h2 class="portfolio__title title">Отдельные блоки</h2>
                     <h4 class="portfolio__subtitle subtitle">
-                        Элементы, без которых не обходится ни один сайт.<br>Сделаны с использованием JavaScript, CSS, HTML.<br>Все элементы адаптированы под мобильные устройства.
+                        Элементы, без которых не обходится ни один сайт.<br>Все элементы адаптированы под мобильные устройства.
                     </h4>
                     <div class="portfolio__grid">
                         @foreach ($projects as $project)
@@ -201,9 +187,9 @@
                                             @endif
                                         </div>
                                     </div>
-                                    <div class="item__description item__description_section_2">
+                                    {{-- <div class="item__description item__description_section_2">
                                         <div class="item__text text">{!! $project->description !!}</div>
-                                    </div>
+                                    </div> --}}
                                     <div class="item__img">
                                         @if($project->link)
                                             <a href="{{ $project->link}}">
@@ -230,15 +216,15 @@
             <img src="{{ asset('img/main/separate.jpg') }}" alt="separate">
         </div>
         {{-- about me --}}
-        <section class="about page__portfolio portfolio portfolio_section_2">
+        <section class="about" id="about">
             <div class="portfolio__container">
                 <div class="portfolio__body">
-                    <h2 class="portfolio__title title">About me</h2>
-                    <h4 class="portfolio__subtitle subtitle">Немножко обо мне, как о fullstack разработчике</h4>
+                    <h2 class="portfolio__title title">Обо мне</h2>
+                    {{-- <h4 class="portfolio__subtitle subtitle">Немножко обо мне, как о fullstack разработчике</h4> --}}
                 </div>
                 <div class="about__article">
                     <p class="about__text">
-                        Меня зовут Наталья у меня красный диплом (специальность информатик-аналиитик, РГУТиС). После университета я долго работала не по специальности в Минэкономразвития России. Я уволилась в 2020 году и изучала программирование самостоятельно.<br>Мой опыт разработки около трех лет. Работала fullstack программистом в магазине "Книжный Лабиринт". Добираться до них было ну очень долго и я оттуда ушла. Далее была удаленная стажировка на портале mos.ru, все закончилось двухмесячным ковидом у всей моей семьи. Спасаясь от повторения болезни, я оказалась на даче с детьми, ноутбуком и личным проектом интернет-магазина автозапчастей.<br>Сейчас развитие сайта магазина приостановлено в связи с последними событиями в Украине. Но он продолжает функционировать для старых клиентов, кто уже о нас знает, а также для тех, кто сам случайно наткнулся в интернете (несведущему человеку найти мой сайт крайне проблематично). Я хочу сказать то, что сео-оптимизация под поисковые запросы оставлет желать лучшего в настоящий момент:)<br><br>Итак, находясь на даче, я продолжила самообучение. Написала самописный фреймворк на php по урокам на youtube. Многое пришлось додумывать самостоятельно, готовый вариант мне понравился. Далее я занималась по курсу JavaScript, а затем углубилась во frontend. Мне очень понравилось, хотя раньше я пренебрегала этими флексами и гридами. Зачем это все нужно, если можно взять готовые компоненты из Bootstrap или Tailwind? На деле стили и верстка оказались очень интересными вещами и совсем несложными, в отличие от backend.<br>Постепенно родилась идея этого сайта-портфолио. Здесь собраны все работы по верстке, код есть на гитхаб
+                        Меня зовут Наталья у меня красный диплом (специальность информатик-аналиитик, РГУТиС). После университета я долго работала не по специальности в Минэкономразвития России. Я уволилась в 2020 году и изучала программирование самостоятельно.<br>Мой опыт разработки около трех лет. Работала fullstack программистом в магазине "Книжный Лабиринт". Добираться до них было ну очень долго и я оттуда ушла. Далее была удаленная стажировка на портале mos.ru, все закончилось двухмесячным ковидом у всей моей семьи. Спасаясь от повторения болезни, я оказалась на даче с детьми, ноутбуком и личным проектом интернет-магазина автозапчастей.<br>Сейчас сайт не развивается в связи с последними событиями в Украине. Но магазин продолжает функционировать для старых клиентов, кто уже о нас знает, а также для тех, кто сам случайно наткнулся в интернете (несведущему человеку найти мой сайт крайне проблематично). Я хочу сказать то, что сео-оптимизация под поисковые запросы оставлет желать лучшего в настоящий момент:)<br><br>Итак, находясь на даче, я продолжила самообучение. Написала фреймворк на php по урокам на youtube. Многое пришлось додумывать самостоятельно, готовый вариант мне понравился. Далее я занималась по курсу JavaScript, а затем углубилась в верстку, стили и все с этим связанное (sass, БЭМ, webpack и тд). Мне очень понравилось, хотя раньше я пренебрегала этими флексами и гридами. Зачем это все нужно, если можно взять готовые компоненты из Bootstrap или Tailwind? На деле стили и верстка оказались очень интересными вещами и совсем несложными, в отличие от backend. Постепенно родилась идея этого сайта-портфолио. Здесь собраны все работы по верстке, код есть на гитхаб
                     </p>
                     <a href="https://github.com/borashek32/digitalcoffeedesign.com.git" class="about__link" target="_blank">
                         репозиторий этого сайта
@@ -251,9 +237,9 @@
             </div>
         </section>
         {{-- contacts --}}
-        <section class="page__contacts" id="contacts">
+        <section class="page__portfolio portfolio portfolio_section_2" id="contacts">
             <div class="contacts contacts__container">
-                <h2 class="title">Contacts</h2>
+                <h2 class="title">Контакты</h2>
                 <h4 class="subtitle">Напишите мне письмо или позвоните:)</h4>
                 <div class="contacts__row">
                     <div class="contacts__column contacts__column_write-me">

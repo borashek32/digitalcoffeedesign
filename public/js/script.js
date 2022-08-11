@@ -20,13 +20,6 @@ $(document).ready(function () {
     $('.header__burger, .header__menu').toggleClass('active');
     $('body').toggleClass('lock');
   });
-}); // editor on admin panel
-
-tinymce.init({
-  selector: 'textarea',
-  plugins: 'advlist autolink lists link image charmap preview anchor pagebreak',
-  toolbar_mode: 'floating',
-  forced_root_block: ""
 }); // to upload images in admin panel
 
 function elFinderBrowser(callback, value, meta) {
@@ -62,6 +55,27 @@ function elFinderBrowser(callback, value, meta) {
       }
     }
   });
-}
+} // anchors
+
+
+var anchors = document.querySelectorAll('.header__link, .about-link');
+anchors.forEach(function (anc) {
+  anc.addEventListener('click', function (event) {
+    event.preventDefault();
+    var id = anc.getAttribute('href');
+    var elem = document.querySelector(id);
+    window.scroll({
+      top: elem.offsetTop,
+      behavior: 'smooth'
+    });
+  });
+}); // editor on admin panel
+
+tinymce.init({
+  selector: 'textarea',
+  plugins: 'advlist autolink lists link image charmap preview anchor pagebreak',
+  toolbar_mode: 'floating',
+  forced_root_block: ""
+});
 /******/ })()
 ;

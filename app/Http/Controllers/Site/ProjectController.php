@@ -80,6 +80,11 @@ class ProjectController extends Controller
         return view('projects.project_10.index');
     }
 
+    public function personalblog()
+    {
+        return view('projects.project_11.index');
+    }
+
     public function flexBox()
     {
         return view('elements.element_1.index');

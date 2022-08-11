@@ -34,7 +34,7 @@
 }
 
 .header-container {
-  padding: 0px 13% 5px 13%;
+  padding: 0px 10.5% 5px 10.5%;
 }
 @media (max-width: 1368px) {
   .header-container {
@@ -49,13 +49,13 @@
   height: 60px;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 767.9px) {
   .header__body {
     height: 60px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.9px) {
   .header__menu {
     position: fixed;
     left: 0;
@@ -74,7 +74,7 @@
   z-index: 2;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 767.9px) {
   .header__list {
     display: block;
     padding: 0px 20px 0px 20px;
@@ -84,7 +84,7 @@
 .header__list li {
   margin: 0px 0px 0px 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767.9px) {
   .header__list li {
     margin: 0px 0px 20px 0px;
   }
@@ -100,7 +100,7 @@
   font-size: 12px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.9px) {
   .header__link {
     color: var(--color-black);
   }
@@ -115,7 +115,7 @@
   position: relative;
   z-index: 3;
 }
-@media (max-width: 768px) {
+@media (max-width: 767.9px) {
   .header__logo {
     flex: 0 0 40px;
   }
@@ -129,7 +129,7 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.9px) {
   .header__burger {
     display: block;
     position: relative;
@@ -182,89 +182,30 @@
     font-size: 20px;
   }
 }
-.main-block__bg {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: ". bg-img";
-  margin-bottom: 60px;
-}
-@media (max-width: 660px) {
-  .main-block__bg {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "bg-img";
-  }
-}
-
-.main-block__image {
-  grid-area: bg-img;
-}
-
-.main-block__image img {
+.main-block__image_small img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-@media (max-width: 970px) {
-  .main-block__image img {
-    display: none;
-  }
-}
-
-.main-block__image_small img {
-  display: none;
-}
-@media (max-width: 970px) {
-  .main-block__image_small img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
+  margin-top: 60px;
 }
 
 .main-block__body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: -550px;
+  margin-top: -240px;
 }
-@media (max-width: 1200px) {
-  .main-block__body {
-    margin-top: -450px;
-  }
-}
-@media (max-width: 970px) {
-  .main-block__body {
-    margin-top: -150px;
-  }
-}
-@media (max-width: 850px) {
-  .main-block__body {
-    margin-top: -300px;
-  }
-}
-@media (max-width: 750px) {
-  .main-block__body {
-    margin-top: -280px;
-  }
-}
-@media (max-width: 660px) {
-  .main-block__body {
-    margin-top: -400px;
-  }
-}
-@media (max-width: 460px) {
-  .main-block__body {
-    margin-top: -300px;
-  }
-}
-@media (max-width: 390px) {
+@media (max-width: 1399.9px) {
   .main-block__body {
     margin-top: -250px;
+  }
+}
+@media (max-width: 1129.9px) {
+  .main-block__body {
+    margin-top: -200px;
+  }
+}
+@media (max-width: 767.9px) {
+  .main-block__body {
+    margin-top: -150px;
   }
 }
 
@@ -272,149 +213,196 @@
   margin-bottom: 25px;
 }
 
-.main-block__title h1 {
-  text-align: center;
-  color: var(--color-brown);
+.main-block__title h2 {
+  text-align: right;
   text-transform: uppercase;
-  font-size: 84px;
+  font-size: 20px;
   line-height: 133.9880952381%;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 3px;
-}
-@media (max-width: 1200px) {
-  .main-block__title h1 {
-    font-size: 70px;
-  }
-}
-@media (max-width: 970px) {
-  .main-block__title h1 {
-    font-size: 60px;
-  }
-}
-@media (max-width: 880px) {
-  .main-block__title h1 {
-    font-size: 40px;
-  }
-}
-@media (max-width: 660px) {
-  .main-block__title h1 {
-    color: var(--color-white);
-  }
-}
-
-.main-block__title span {
   color: var(--color-white);
 }
-
-.main-block__text {
-  width: 500px;
-}
-@media (max-width: 750px) {
-  .main-block__text {
+@media (max-width: 874.9px) {
+  .main-block__title h2 {
     display: none;
   }
 }
 
-.main-block__text p {
-  font-weight: 400;
-  font-size: 12px;
-  color: #737373;
-  line-height: 121%;
-  text-align: center;
+.main-block__title h1 {
+  font-family: "Irish Grover";
+  text-align: right;
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-size: 46px;
+  line-height: 133.9880952381%;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
-
-.main-block__buttons {
-  margin-top: 10px;
-  display: inline-block;
-  margin-left: 200px;
-}
-@media (max-width: 1260px) {
-  .main-block__buttons {
-    margin-left: 100px;
+@media (max-width: 1399.9px) {
+  .main-block__title h1 {
+    font-size: 38px;
   }
 }
-@media (max-width: 880px) {
-  .main-block__buttons {
-    margin-top: 40px;
+@media (max-width: 991.9px) {
+  .main-block__title h1 {
+    font-size: 30px;
   }
 }
-@media (max-width: 750px) {
-  .main-block__buttons {
-    margin-top: 20px;
-  }
-}
-@media (max-width: 670px) {
-  .main-block__buttons {
-    display: flex;
-    justify-items: center;
-  }
-}
-@media (max-width: 660px) {
-  .main-block__buttons {
-    margin-left: 0;
-    justify-content: center;
+@media (max-width: 767.9px) {
+  .main-block__title h1 {
+    display: none;
   }
 }
 
-.main-block__images {
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
-  gap: 55px;
+.main-block__title h3 {
+  display: none;
 }
-@media (max-width: 1200px) {
-  .main-block__images {
+@media (max-width: 767.9px) {
+  .main-block__title h3 {
+    display: block;
+    font-family: "Irish Grover";
+    text-align: right;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 133.9880952381%;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+}
+@media (max-width: 547.9px) {
+  .main-block__title h3 {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 439.9px) {
+  .main-block__title h3 {
+    font-size: 20px;
     margin-top: 50px;
   }
 }
-@media (max-width: 970px) {
-  .main-block__images {
+@media (max-width: 357.9px) {
+  .main-block__title h3 {
     display: none;
   }
 }
 
-.images__image {
-  border-radius: 30px;
-  width: 250px;
-  box-shadow: 10px 15px 12px rgba(0, 0, 0, 0.3215686275);
-  transform: width 1s;
+.main-block__title h4 {
+  display: none;
+}
+@media (max-width: 357.9px) {
+  .main-block__title h4 {
+    display: block;
+    font-family: "Irish Grover";
+    text-align: right;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 133.9880952381%;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-top: 46px;
+  }
 }
 
-.images__image:hover {
-  width: 255px;
-  filter: brightness(130%);
+.main-block__desc {
+  grid-area: desc;
+  display: flex;
+  margin-top: 75px;
+  gap: 5px;
+}
+@media (max-width: 1399.9px) {
+  .main-block__desc {
+    margin-top: 95px;
+  }
+}
+@media (max-width: 1129.9px) {
+  .main-block__desc {
+    margin-top: 45px;
+  }
+}
+@media (max-width: 991.9px) {
+  .main-block__desc {
+    margin-top: 55px;
+  }
+}
+@media (max-width: 874.9px) {
+  .main-block__desc {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 767.9px) {
+  .main-block__desc {
+    margin-top: -20px;
+  }
+}
+@media (max-width: 547.9px) {
+  .main-block__desc {
+    margin-top: -50px;
+  }
+}
+@media (max-width: 439.9px) {
+  .main-block__desc {
+    margin-top: -50px;
+  }
+}
+@media (max-width: 357.9px) {
+  .main-block__desc {
+    margin-top: -70px;
+  }
 }
 
-.images__item_big-shadow .images__image {
-  box-shadow: none;
+.main-block__me {
+  width: 110px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.images__item_big-shadow {
-  position: relative;
-  z-index: 2;
+.main-block__text {
+  margin-top: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
-.images__item_big-shadow::before {
-  content: "";
-  border-radius: 30px;
-  width: 250px;
-  height: 300px;
-  background-color: #c5b0aa;
-  position: absolute;
-  z-index: 1;
-  top: 15px;
-  left: 15px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.262745098);
+.main-block__text p {
+  color: var(--color-brown-dark);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 133.3333333333%;
+  text-align: left;
+}
+@media (max-width: 329.9px) {
+  .main-block__text p {
+    font-size: 14px;
+  }
 }
 
-.images__item_big-shadow img {
-  position: relative;
-  z-index: 3;
+.main-block__img {
+  border-radius: 50%;
+  border: 2px solid var(--color-brown);
+  width: 100px;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.3215686275);
+  transition: all 0.5s ease-in-out;
+}
+
+.main-block__img:hover {
+  width: 101px;
+  filter: brightness(120%);
+  box-shadow: 3px 5px 40px rgba(0, 0, 0, 0.3215686275);
+}
+
+.main-block__buttons {
+  grid-area: button;
+  display: flex;
+  justify-content: end;
 }
 
 .main-project {
   background-color: var(--color-white);
-  padding: 70px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 @media (max-width: 970px) {
   .main-project {
@@ -435,6 +423,10 @@
   .main-project {
     margin-top: 50px;
   }
+}
+
+.main-project_title {
+  font-family: "Irish Grover";
 }
 
 .main-project__row {
@@ -467,11 +459,12 @@
 }
 
 .portfolio {
-  padding: 0px 0px 50px 0px;
+  padding: 100px 0px 0px 0px;
 }
-
-.portfolio__container {
-  padding: 60px 60px 60px 60px;
+@media (max-width: 767.9px) {
+  .portfolio {
+    padding: 50px 0px 0px 0px;
+  }
 }
 
 .portfolio__grid {
@@ -520,7 +513,7 @@
 }
 
 .item__title {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   text-align: center;
   margin-top: 10px;
@@ -718,7 +711,7 @@ button {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Irish Grover";
+  font-family: "Inter";
 }
 
 small {
@@ -733,6 +726,11 @@ small {
   padding: 5px;
 }
 
+@media (max-width: 1399.9px) {
+  [class*=__container] {
+    max-width: 1000px;
+  }
+}
 @media (max-width: 1057px) {
   [class*=__container] {
     max-width: 900px;
@@ -764,21 +762,29 @@ small {
   font-size: 40px;
   line-height: 115%;
   letter-spacing: 2px;
-  margin-bottom: 15px;
-  margin-top: 25px;
   text-align: center;
   margin-bottom: 20px;
-  font-family: "Irish Grover";
+  font-weight: 600;
+}
+@media (max-width: 767.9px) {
+  .title {
+    font-size: 30px;
+  }
 }
 
 .subtitle {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 130%;
   letter-spacing: 1px;
   margin-bottom: 45px;
   text-align: center;
   margin-bottom: 30px;
   font-family: "Inter";
+}
+@media (max-width: 767.9px) {
+  .subtitle {
+    font-size: 12px;
+  }
 }
 
 .page {
@@ -2637,6 +2643,9 @@ select {
 }
 .uppercase {
   text-transform: uppercase;
+}
+.italic {
+  font-style: italic;
 }
 .leading-5 {
   line-height: 1.25rem;

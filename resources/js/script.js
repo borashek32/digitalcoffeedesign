@@ -20,16 +20,6 @@ $(document).ready(function() {
     })
 })
 
-// editor on admin panel
-tinymce.init({
-    selector: 'textarea',
-    plugins: 'advlist autolink lists link image charmap preview anchor pagebreak',
-    toolbar_mode: 'floating',
-    forced_root_block : "",
-});
-
-
-
 // to upload images in admin panel
 function elFinderBrowser (callback, value, meta) {
     tinymce.activeEditor.windowManager.openUrl({
@@ -63,3 +53,25 @@ function elFinderBrowser (callback, value, meta) {
     });
 }
 
+// anchors
+const anchors = document.querySelectorAll('.header__link, .about-link')
+
+anchors.forEach(anc => {
+    anc.addEventListener('click', function(event) {
+        event.preventDefault()
+        const id = anc.getAttribute('href')
+        const elem = document.querySelector(id)
+        window.scroll({
+            top: elem.offsetTop,
+            behavior: 'smooth'
+        })
+    })
+})
+
+// editor on admin panel
+tinymce.init({
+    selector: 'textarea',
+    plugins: 'advlist autolink lists link image charmap preview anchor pagebreak',
+    toolbar_mode: 'floating',
+    forced_root_block : "",
+});

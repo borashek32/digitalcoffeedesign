@@ -11,7 +11,7 @@
         <nav class="header__menu">
             <ul class="header__list">
                 <li class="header__item">
-                    <a href="#" class="header__link">
+                    <a href="#home" class="header__link">
                         В начало
                     </a>
                 </li>

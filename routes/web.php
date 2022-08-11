@@ -47,6 +47,9 @@ Route::get('/velocity', [App\Http\Controllers\Site\ProjectController::class, 've
 Route::get('/calm', [App\Http\Controllers\Site\ProjectController::class, 'calm'])
     ->name('calm');
 
+Route::get('/personal-blog', [App\Http\Controllers\Site\ProjectController::class, 'personalblog'])
+    ->name('personalblog');
+
 
 // ELEMENTS
 Route::get('/flex-box', [App\Http\Controllers\Site\ProjectController::class, 'flexBox'])

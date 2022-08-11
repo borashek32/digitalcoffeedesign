@@ -10,7 +10,7 @@
 
 // ---------------------------------------COMMON--------------------------------------
 h1, h2, h3, h4, h5, h6
-    font-family: "Irish Grover"
+    font-family: "Inter"
 
 small
     color: var(--color-black)
@@ -21,6 +21,9 @@ small
     max-width: 1123px
     margin: 0 auto
     padding: 5px
+@media (max-width: 1399.9px)
+    [class*="__container"]
+        max-width: 1000px
 @media (max-width: 1057px)
     [class*="__container"]
         max-width: 900px
@@ -44,20 +47,24 @@ small
     font-size: 40px
     line-height: calc( 46/40*100% )
     letter-spacing: 2px
-    margin-bottom: 15px
-    margin-top: 25px
     text-align: center
     margin-bottom: 20px
-    font-family: "Irish Grover"
+    font-weight: 600
+
+    @media (max-width:  767.9px)
+        font-size: 30px
 
 .subtitle
-    font-size: 18px
+    font-size: 14px
     line-height: calc( 26/20*100% )
     letter-spacing: 1px
     margin-bottom: 45px
     text-align: center
     margin-bottom: 30px
     font-family: "Inter"
+
+    @media (max-width:  767.9px)
+        font-size: 12px
 
 .page
     flex: 1 1 auto
@@ -111,7 +118,5 @@ small
     background-color: var(--color-white)
     display: grid
     border-left: 1px solid #000
-    // border-right: 1px solid #000
     padding: 20px
-    // box-shadow: 10px 15px 12px #00000052
     grid-template: minmax(50px, auto) 1fr minmax(auto, auto) / 1fr
