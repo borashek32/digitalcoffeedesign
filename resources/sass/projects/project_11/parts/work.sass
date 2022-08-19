@@ -1,0 +1,64 @@
+.work
+    display: flex
+    padding-bottom: 25px
+
+    @media (max-width: 799.9px)
+        flex-direction: column
+
+.work__img
+    object-fit: cover
+    min-width: 310px
+    min-height: 552px
+    flex: 1 1 auto
+    margin-bottom: -25px
+
+    @media (max-width: 799.9px)
+        width: auto
+        height: auto
+        margin-bottom: 20px
+
+.work__content
+    display: flex
+    flex-direction: column
+
+.work__title
+    font-size: 24px
+    line-height: calc(28/24*100%)
+
+.work__areas
+    margin: 25px
+
+.work_area
+    font-size: 11px
+    line-height: calc(13/11*100%)
+    font-family: inherit
+    color: var(--color-white)
+
+    background-color: #EA8C1E
+    border: none
+    cursor: pointer
+
+    padding: 4px 9px
+    border-radius: 3px
+    box-shadow: 0 7px 17px -10px rgba(#000000, .25)
+    margin-right: 10px
+
+    &:last-child
+        margin-right: 0
+
+    &:hover
+        background-color: darken(#EA8C1E, 5%)
+
+
+.work__site
+    display: flex
+    justify-content: end
+    align-content: end
+
+    margin-right: 25px
+
+.button_site
+    align-self: end
+
+    &:hover
+        background-color: darken(#3137C9, 5%)

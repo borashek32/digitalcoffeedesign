@@ -44,3 +44,54 @@
 
 .social__item
     margin-bottom: 30px
+
+
+// PROFILE PAGE--------------------------------------------
+.profile-page
+    padding-top: 60px
+    display: flex
+    justify-content: space-between
+
+    @media (max-width: 767.9px)
+        flex-direction: column-reverse
+        padding: 20px 0px
+
+.profile-page__info
+    width: 70%
+
+    @media (max-width: 767.9px)
+        width: 100%
+
+.profile-page__name,
+.profile-page__email,
+.profile-page__password,
+.profile-page__password-conf
+    border: none
+    margin-bottom: 25px
+    padding: 0px
+    color: var(--color-white)
+
+    &:placeholder
+        border: none
+
+.profile-page__photo
+    display: flex
+    flex-direction: column
+
+.profile-page__photo img
+    width: 150px
+    height: 150px
+    margin-bottom: 15px
+
+.profile-page__choose-photo
+    color: rgba(16, 126, 255, 1)
+    font-size: 14px
+    line-height: calc(16/14*100%)
+    transition: all 0.3s ease-in-out
+
+    &:hover
+        text-decoration: underline
+        color: darken(rgba(16, 126, 255, 1), 10%)
+
+    @media (max-width: 767.9px)
+        margin-bottom: 30px

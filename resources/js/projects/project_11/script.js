@@ -7,4 +7,13 @@ $(document).ready(function() {
         $('.header__burger, .header__menu').toggleClass('active')
         $('body').toggleClass('lock')
     })
+
+    $('.send-me-letter').click(function(event) {
+        $('body').toggleClass('no-scroll')
+        $('.modal').toggleClass('disabled')
+    })
+    $('.cross, .button_send-message').click(function(event) {
+        $('body').toggleClass('no-scroll')
+        $('.modal').toggleClass('disabled')
+    })
 })

@@ -1,0 +1,81 @@
+.stories
+    display: flex
+    gap: 13px
+    justify-content: center
+    margin-bottom: 3rem
+
+#stories6
+    @media (max-width: 1399.9px)
+        display: none
+
+#stories4
+    display: none
+
+    @media (max-width: 1399.9px)
+        display: flex
+    @media (max-width: 755.9px)
+        display: none
+
+#stories2
+    display: none
+
+    @media (max-width: 755.9px)
+        display: flex
+
+.story
+    overflow: hidden
+    position: relative
+    z-index: 1
+    cursor: pointer
+    width: 140px
+    height: 195px
+    border-radius: 4px
+    box-shadow: 0px 4px 4px var(--color-black-shadow)
+
+    &:after
+        content: ""
+        width: 100%
+        height: 100%
+        display: block
+
+        position: absolute
+        z-index: 2
+        top: 0
+        left: 0
+
+        background-image: linear-gradient(to bottom, rgba(var(--color-black), .8), rgba(var(--color-black), 0) 50%, rgba(var(--color-black), .8))
+
+    &:hover
+        .story__img
+            transform: scale(1.3)
+            transition-duration: 5s
+
+.story__img
+    overflow: hidden
+    object-fit: cover
+    transition: transform 1s ease-in-out
+    position: absolute
+    z-index: 2
+    width: 140px
+    height: 195px
+
+.story__desc
+    width: 110px
+    height: 165px
+    top: 15px
+    left: 15px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    position: absolute
+    z-index: 3
+
+.story__title, .story__date
+    font-size: 12px
+    color: var(--color-white)
+    line-height: calc(14/12*100%)
+
+.story__title
+
+.story__date
+    text-align: right

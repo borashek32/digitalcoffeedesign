@@ -69,7 +69,7 @@ small
 .page
     flex: 1 1 auto
 
-.button_brown
+.button_white
     border-radius: 50px
     display: flex
     justify-content: center
@@ -82,32 +82,25 @@ small
     line-height: calc(28/14 * 100%)
     text-align: center
     transition: all 0.5s ease-in-out 0s
-    color: #fff
-    background: var(--color-brown)
-    box-shadow: 0px 10px 10px var(--color-brown-dark)
+    color: var(--color-brown)
+    background-color: var(--color-white)
+    // box-shadow: 0px 10px 10px var(--color-brown-dark)
     cursor: pointer
 
+.button_white:hover
+        color: var(--color-white)
+
 @media (max-width: 660px)
-    .button_brown
+    .button_white
         color: var(--color-brown)
         background-color: var(--color-white)
         box-shadow: none
-    .button_brown:hover
-        color: var(--color-white)
 
 @media (max-width: 500px)
     .button
         flex: 1 1 100%
 
-.button_brown
-
-.button_brown:hover
-    background: var(--color-brown-dark)
-
 .button_brown:active
-    color: var(--color-brown)
-    background-color: #fff
-    border: 1px solid var(--color-brown)
 
 .text
     margin-top: 10px

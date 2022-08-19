@@ -114,14 +114,14 @@ class ProjectController extends Controller
         if (Auth::user()->hasRole('admin')) {
             if ($request->mode == 'true') {
                 DB::table('projects')->where('id', $request->id)
-                    ->update(['status' => '1']);
+                    ->update(['visability' => '1']);
             } else {
                 DB::table('projects')->where('id', $request->id)
-                    ->update(['status' => '0']);
+                    ->update(['visability' => '0']);
             }
             return response()->json([
                 'message'  => 'Статус проекта успешно обновлен',
-                'status'   => 200
+                'visability'   => 200
             ]);
         } else {
             return redirect('/projects')

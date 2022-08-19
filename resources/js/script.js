@@ -7,6 +7,11 @@
 //     })
 // })
 
+// animation on scroll
+AOS.init({
+    once: true,
+    disable: 'mobile'
+})
 
 // show hide burger menu
 $(document).ready(function() {

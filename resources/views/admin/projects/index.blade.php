@@ -53,7 +53,7 @@
                                 data-toggle="toggle"
                                 id="status"
                                 value="{{ $project->id }}"
-                                {{ $project->status == '1' ? 'checked' : '' }}
+                                {{ $project->visability == '1' ? 'checked' : '' }}
                                 >
                         </td>
                         <td class="px-6 py-4 border-b border-gray-300 text-sm leading-5">

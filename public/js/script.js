@@ -10,7 +10,12 @@ var __webpack_exports__ = {};
 //         this.classList.add('active-btn');
 //     })
 // })
-// show hide burger menu
+// animation on scroll
+AOS.init({
+  once: true,
+  disable: 'mobile'
+}); // show hide burger menu
+
 $(document).ready(function () {
   $('.header__burger').click(function (event) {
     $('.header__burger, .header__menu').toggleClass('active');

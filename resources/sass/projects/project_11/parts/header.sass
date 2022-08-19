@@ -6,8 +6,9 @@
     z-index: var(--z-index-header)
     width: calc(100% - var(--width-sidebar))
     height: 40px
+    box-shadow: 0px 2px 10px var(--color-black-shadow)
 
-    @media (max-width: 767.9px)
+    @media (max-width: 1087.9px)
         width: 100%
 
 .header:before
@@ -20,17 +21,23 @@
     background-color: var(--color-black-one)
     z-index: 2
 
+.header__nav
+    display: flex
+    justify-content: space-between
+
 .header__menu
     display: flex
-    position: relative
+    // position: relative
     justify-content: space-between
-    align-content: center
+    // align-content: center
 
     @media (max-width: 767.9px)
         position: fixed
         left: 0
         width: 100%
         height: 100%
+        flex-direction: column
+        justify-content: start
         background-color: var(--color-black-one)
         padding: 40px 0px 0px 0px
         top: -100%
@@ -43,22 +50,48 @@
 .header__left, .header__right
     display: flex
     z-index: 2
-    position: relative
-
-    @media (max-width: 767.9px)
-        display: block
-        padding: 30px 20px 30px 20px
 
 .header__left
     padding-left: 2px
 
-.header__li
-    padding: 13px 13px 13px 13px
-    transition: background-color 0.2s lenear
-.header__li:hover
-    background-color: var(--color-blue-two)
+    @media (max-width: 767.9px)
+        display: block
+        padding: 0
+
+.header__right
+    position: absolute
+    z-index: 2
+    right: 250px
+    top: 0
 
     @media (max-width: 767.9px)
+        position: static
+        display: block
+        padding: 0px 0px 30px 0px
+
+.header__li
+    cursor: pointer
+    padding: 13px 13px
+    transition: all 0.2s linear
+
+    &:hover
+        background-color: var(--color-blue-two)
+
+.header__li_subnav
+    position: relative
+
+    &:hover
+        > .subnav
+            display: block
+
+.header__li_flex
+    display: flex
+
+.arrow
+    margin: 5px 0px 0px 12px
+    border-style: solid
+    border-width: 6px 5px 0 5px
+    border-color: #ffffff transparent transparent transparent
 
 .header__link
     font-size: 11px
@@ -68,15 +101,58 @@
     line-height: calc(16/14*100%)
     color: var(--color-white)
 
+.header__link_down
+    margin-top: 2px
+
+// ---------------------------------------SEARCH---------------------------------------
 .header__search
+    position: absolute
+    z-index: 2
+    right: 0
+    top: 0
+
+    height: 40px
     width: 250px
     margin-left: 30px
     background-color: var(--color-black-three)
+
+    &:focus
+        background-color: var(--color-black-three)
+
 
 .header__search-placeholder
     background-color: var(--color-black-three)
     border: none
     padding: 14px 12px 0px 20px
+    color: var(--color-white)
+
+// ---------------------------------------SUBNAV---------------------------------------
+.subnav
+    display: none
+
+    position: absolute
+    top: 100%
+    left: 0
+
+    width: 165px
+    background-color: var(--color-blue-two)
+    box-shadow: 0px 6px 8px var(--color-black-shadow)
+
+.subnav__li
+    padding: 10px 13px
+    transition: all 0.2s linear
+
+    &:hover
+        background-color: var(--color-blue-hover)
+
+.subnav__li p
+    font-size: 12px
+    line-height: calc(14/12*100%)
+
+.subnav__a
+    font-size: 12px
+    line-height: calc(14/12*100%)
+    color: var(--color-white)
 
 // ---------------------------------------BURGER---------------------------------------
 .header__burger
@@ -90,6 +166,7 @@
         height: 20px
         z-index: 3
         left: 15px
+        top: 10px
 
     .header__burger span
         position: absolute

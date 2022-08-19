@@ -1,0 +1,85 @@
+.posts
+    width: 100%
+
+.posts__post
+
+.post
+    margin-bottom: 30px
+    background-color: var(--color-black-three)
+    border-radius: 5px
+    padding: 0px 0px 25px 0px
+    box-shadow: 0px 4px 8px var(--color-black-shadow)
+    overflow: hidden
+
+.post__content
+    padding-top: 25px
+
+.post__title
+    color: var(--color-white)
+    font-size: 18px
+    line-height: calc(21/18*100%)
+    margin: 0px 25px 15px 25px
+
+    &:hover
+        text-decoration: underline
+
+.post__img
+    object-fit: cover
+    width: 100%
+    height: auto
+    display: block
+    box-shadow: 0px 4px 10px var(--color-black-shadow)
+
+.post__video
+    // object-fit: cover
+    margin: 25px 25px 0px 25px
+    border-radius: 5px
+    box-shadow: 0px 5px 10px var(--color-black-shadow)
+    // width: 100%
+    // height: auto
+
+.post__desc
+    color: rgba(210, 210, 210, 1)
+    font-size: 14px
+    line-height: calc(21/14*100%)
+    margin: 0px 25px 0px 25px
+
+.post__footer
+    display: flex
+    margin: 9px 25px 0px 25px
+    justify-content: space-between
+    align-items: center
+
+.post__create
+    display: flex
+    gap: 30px
+
+.post__date,
+.post__category
+    color: var(--color-grey-two)
+    font-size: 12px
+    line-height: calc(14/12*100%)
+
+.post__category
+    position: relative
+
+    &:before
+        content: ''
+        position: absolute
+        left: -16px
+        top: 4px
+        background-color: #C4C4C4
+        width: 6px
+        height: 6px
+        border-radius: 50%
+
+.post__link
+    color: rgba(16, 126, 255, 1)
+    font-size: 14px
+    line-height: calc(26/14*100%)
+    text-transform: lowercase
+    cursor: pointer
+
+    &:hover
+        text-decoration: underline
+

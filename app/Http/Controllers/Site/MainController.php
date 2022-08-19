@@ -23,12 +23,12 @@ class MainController extends Controller
             'email'   => $request->email,
             'message' => $request->message
         );
-        if (Auth::user()) {
+        // if (Auth::user()) {
             Mail::to("borashek@inbox.ru")->send(new MessageMail($request));
             return response()->json([
                 'status'   => 200,
                 'success'  => 'Ваше сообщение успешно отправлено'
             ]);
-        }
+        // }
     }
 }

@@ -7,8 +7,7 @@ use App\Http\Controllers\Admin\ProjectController;
 
 Route::get('/', [App\Http\Controllers\Site\ProjectController::class, 'index']);
 Route::post('/', [App\Http\Controllers\Site\MainController::class, 'message'])
-    ->name('message')
-    ->middleware('auth');
+    ->name('message');
 
 // PROJECTS
 Route::get('/freelance-camp', [App\Http\Controllers\Site\ProjectController::class, 'freelanceCamp'])
@@ -38,18 +37,47 @@ Route::get('/go-corona', [App\Http\Controllers\Site\ProjectController::class, 'g
 Route::get('/designer-portfolio-site', [App\Http\Controllers\Site\ProjectController::class, 'designerPortfolioSite'])
     ->name('designer-portfolio-site');
 
-Route::get('/organic', [App\Http\Controllers\Site\ProjectController::class, 'organic'])
-    ->name('organic');
-
 Route::get('/velocity', [App\Http\Controllers\Site\ProjectController::class, 'velocity'])
     ->name('velocity');
 
 Route::get('/calm', [App\Http\Controllers\Site\ProjectController::class, 'calm'])
     ->name('calm');
 
-Route::get('/personal-blog', [App\Http\Controllers\Site\ProjectController::class, 'personalblog'])
-    ->name('personalblog');
+// personal blog
+Route::get('/personal-blog', [App\Http\Controllers\Site\Projects\Project11\ProjectController::class, 'personalBlog'])
+    ->name('personal-blog');
+Route::get('/personal-blog/about', [App\Http\Controllers\Site\Projects\Project11\ProjectController::class, 'personalBlogAbout'])
+    ->name('personalblog-about');
+Route::get('/personal-blog/{id}', [App\Http\Controllers\Site\Projects\Project11\ProjectController::class, 'personalBlogPost'])
+    ->name('personalblog-onepost');
+Route::get('/personal-blog/category/{id}', [App\Http\Controllers\Site\Projects\Project11\ProjectController::class, 'personalBlogCategory'])
+    ->name('personalblog-category');
+Route::get('/personal-blog/{$search}', [App\Http\Controllers\Site\Projects\Project11\ProjectController::class, 'personalBlogSearch'])
+    ->name('personalblog-search');
+Route::post('/personal-blog/add-post', [App\Http\Controllers\Site\Projects\Project11\ProjectController::class, 'personalBlogStore'])
+    ->name('personalblog-addpost');
+Route::post('/personal-blog/add-comment', [App\Http\Controllers\Site\Projects\Project11\ProjectController::class, 'personalBlogStore'])
+    ->name('personalblog-addcomment');
 
+// Route::get('/personal-blog/works', [App\Http\Controllers\Site\Projects\Project11Controller::class, 'personalBlogWorks'])
+//     ->name('personalblog-works');
+Route::get('/personal-blog/works/{id}', [App\Http\Controllers\Site\Projects\Project11\ProjectController::class, 'personalBlogOneWork'])
+    ->name('personalblog-onework');
+
+Route::get('/personal-blog/dashboard/profile', [App\Http\Controllers\Site\Projects\Project11\Auth\ProfileController::class, 'personalBlogProfile'])
+    ->name('personalblog-profile');
+// Route::get('/personal-blog/login', [App\Http\Controllers\Site\Projects\Project11\Auth\AuthController::class, 'personalBlogLogin'])
+//     ->name('personalblog-login');
+// Route::get('/personal-blog/registration', [App\Http\Controllers\Site\Projects\Project11\Auth\AuthController::class, 'personalBlogRegistration'])
+//     ->name('personalblog-registration');
+Route::resource('/personal-blog/dashboard/posts', App\Http\Controllers\Site\Projects\Project11\Posts\PostController::class)
+    ->names('personalblog-posts');
+Route::resource('/personal-blog/dashboard/categories', App\Http\Controllers\Site\Projects\Project11\Posts\CatController::class)
+    ->names('personalblog-cats');
+
+// organic
+Route::get('/organic', [App\Http\Controllers\Site\Projects\Project8\OrganicController::class, 'index'])
+    ->name('organic');
 
 // ELEMENTS
 Route::get('/flex-box', [App\Http\Controllers\Site\ProjectController::class, 'flexBox'])

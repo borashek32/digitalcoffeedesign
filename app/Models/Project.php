@@ -18,7 +18,7 @@ class Project extends Model
         'category_id',
         'slug',
         'link',
-        'status'
+        'visability'
     ];
 
     public function sluggable(): array

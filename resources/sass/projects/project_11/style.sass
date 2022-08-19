@@ -5,6 +5,15 @@
 @import parts/header
 @import parts/sidebar
 @import parts/profile
+@import parts/stories
+@import parts/add-post
+@import parts/posts
+@import parts/one-post
+@import parts/comments
+@import parts/admin-posts
+@import parts/work
+@import parts/modal
+
 @import parts/main
 @import parts/container
 
@@ -16,3 +25,24 @@ body
     font-family: var(--bs-font-sans-serif)
     color: var(--color-white)
     font-size: 1.4rem
+
+    &.no-scroll
+        overflow: hidden
+
+.embed
+    position: relative
+    overflow: hidden
+
+    &:before
+        content: ""
+        display: block
+        padding-top: 56.25%
+        height: 0
+
+.embed iframe, video
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 1

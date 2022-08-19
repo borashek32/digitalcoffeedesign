@@ -30,7 +30,7 @@
                         Контакты
                     </a>
                 </li>
-                @include('includes.auth')
+                {{-- @include('includes.auth') --}}
             </ul>
         </nav>
     </div>

@@ -11,6 +11,7 @@ class ProjectController extends Controller
     public function index()
     {
         $projects = Project::latest()->get();
+        // dd($projects);
 
         return view('site.index', compact('projects'));
     }
@@ -65,11 +66,6 @@ class ProjectController extends Controller
         return view('projects.project_7.index');
     }
 
-    public function organic()
-    {
-        return view('projects.project_8.index');
-    }
-
     public function velocity()
     {
         return view('projects.project_9.index');
@@ -78,11 +74,6 @@ class ProjectController extends Controller
     public function calm()
     {
         return view('projects.project_10.index');
-    }
-
-    public function personalblog()
-    {
-        return view('projects.project_11.index');
     }
 
     public function flexBox()

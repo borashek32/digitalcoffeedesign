@@ -8,13 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,light&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/projects/project_11/css/style.css') }}">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
     @include('projects.project_11.includes.header')
     @include('projects.project_11.includes.aside')
     @yield('content')
-
+    @include('projects.project_11.modals.contact-modal')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="{{ asset('assets/projects/project_11/js/script.js') }}"></script>
 </body>
