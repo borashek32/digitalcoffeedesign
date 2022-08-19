@@ -13,6 +13,7 @@ Route::post('/', [App\Http\Controllers\Site\MainController::class, 'message'])
 Route::get('/freelance-camp', [App\Http\Controllers\Site\ProjectController::class, 'freelanceCamp'])
     ->name('freelance-camp');
 
+// creative agency
 Route::get('/creative-agency', [App\Http\Controllers\Site\ProjectController::class, 'creativeAgency'])
     ->name('creative-agency');
 Route::get('/creative-agency/contact', [App\Http\Controllers\Site\ProjectController::class, 'creativeAgencyContact'])
@@ -78,6 +79,14 @@ Route::resource('/personal-blog/dashboard/categories', App\Http\Controllers\Site
 // organic
 Route::get('/organic', [App\Http\Controllers\Site\Projects\Project8\OrganicController::class, 'index'])
     ->name('organic');
+Route::get('/organic/reviews', [App\Http\Controllers\Site\Projects\Project8\OrganicController::class, 'organicReviews'])
+    ->name('organic-reviews');
+Route::get('/organic/about', [App\Http\Controllers\Site\Projects\Project8\OrganicController::class, 'organicAbout'])
+    ->name('organic-about');
+Route::get('/organic/products', [App\Http\Controllers\Site\Projects\Project8\OrganicController::class, 'organicProducts'])
+    ->name('organic-products');
+Route::get('/organic/contacts', [App\Http\Controllers\Site\Projects\Project8\OrganicController::class, 'organicContacts'])
+    ->name('organic-contacts');
 
 // ELEMENTS
 Route::get('/flex-box', [App\Http\Controllers\Site\ProjectController::class, 'flexBox'])

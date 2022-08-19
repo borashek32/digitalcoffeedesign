@@ -1,0 +1,185 @@
+.reviews
+    margin-top: 86px
+    display: flex
+    padding: 100px
+    background-color: var(--color-white)
+
+    @media (max-width: 1029.9px)
+        flex-direction: column
+        padding: 50px
+
+.review
+    width: 50%
+
+    @media (max-width: 1029.9px)
+        width: 100%
+
+.review__footer
+    padding-bottom: 15px
+
+.review__author
+    font-size: 30px
+    line-height: calc(36/30*100%)
+    color: #222222
+    margin-bottom: 20px
+
+.actions
+    display: flex
+    justify-content: space-between
+
+    @media (max-width: 506.9px)
+        display: block
+
+.actions__star-rating
+    width: 50%
+    display: flex
+
+.actions__star
+    margin-right: 10px
+    width: 23px
+    height: 23px
+
+    &:last-child
+        margin-right: 0
+
+.buttons-slider
+    width: 50%
+    display: flex
+    justify-content: center
+
+.buttons-slider__wrapper
+    width: 56px
+    height: 56px
+    border-radius: 50%
+    border: 1px solid #CCCCCC
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 26px
+    color: #CCCCCC
+    font-size: 26px
+    font-weight: 300
+    cursor: pointer
+    transition: all 0.2s linear
+
+    @media (max-width: 506.9px)
+        margin-top: 30px
+    @media (max-width: 468.9px)
+        font-size: 18px
+        width: 48px
+        height: 48px
+    @media (max-width: 510.9px)
+        margin-top: -5px
+    @media (max-width: 412.9px)
+        width: 38px
+        height: 38px
+
+    &:hover
+        color: #999999
+        border: 1px solid #999999
+
+    &:active
+        color: #737373
+        border: 1px solid #737373
+
+    &_green
+        border: none
+        background-color: #09A66D
+        color: var(--color-white)
+        transition: all 0.2s linear
+
+.buttons-slider__wrapper_green:hover
+    background-color: #08915f
+
+.buttons-slider__wrapper_green:active
+    background-color: #066d47
+
+.author-img__background
+    width: 500px
+    height: 500px
+    border-radius: 50%
+    background-color: var(--color-green-light)
+
+.author-img
+    width: 50%
+    display: flex
+    justify-content: end
+    align-items: end
+    position: relative
+    z-index: 1
+
+.author-img__img
+    width: 500px
+    height: 500px
+
+    @media (max-width:  1299.9px)
+        width: 400px
+        height: 400px
+    @media (max-width: 1029.9px)
+        width: 350px
+        height: 350px
+    @media (max-width: 920.9px)
+        width: 300px
+        height: 300px
+    @media (max-width: 689.9px)
+        width: 200px
+        height: 200px
+    @media (max-width: 506.9px)
+        display: none
+
+.other-reviews
+    position: absolute
+    bottom: 15px
+    left: 120px
+    width: 220px
+    height: 80px
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25)
+    border-radius: 4px
+    padding: 11px 21px
+    z-index: 2
+    background-color: var(--color-white)
+
+    @media (max-width: 506.9px)
+        display: none
+
+.other-reviews__star-rating
+
+.actions__star_right
+    width: 14px
+    height: 14px
+
+.other-reviews__images
+    display: flex
+    margin-top: 10px
+
+.other-reviews__images img
+    width: 32px
+    height: auto
+    margin-left: -12px
+
+
+// cross button --------------------------------------------
+.cross__wrapper
+    width: 32px
+    height: 32px
+    border-radius: 50%
+    background-color: var(--color-green-light)
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-left: -12px
+    position: relative
+
+    &:after
+        content: ''
+        background-color: var(--color-black)
+        width: 16px
+        height: 3px
+        position: absolute
+        transform: rotate(90deg)
+
+.cross
+    background-color: var(--color-black)
+    width: 16px
+    height: 3px
+    position: absolute

@@ -63,6 +63,8 @@
     background-color: var(--color-pink)
 
 .healthy__grid
+    display: grid
+    align-self: end
     @media (max-width: 705px)
         align-self: center
         justify-self: center
@@ -72,7 +74,7 @@
     display: grid
     align-self: end
     grid-template-columns: 1fr
-    grid-template-rows: 2fr 1.5fr 1.5fr
+    grid-template-rows: 1fr 0.5fr 0.5fr
     grid-template-areas: "." "title" "desc"
     color: var(--color-white)
     gap: 30px

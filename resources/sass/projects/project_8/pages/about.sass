@@ -1,0 +1,108 @@
+.about
+    margin-top: 86px
+    background-color: var(--color-green-light)
+    padding: 100px 50px 100px 100px
+
+    @media (max-width: 1029.9px)
+        padding: 50px
+
+.about__wrapper
+    position: relative
+    display: flex
+    gap: 50px
+
+    @media (max-width: 1029.9px)
+        flex-direction: column
+
+.about__img
+    width: 50%
+
+    @media (max-width: 1029.9px)
+        width: 100%
+        text-align: center
+
+.about__description
+    width: 50%
+
+    @media (max-width: 1029.9px)
+        width: 100%
+
+.about__title
+    padding-right: 50px
+
+.about__text
+    padding-right: 50px
+
+.about__footer
+    display: flex
+    margin-bottom: -100px
+    justify-content: space-between
+
+    @media (max-width: 1029.9px)
+        flex-direction: column
+        padding-bottom: 50px
+
+.about__nav
+    display: flex
+    height: 56px
+    gap: 20px
+    align-items: center
+
+    @media (max-width: 1029.9px)
+        margin-bottom: 30px
+        gap: 5px
+
+.about__leaves
+    background-color: var(--color-green-light)
+    border-radius: 6px
+    width: 413px
+    height: auto
+
+    @media (max-width: 1399.9px)
+        width: 300px
+    @media (max-width: 1174.9px)
+        width: 250px
+    @media (max-width: 1063.9px)
+        width: 200px
+    @media (max-width: 1036.9px)
+        display: none
+
+.buttons-slider__wrapper_arrow
+    width: 32px
+    height: 2px
+    background-color: var(--color-white)
+    position: relative
+
+    &:hover
+        color: #999999
+        border: 1px solid #999999
+
+    &:active
+        color: #737373
+        border: 1px solid #737373
+
+    &:before, &:after
+        content: ''
+        position: absolute
+        width: 8px
+        height: 2px
+        background-color: var(--color-white)
+    &:after
+        transform: rotate(-45deg)
+        top: 2.5px
+        right: -1px
+    &:before
+        transform: rotate(45deg)
+        top: -2.5px
+        right: -1px
+
+.buttons-slider__wrapper:hover .buttons-slider__wrapper_arrow,
+.buttons-slider__wrapper:hover .buttons-slider__wrapper_arrow:before,
+.buttons-slider__wrapper:hover .buttons-slider__wrapper_arrow:after
+        color: #999999
+        border: 1px solid #999999
+.buttons-slider__wrapper:active .buttons-slider__wrapper_arrow,
+.buttons-slider__wrapper:active .buttons-slider__wrapper_arrow:before,
+.buttons-slider__wrapper:active .buttons-slider__wrapper_arrow:after
+        color: #737373
+        border: 1px solid #737373

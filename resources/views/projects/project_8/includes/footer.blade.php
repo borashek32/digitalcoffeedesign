@@ -5,22 +5,22 @@
                 <ul>
                     <li>
                         <a href="#" class="socials__link opacity">
-                            <img src="img/projects/project_8/ig.svg" alt="ig">
+                            <img src="{{ asset('img/projects/project_8/ig.svg') }}" alt="ig">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="socials__link opacity">
-                            <img src="img/projects/project_8/tw.svg" alt="tw">
+                            <img src="{{ asset('img/projects/project_8/tw.svg') }}" alt="tw">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="socials__link opacity">
-                            <img src="img/projects/project_8/fb.svg" alt="fb">
+                            <img src="{{ asset('img/projects/project_8/fb.svg') }}" alt="fb">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="socials__link opacity">
-                            <img src="img/projects/project_8/in.svg" alt="in">
+                            <img src="{{ asset('img/projects/project_8/in.svg') }}" alt="in">
                         </a>
                     </li>
                 </ul>
@@ -37,7 +37,7 @@
         </form>
         <div class="footer__footer-logo footer-logo">
             <div class="footer-logo__rights">
-                <img src="img/projects/project_8/logo.png" class="opacity footer-logo__logo-img" width="50px" alt="logo">
+                <img src="{{ asset('img/projects/project_8/logo.png') }}" class="opacity footer-logo__logo-img" width="50px" alt="logo">
                 <p class="footer-logo__reserved">&copy; All rights reserved <?= date('Y') ?></p>
             </div>
         </div>

@@ -1,8 +1,8 @@
 <div class="slider-arrows">
     <div class="slider-arrows__items-wrapper">
         <img src="img/projects/project_8/apple.jpg" alt="apple" class="slider-arrows__item">
-        <img src="img/projects/project_8/apples-many.jpg" alt="apple" class="slider-arrows__item">
-        <img src="img/projects/project_8/apples-green-red.jpg" alt="apple" class="slider-arrows__item">
+        {{-- <img src="img/projects/project_8/apples-many.jpg" alt="apple" class="slider-arrows__item">
+        <img src="img/projects/project_8/apples-green-red.jpg" alt="apple" class="slider-arrows__item"> --}}
     </div>
     <div class="slider-arrows__nav">
         <button class="slider-arrows__arrow slider-arrows__arrow_prev opacity"><</button>
