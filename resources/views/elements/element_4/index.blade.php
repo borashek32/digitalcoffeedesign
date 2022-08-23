@@ -12,14 +12,11 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
-
-        </header>
         <main class="main__container">
             <section class="sliders">
                 <div class="title__block">
                     <div class="title_block__title title">
-                        Sliders
+                        Slider One
                     </div>
                 </div>
                 <div class="slider_1">
@@ -32,11 +29,30 @@
                 </div>
                 <button class="slider_1__button_prev">Prev</button>
                 <button class="slider_1__button_next">Next</button>
+                <div class="title__block">
+                    <div class="title_block__title title">
+                        Slider Two
+                    </div>
+                </div>
+                <div class="slider_2_wrapper">
+                    <div class="prev n">
+                        <p>Prev</p>
+                    </div>
+                    <div class="slider_2">
+                        <div class="img current">1</div>
+                        <div class="img">2</div>
+                        <div class="img">3</div>
+                        <div class="img">4</div>
+                        <div class="img">5</div>
+                    </div>
+                    <div class="next n">
+                        <p>Next</p>
+                    </div>
+                </div>
             </section>
         </main>
-        <footer class="footer"></footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="{{ asset('assets/elements/element_4/js/script.js') }}"></script>
 </body>
 </html>

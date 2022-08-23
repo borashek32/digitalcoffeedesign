@@ -815,7 +815,7 @@ div {
 
 .products {
   margin-top: 86px;
-  background-color: var(--color-green-light);
+  background-color: var(--color-white);
   padding: 100px 100px 50px 100px;
 }
 @media (max-width: 1029.9px) {
@@ -883,7 +883,7 @@ div {
   width: 250px;
   height: 116px;
   border-radius: 2px;
-  background-color: var(--color-white);
+  background-color: var(--color-green-light);
   padding: 17px 40px;
   display: flex;
   gap: 24px;
