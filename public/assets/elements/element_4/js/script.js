@@ -26,10 +26,13 @@ document.querySelector('.slider_1__button_prev').addEventListener('click', funct
 }); // slider two
 
 $(document).ready(function () {
+  var currentReview = $('.review-content.current');
+  var currentReviewIndex = $('.review-content.current').index();
+  console.log(currentReviewIndex);
   $('.next').click(function () {
     var currentImage = $('.img.current');
     var currentImageIndex = $('.img.current').index();
-    var nextImageIndex = currentImageIndex + 1;
+    var nextImageIndex = currentImageIndex + 2;
     var nextImage = $('.img').eq(nextImageIndex);
     currentImage.fadeOut(1000);
     currentImage.removeClass('current');

@@ -44,6 +44,9 @@ Route::get('/velocity', [App\Http\Controllers\Site\ProjectController::class, 've
 Route::get('/calm', [App\Http\Controllers\Site\ProjectController::class, 'calm'])
     ->name('calm');
 
+Route::get('/contractor-x', [App\Http\Controllers\Site\ProjectController::class, 'contractorX'])
+    ->name('contractor-x');
+
 // personal blog
 Route::get('/personal-blog', [App\Http\Controllers\Site\Projects\Project11\ProjectController::class, 'personalBlog'])
     ->name('personal-blog');

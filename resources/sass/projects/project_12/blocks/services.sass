@@ -1,0 +1,123 @@
+.services
+    padding: 200px 0px
+
+    @media (max-width: 1000.9px)
+        padding: 150px 0px
+
+.services__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 64px
+    margin-left: 24px
+    margin-right: 24px
+
+    @media (max-width: 600.9px)
+        flex-direction: column
+
+.services__title
+    font-size: 54px
+    line-height: calc(61.99/54*100%)
+    text-align: left
+    color: var(--color-black)
+    margin-bottom: 19px
+
+    @media (max-width: 958.9px)
+        font-size: 40px
+    @media (max-width: 600.9px)
+        text-align: center
+    @media (max-width: 524.9px)
+        font-size: 30px
+
+.services__buttons
+    display: flex
+
+    @media (max-width: 820.9px)
+        flex-direction: column
+    @media (max-width: 600.9px)
+        flex-direction: row
+    @media (max-width: 400.9px)
+        flex-direction: column
+
+.services__button
+    text-align: center
+
+.services__items
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    grid-column-gap: 28px
+    grid-row-gap: 95px
+    margin-left: 24px
+    margin-right: 24px
+
+    @media (max-width: 1100.9px)
+        grid-template-columns: 1fr 1fr
+    @media (max-width: 570.9px)
+        grid-template-columns: 1fr
+
+.item
+    display: flex
+    flex-direction: column
+
+    @media (max-width: 570.9px)
+        align-items: center
+        text-align: center
+
+.item__img-wrapper
+    flex: 0 0 78px
+    display: flex
+    justify-content: left
+    align-items: center
+    margin-bottom: 32px
+
+    @media (max-width: 570.9px)
+        margin-bottom: 15px
+
+.item__title-wrapper
+    display: flex
+    flex: 1 0 48px
+    margin-bottom: 14px
+
+    @media (max-width: 570.9px)
+        margin-bottom: 7px
+
+.item__title
+    font-size: 34px
+    line-height: calc(48.01/34*100%)
+    color: var(--color-black)
+
+    @media (max-width: 810.9px)
+        font-size: 24px
+
+.item__desc-wrapper
+    display: flex
+    flex: 1 1 91px
+
+    @media (max-width: 570.9px)
+        flex: 1 1 50px
+
+.item__link
+    color: var(--color-black)
+    line-height: cala(20/18*100%)
+    position: relative
+    left: 40px
+    top: 17px
+
+.item__link:before
+    content: ''
+    position: absolute
+    width: 30px
+    height: 30px
+    background-color: var(--color-black)
+    left: -40px
+
+.item__link:hover,
+.item__link:hover:before
+    cursor: pointer
+
+.item__link:hover:before
+    background-color: var(--color-grey)
+
+.item__link:hover
+    color: var(--color-grey)

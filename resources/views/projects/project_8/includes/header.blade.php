@@ -1,6 +1,6 @@
 <header class="header">
     <h1 class="header__logo logo">
-        <a href="#">organic juicy co.</a>
+        <a href="{{ route('organic') }}">organic juicy co.</a>
     </h1>
     <nav class="header__nav">
         <ul>

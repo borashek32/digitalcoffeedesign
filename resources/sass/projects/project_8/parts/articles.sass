@@ -65,6 +65,8 @@
 .healthy__grid
     display: grid
     align-self: end
+    width: 100%
+    height: 100%
     @media (max-width: 705px)
         align-self: center
         justify-self: center
@@ -110,11 +112,9 @@
     background-color: var(--color-yellow)
     display: grid
 
-.thirsty__grid
     @media (max-width: 705px)
-        // align-self: center
-        // justify-self: center
-        display: grid
+        justify-items: center
+        display: flex
 
 .common__thirsty
     display: grid
@@ -122,12 +122,16 @@
     grid-template-areas: "desc title"
     justify-self: center
     align-self: center
+    padding-left: 150px
+    padding-right: 150px
     @media (max-width: 705px)
         justify-self: center
         grid-template-columns: 1fr 1fr
         grid-template-rows: auto
         grid-template-areas: "title desc"
         gap: 40px
+        padding-left: 0
+        padding-right: 0
     @media (max-width: 410px)
         grid-template-columns: 1fr
         grid-template-rows: auto

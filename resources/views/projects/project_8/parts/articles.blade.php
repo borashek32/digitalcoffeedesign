@@ -11,7 +11,7 @@
 </article>
 <article class="healthy">
     <div class="healthy__grid">
-        <div class="common common__healthy">
+        <div class="common__healthy">
         <h2 class="common__title common__title_healthy">
             worry less drink
             <span>hea-<wbr>lthy</span>
@@ -20,18 +20,15 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, cupiditate? Laboriosam fugiat, voluptas doloribus non ipsam odio optio nihil nesciunt amet culpa dolorem inventore mollitia fugit cum labore, totam quod.</p>
         </div>
     </div>
-    </div>
 </article>
 <article class="thirsty">
-    {{-- <div class="thirsty__grid"> --}}
-        <div class="common common__thirsty">
-            <h2 class="common__title common__title_thirsty">
-                are you summer
-                <span>thir-<wbr>sty?</span>
-            </h2>
-            <div class="common__desc common__desc_thirsty">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, cupiditate? Laboriosam fugiat, voluptas doloribus non ipsam odio optio nihil nesciunt amet culpa dolorem inventore mollitia fugit cum labore, totam quod.</p>
-            </div>
+    <div class="common common__thirsty">
+        <h2 class="common__title common__title_thirsty">
+            are you summer
+            <span>thir-<wbr>sty?</span>
+        </h2>
+        <div class="common__desc common__desc_thirsty">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, cupiditate? Laboriosam fugiat, voluptas doloribus non ipsam odio optio nihil nesciunt amet culpa dolorem inventore mollitia fugit cum labore, totam quod.</p>
         </div>
-    {{-- </div> --}}
+    </div>
 </article>

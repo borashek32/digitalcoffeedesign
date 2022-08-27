@@ -192,6 +192,7 @@
 
 .main-block__body {
   margin-top: -240px;
+  margin-bottom: 30px;
 }
 @media (max-width: 1399.9px) {
   .main-block__body {
@@ -2073,6 +2074,9 @@ select {
 }
 .grid {
   display: grid;
+}
+.list-item {
+  display: list-item;
 }
 .hidden {
   display: none;

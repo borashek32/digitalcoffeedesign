@@ -1,0 +1,116 @@
+// FOOTER ---------------------------------------
+.footer
+    background-color: #000
+    padding: 132px 24px 38px 24px
+
+.footer__container
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    gap: 30px
+
+.footer__column
+    display: flex
+    flex-direction: column
+    justify-content: center
+    gap: 20px
+
+.footer__column_center
+    display: flex
+    justify-content: center
+    flex-direction: column
+
+.footer__column_30
+    width: 270px
+
+.footer__column_20
+    width: 202px
+
+.footer_desc
+    color: var(--color-white)
+
+.footer__span-wrapper
+    display: flex
+    justify-content: space-between
+    margin-top: 35px
+
+.footer__span-wrapper div
+    width: 36px
+    height: 36px
+    background-color: var(--color-orange)
+
+.footer__title
+    color: var(--color-white)
+    font-size: 22px
+    line-height: calc(24/22*100%)
+    margin-bottom: 40px
+
+    @media (max-width: 794.9px)
+        margin-bottom: 10px
+
+.footer__menu
+    display: flex
+    gap: 28px
+
+.footer__item
+    color: var(--color-white)
+    margin-bottom: 17px
+    line-height: calc(20/18*100%)
+
+.footer__description
+    color: var(--color-white)
+
+.footer__btns-wrapper
+    display: flex
+    flex-direction: column
+    gap: 18px
+
+.btn
+    padding: 30px
+    border: 1px solid var(--color-orange)
+    display: flex
+    align-items: center
+    gap: 16px
+    transition: all .3s linear
+
+.btn:hover
+    border: 1px solid var(--color-orange-dark)
+
+.btn:active
+    border: 1px solid #c03900
+
+.btn__icon-wrapper
+    width: 48px
+    height: 48px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: var(--color-orange)
+    transition: all .3s linear
+
+.btn:hover .btn__icon-wrapper
+    background-color: var(--color-orange-dark)
+
+.btn:active .btn__icon-wrapper
+    background-color: #c03900
+
+.footer__description p
+    font-size: 16px
+    line-height: calc(18/16*100%)
+
+.btn:hover .footer__description p
+    color: var(--color-grey)
+
+.last-line
+    padding: 127px 0px 0px 0px
+    display: flex
+    justify-content: space-between
+
+    @media (max-width: 794.9px)
+        flex-direction: column
+
+.last-line__text
+    color: var(--color-white)
+
+.last-line__text span
+    color: var(--color-orange)

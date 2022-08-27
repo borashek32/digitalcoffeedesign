@@ -3,7 +3,7 @@
         <div class="portfolio__body">
             <h2 class="portfolio__title title">Одностраничные лэндинги</h2>
             <h4 class="portfolio__subtitle subtitle">
-                Лэндинги, JavaScript, CSS, HTML.<br>Все страницы адаптированы под мобильные устройства.
+                Примеры лэндингов, JavaScript, CSS, HTML.<br>Все страницы адаптированы под мобильные устройства.
             </h4>
             <div class="portfolio__grid">
                 @foreach ($projects as $project)

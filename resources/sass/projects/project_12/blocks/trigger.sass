@@ -1,0 +1,43 @@
+.trigger
+    position: relative
+    width: 100%
+    height: 545px
+
+.trigger__img
+    object-position: bottom
+    width: 100%
+    height: 100%
+    object-fit: cover
+    position: absolute
+    z-index: 2
+
+.trigger__container
+    position: absolute
+    z-index: 4
+    top: 114px
+    left: 122px
+
+    @media (max-width: 1345.9px)
+        left: 20px
+    @media (max-width: 1214.9px)
+        top: 50px
+
+.trigger__content
+    max-width: 600px
+
+    @media (max-width: 775.9px)
+        max-width: 550px
+    @media (max-width: 654.9px)
+        max-width: 500px
+    @media (max-width: 516.9px)
+        max-width: 450px
+    @media (max-width: 453.9px)
+        max-width: 350px
+
+.trigger__buttons
+    margin-top: 35px
+
+    @media (max-width: 383.9px)
+        display: flex
+        flex-direction: column
+        align-items: start

@@ -2,14 +2,16 @@
     margin-top: 86px
     display: flex
     padding: 100px
-    background-color: var(--color-white)
+    background-color: var(--color-green)
 
     @media (max-width: 1029.9px)
         flex-direction: column
         padding: 50px
 
 .review
-    width: 50%
+    display: flex
+    width: 100%
+    position: relative
 
     @media (max-width: 1029.9px)
         width: 100%
@@ -17,7 +19,11 @@
 .review__footer
     padding-bottom: 15px
 
+.review__content
+    width: 50%
+
 .review__author
+    width: 40%
     font-size: 30px
     line-height: calc(36/30*100%)
     color: #222222
@@ -46,6 +52,9 @@
     width: 50%
     display: flex
     justify-content: center
+    position: absolute
+    left: 170px
+    bottom: -70px
 
 .buttons-slider__wrapper
     width: 56px
@@ -75,24 +84,18 @@
         height: 38px
 
     &:hover
-        color: #999999
-        border: 1px solid #999999
+        background-color: #08915f
+        border: 1px solid #08915f
 
     &:active
-        color: #737373
-        border: 1px solid #737373
+        background-color: #066d47
+        border: 1px solid #066d47
 
     &_green
         border: none
         background-color: #09A66D
         color: var(--color-white)
         transition: all 0.2s linear
-
-.buttons-slider__wrapper_green:hover
-    background-color: #08915f
-
-.buttons-slider__wrapper_green:active
-    background-color: #066d47
 
 .author-img__background
     width: 500px
@@ -183,3 +186,11 @@
     width: 16px
     height: 3px
     position: absolute
+
+
+// slider -------------------------------------------------
+.review-content.current
+    display: block
+
+.review-content
+    display: none

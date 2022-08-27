@@ -120,8 +120,8 @@ class ProjectController extends Controller
                     ->update(['visability' => '0']);
             }
             return response()->json([
-                'message'  => 'Статус проекта успешно обновлен',
-                'visability'   => 200
+                'message'      => 'Статус проекта успешно обновлен',
+                'status'       => 200
             ]);
         } else {
             return redirect('/projects')

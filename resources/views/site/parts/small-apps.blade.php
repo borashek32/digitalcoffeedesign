@@ -3,7 +3,7 @@
         <div class="portfolio__body">
             <h2 class="portfolio__title title">Многостраничная верстка</h2>
             <h4 class="portfolio__subtitle subtitle">
-                Многостраничные сайты, JavaScript, CSS, HTML.<br>Все сайты полностью адаптированы под мобильные устройства.
+                Примеры многостраничных сайтов, JavaScript, CSS, HTML.<br>Все сайты полностью адаптированы под мобильные устройства.
             </h4>
             <div class="portfolio__grid">
                 @foreach ($projects as $project)

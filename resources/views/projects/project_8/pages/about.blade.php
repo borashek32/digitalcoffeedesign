@@ -12,15 +12,15 @@
             <div class="about__footer">
                 <div class="about__nav">
                     <div class="about__link">
-                        <a href="#">Explore Now</a>
+                        <a href="{{ route('organic-products') }}">Explore Now</a>
                     </div>
-                    <a href="#">
+                    <a href="{{ route('organic-products') }}">
                         <div class="buttons-slider__wrapper buttons-slider__wrapper_green">
                             <span class="buttons-slider__wrapper_arrow"></span>
                         </div>
                     </a>
                 </div>
-                <img src="{{ asset('img/projects/project_8/about-leaves.png') }}" alt="leaves" class="about__leaves">
+                {{-- <img src="{{ asset('img/projects/project_8/about-leaves.png') }}" alt="leaves" class="about__leaves"> --}}
             </div>
         </div>
     </div>

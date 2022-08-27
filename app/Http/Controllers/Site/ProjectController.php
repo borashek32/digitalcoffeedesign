@@ -95,4 +95,9 @@ class ProjectController extends Controller
     {
         return view('elements.element_4.index');
     }
+
+    public function contractorX()
+    {
+        return view('projects.project_12.index');
+    }
 }

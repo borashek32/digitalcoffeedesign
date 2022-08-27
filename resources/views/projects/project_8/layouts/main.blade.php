@@ -18,7 +18,7 @@
         {{-- footer --}}
         @include('projects.project_8.includes.footer')
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="{{ asset('assets/projects/project_8/js/script.js') }}"></script>
 </body>
 </html>
