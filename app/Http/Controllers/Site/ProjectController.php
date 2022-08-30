@@ -96,8 +96,18 @@ class ProjectController extends Controller
         return view('elements.element_4.index');
     }
 
+    public function position()
+    {
+        return view('elements.element_5.index');
+    }
+
     public function contractorX()
     {
         return view('projects.project_12.index');
+    }
+
+    public function dataRar()
+    {
+        return view('projects.project_13.index');
     }
 }

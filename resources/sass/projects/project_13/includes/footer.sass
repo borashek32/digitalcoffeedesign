@@ -1,0 +1,143 @@
+// ---------------------------------------FOOTER---------------------------------------
+.footer
+    padding-bottom: 200px
+
+    @media (max-width: 830.9px)
+        padding-bottom: 50px
+
+.footer__container
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+    @media (max-width: 830.9px)
+        flex-direction: column
+        align-items: center
+        padding-bottom: 100px
+        row-gap: 50px
+
+.footer__left-column
+
+.footer__logo-block
+    display: flex
+    align-items: center
+    gap: 22px
+    margin-bottom: 21px
+
+    @media (max-width: 830.9px)
+        justify-content: center
+
+.footer__logo
+
+.footer__title
+    font-size: 30px
+    line-height: calc(45/30*100%)
+    color: var(--color-yellow)
+
+.footer__question
+    font-size: 16px
+    line-height: calc(26/16*100%)
+    letter-spacing: -1%
+    margin-bottom: 8px
+
+    @media (max-width: 830.9px)
+        text-align: center
+    @media (max-width: 454.9px)
+        margin-bottom: 20px
+
+.social__bar
+    display: flex
+    gap: 20px
+    margin-bottom: 56px
+    flex-wrap: wrap
+    justify-content: center
+
+.footer__icon-wrapper
+    width: 43px
+    height: 43px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: all .3s linear
+    cursor: pointer
+
+.footer__icon-wrapper.footer__icon-wrapper_yellow
+    background-color: var(--color-yellow)
+.footer__icon-wrapper.footer__icon-wrapper_yellow:hover
+    background-color: #ea7301
+.footer__icon-wrapper.footer__icon-wrapper_yellow:active
+    background-color: #c86301
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, .25)
+
+.footer__icon-wrapper.footer__icon-wrapper_orange
+    background-color: var(--color-orange)
+.footer__icon-wrapper.footer__icon-wrapper_orange:hover
+    background-color: #ea7301
+.footer__icon-wrapper.footer__icon-wrapper_orange:active
+    background-color: #c86301
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, .25)
+
+.footer__icon-wrapper.footer__icon-wrapper_pink
+    background-color: var(--color-orange-pink)
+.footer__icon-wrapper.footer__icon-wrapper_pink:hover
+    background-color: #ed5022
+.footer__icon-wrapper.footer__icon-wrapper_pink:active
+    background-color: #d73e11
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, .25)
+
+.footer__icon-wrapper.footer__icon-wrapper_orange-pink
+    background-color: var(--color-pink)
+.footer__icon-wrapper.footer__icon-wrapper_orange-pink:hover
+    background-color: #af1b4b
+.footer__icon-wrapper.footer__icon-wrapper_orange-pink:active
+    background-color: #961741
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, .25)
+
+.footer__last
+    font-size: 12px
+    line-height: calc(16/12*100%)
+    letter-spacing: -1%
+    color: var(--color-grey)
+
+    @media (max-width: 830.9px)
+        text-align: center
+
+.footer__last_last-line
+    margin-bottom: -20px
+
+.footer__right-column
+    display: flex
+    flex-direction: column
+
+    @media (max-width: 830.9px)
+        align-items: center
+
+.footer__order-call
+    margin-bottom: 36px
+
+.footer__order-call:hover
+    background-color: #ea7301
+.footer__order-call:active
+    background-color: #c86301
+
+.footer__menu
+    display: flex
+    flex-wrap: wrap
+    width: 300px
+    column-gap: 27px
+    row-gap: 20px
+
+    @media (max-width: 830.9px)
+        justify-content: center
+        margin-top: 20px
+
+.footer__menu-item
+    color: var(--color-grey-two)
+    font-size: 12px
+    line-height: calc(16/12*100%)
+
+    @media (max-width: 830.9px)
+        font-size: 16px
+    @media (max-width: 525.9px)
+        font-size: 18px

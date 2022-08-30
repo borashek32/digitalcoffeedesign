@@ -12,9 +12,9 @@
                 </div>
             </div>
         </div>
-        <div class="projects__slides slider-container">
-            <div class="slider-track">
-                <div class="projects__slide slide">
+        <div class="projects__slides slider-container" id="slider-container_projects">
+            <div class="slider-track" id="slider-track_projects">
+                <div class="projects__slide slide_projects">
                     <div class="slide-cont">
                         <img src="{{ asset('img/projects/project_12/img1.jpg') }}" alt="slide" class="slide__img">
                         <div class="slide__content">
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="projects__slide slide">
+                <div class="projects__slide slide_projects">
                     <div class="slide-cont">
                         <img src="{{ asset('img/projects/project_12/img2.jpg') }}" alt="slide" class="slide__img">
                         <div class="slide__content">
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="projects__slide slide">
+                <div class="projects__slide slide_projects">
                     <div class="slide-cont">
                         <img src="{{ asset('img/projects/project_12/img3.jpg') }}" alt="slide" class="slide__img">
                         <div class="slide__content">
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="projects__slide slide">
+                <div class="projects__slide slide_projects">
                     <div class="slide-cont">
                         <img src="{{ asset('img/projects/project_12/img1.jpg') }}" alt="slide" class="slide__img">
                         <div class="slide__content">
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="projects__slide slide">
+                <div class="projects__slide slide_projects">
                     <div class="slide-cont">
                         <img src="{{ asset('img/projects/project_12/img2.jpg') }}" alt="slide" class="slide__img">
                         <div class="slide__content">
@@ -79,7 +79,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="projects__slide slide">
+                <div class="projects__slide slide_projects">
                     <div class="slide-cont">
                         <img src="{{ asset('img/projects/project_12/img3.jpg') }}" alt="slide" class="slide__img">
                         <div class="slide__content">
@@ -94,11 +94,21 @@
                 </div>
             </div>
             <div class="slider__nav">
-                <button class="slider__btn projects__slider__btn_left">
-                    <iconify-icon inline icon="akar-icons:arrow-right" width="40" height="40" rotate="180deg"></iconify-icon>
+                <button class="slider__btn" id="slider__btn_left_projects">
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;}</style></defs><title/><g data-name="Layer 2" id="Layer_2"><path d="M13,26a1,1,0,0,1-.71-.29l-9-9a1,1,0,0,1,0-1.42l9-9a1,1,0,1,1,1.42,1.42L5.41,16l8.3,8.29a1,1,0,0,1,0,1.42A1,1,0,0,1,13,26Z"/><path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z"/></g><g id="frame"><rect class="cls-1"/></g></svg>
                 </button>
-                <button class="slider__btn projects__slider__btn_right">
-                    <iconify-icon inline icon="akar-icons:arrow-left" width="40" height="40" rotate="180deg"></iconify-icon>
+                <button class="slider__btn" id="slider__btn_right_projects">
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <defs><style></style></defs>
+                        <title/>
+                        <g data-name="Layer 2" id="Layer_2">
+                            <path d="M19,26a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L26.59,16l-8.3-8.29a1,1,0,0,1,1.42-1.42l9,9a1,1,0,0,1,0,1.42l-9,9A1,1,0,0,1,19,26Z"/>
+                            <path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z"/>
+                        </g>
+                        <g id="frame">
+                            <rect class="cls-1"/>
+                        </g>
+                    </svg>
                 </button>
             </div>
         </div>

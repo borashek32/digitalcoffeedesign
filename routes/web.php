@@ -47,6 +47,9 @@ Route::get('/calm', [App\Http\Controllers\Site\ProjectController::class, 'calm']
 Route::get('/contractor-x', [App\Http\Controllers\Site\ProjectController::class, 'contractorX'])
     ->name('contractor-x');
 
+Route::get('/data-rar', [App\Http\Controllers\Site\ProjectController::class, 'dataRar'])
+    ->name('data-rar');
+
 // personal blog
 Route::get('/personal-blog', [App\Http\Controllers\Site\Projects\Project11\ProjectController::class, 'personalBlog'])
     ->name('personal-blog');
@@ -103,6 +106,9 @@ Route::get('/sliders', [App\Http\Controllers\Site\ProjectController::class, 'sli
 
 Route::get('/grid-layout', [App\Http\Controllers\Site\ProjectController::class, 'gridLayout'])
     ->name('grid-layout');
+
+Route::get('/position', [App\Http\Controllers\Site\ProjectController::class, 'position'])
+    ->name('position');
 
 // AUTH
 Route::group(['middleware' => ['role:admin']], function () {

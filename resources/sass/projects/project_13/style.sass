@@ -1,0 +1,89 @@
+@import variables
+@import reset
+@import includes/header
+@import includes/footer
+@import blocks/contacts
+@import blocks/promo
+
+// ---------------------------------- COMMON STYLES ------------------------------------
+html,
+body
+    height: 100%
+    line-height: 1
+    font-family: Montserrat
+    font-size: 16px
+    font-weight: 400
+    color: var(--color-black)
+    background-color: var(--color-bg)
+
+@media (max-width: 768px)
+    body.lock
+        overflow: hidden
+
+.wrapper
+    min-height: 100%
+    overflow: hidden
+    display: flex
+    flex-direction: column
+
+._container
+    position: relative
+    max-width: 1188px
+    padding: 0px 5px
+    margin: 0 auto // put every block at horizontal center
+
+    @media (max-width: 1000px)
+        padding: 0px 30px
+
+.main
+    margin-top: 60px
+    flex: 1 1 auto
+
+// ---------------------------------- TEXT STYLES -------------------------------------
+.title
+    font-size: 34px
+    font-weight: 700
+    line-height: calc(50/34*100%)
+    letter-spacing: -1%
+    text-transform: uppercase
+
+    @media (max-width: 868.9px)
+        font-size: 28px
+        font-weight: 600
+    @media (max-width: 767.9px)
+        color: var(--color-black)
+
+.title_white
+    color: var(--color-white)
+
+p
+    line-height: calc(25/14*100%)
+    font-size: 14px
+    letter-spacing: 0.15px
+    color: var(--color-black)
+    margin-top: 0
+    padding-top: 0
+
+p + p
+    margin-top: 0
+
+// ---------------------------------- BUTTONS STYLES -------------------------------------
+.button
+    padding: 13px 29px
+    border-radius: 20px
+    text-transform: uppercase
+    color: var(--color-white)
+    font-size: 14px
+    line-height: calc(17/14*100%)
+    letter-spacing: 0.75px
+    width: 217px
+    cursor: pointer
+    transition: all .3s linear
+
+.button_orange
+    background-color: var(--color-orange)
+
+.button_orange:hover
+    background-color: #ea7301
+.button_orange:active
+    background-color: #c86301

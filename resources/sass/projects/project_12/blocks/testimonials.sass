@@ -4,18 +4,30 @@
     @media (max-width: 1000.9px)
         padding: 0px 0px
 
-.testimonials__slider
-
 .testimonials__slide
+    // padding: 0px 19px
+
+    @media (max-width: 519.9px)
+        padding: 0
+
+.slide-cont_testimonials
     display: flex
     align-items: center
     gap: 38px
     width: 780px
 
-.slide-testimonials
+    @media (max-width: 840.9px)
+        width: 720px
+    @media (max-width: 616.9px)
+        width: 550px
+    @media (max-width: 519.9px)
+        flex-direction: column
 
 .slide-testimonials__img
     width: 50%
+
+    @media (max-width: 840.9px)
+        width: 30%
 
 .slide-testimonials__img img
     width: 100%
