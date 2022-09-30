@@ -101,6 +101,11 @@ class ProjectController extends Controller
         return view('elements.element_5.index');
     }
 
+    public function digitalclock()
+    {
+        return view('elements.element_6.index');
+    }
+
     public function contractorX()
     {
         return view('projects.project_12.index');
@@ -114,10 +119,5 @@ class ProjectController extends Controller
     public function momentum()
     {
         return view('projects.project_14.index');
-    }
-
-    public function digitalclock()
-    {
-        return view('javascript.js_1.index');
     }
 }
