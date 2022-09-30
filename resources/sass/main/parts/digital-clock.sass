@@ -1,0 +1,45 @@
+// CLOCK STYLES ------------------------------------------
+.digital__clock
+
+.clock
+    display: flex
+    gap: 20px
+    @media (max-width: 991.9px)
+        margin-top: -20px
+    @media (max-width: 767.9px)
+        display: none
+
+.clock__item
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    width: 100px
+    height: 100px
+    background-color: rgba(115, 182, 224, .8)
+    border-radius: 5px
+
+.clock__time
+    font-size: 60px
+    color: var(--color-white)
+
+.clock__text-wrapper
+    height: 30px
+    width: 100%
+    background-color: rgba(0, 64, 173, .8)
+    text-align: center
+
+.clock__text
+    color: var(--color-white)
+    text-transform: uppercase
+    letter-spacing: 2px
+    font-size: 14px
+
+.digital__wrapper
+    display: flex
+    align-items: center
+
+.digital__ampm
+    color: var(--color-white)
+    font-family: 'Inter'
+    font-size: 30px

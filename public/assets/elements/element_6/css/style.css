@@ -1,1 +1,185 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
 
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:visited {
+  text-decoration: none;
+  background-color: var(--color-white);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--color-grey);
+}
+@media (max-width: 794.9px) {
+  a:hover {
+    color: var(--color-black);
+  }
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+img, svg, video {
+  vertical-align: top;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* отображаем курсор в виде руки при наведении; некоторые */
+  /* считают, что необходимо оставлять стрелочный вид для кнопок */
+  cursor: pointer;
+  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
+}
+
+div {
+  -webkit-tap-highlight-color: transparent;
+}
+
+path {
+  fill: inherit;
+  stroke: inherit;
+}
+
+@font-face {
+  font-family: "Gothic Regular";
+  src: local("☺"), url("/assets/fonts/GothicA1-Regular.woff") format("woff"), url("/assets/fonts/GothicA1-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gothic Bold";
+  src: local("☺"), url("/assets/fonts/GothicA1-Bold.woff") format("woff"), url("/assets/fonts/GothicA1-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+html,
+body {
+  height: 100%;
+  line-height: 166.7222222222%;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Gothic Regular";
+  color: #fff;
+}
+@media (max-width: 794.9px) {
+  html,
+body {
+    font-size: 16px;
+  }
+}
+@media (max-width: 589.9px) {
+  html,
+body {
+    font-size: 14px;
+  }
+}
+
+._container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px 144px;
+  box-sizing: border-box;
+}
+@media (max-width: 968.9px) {
+  ._container {
+    max-width: 900px;
+    padding: 0px 50px;
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/img/elements/element_6/promo.jpg");
+  background-size: cover;
+  min-height: 800px;
+  background-position: center;
+}
+
+.digital__title {
+  font-family: "Gothic Bold";
+  font-size: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.clock {
+  display: flex;
+  gap: 20px;
+}
+
+.clock__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(115, 182, 224, 0.8);
+  border-radius: 5px;
+}
+
+.clock__time {
+  font-size: 60px;
+  margin-top: 25px;
+}
+
+.clock__text-wrapper {
+  height: 30px;
+  width: 100%;
+  background-color: rgba(0, 64, 173, 0.8);
+  text-align: center;
+}
+
+.clock__text {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.digital__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.digital__ampm {
+  font-family: "Gothic Bold";
+  font-size: 30px;
+}

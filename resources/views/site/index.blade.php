@@ -18,13 +18,16 @@
                         <h3>Digital<br>Coffee Design</h3>
                         <h4>Digital<br>Coffee<br>Design</h4>
                     </div>
-                    <div class="main-block__desc">
-                        <a href="#about" class="main-block__me">
-                            <img src="{{ asset('img/main/me.jpg') }}" class="main-block__img" alt="coffee">
-                        </a>
-                        <div class="main-block__text">
-                            <p>fullstack developer portfolio</p>
+                    <div class="main-block__desc-wrapper">
+                        <div class="main-block__desc">
+                            <a href="#about" class="main-block__me">
+                                <img src="{{ asset('img/main/me.jpg') }}" class="main-block__img" alt="coffee">
+                            </a>
+                            <div class="main-block__text">
+                                <p>fullstack developer portfolio</p>
+                            </div>
                         </div>
+                        @include('site.parts.digital-clock')
                     </div>
                 </div>
             </div>

@@ -1,0 +1,99 @@
+@import reset
+
+// FONTS --------------------------------------------------
+@font-face
+    font-family: 'Gothic Regular'
+    src: local('☺'), url('/assets/fonts/GothicA1-Regular.woff') format('woff'), url('/assets/fonts/GothicA1-Regular.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: 'Gothic Bold'
+    src: local('☺'), url('/assets/fonts/GothicA1-Bold.woff') format('woff'), url('/assets/fonts/GothicA1-Bold.ttf') format('truetype')
+    font-weight: bold
+    font-style: normal
+    font-display: swap
+
+// COMMON STYLES ------------------------------------------
+html,
+body
+    height: 100%
+    line-height: calc(30.01/18*100%)
+    font-size: 18px
+    font-weight: 400
+    font-family: 'Gothic Regular'
+    color: #fff
+
+    @media (max-width: 794.9px)
+        font-size: 16px
+    @media (max-width: 589.9px)
+        font-size: 14px
+
+._container
+    max-width: 1000px
+    margin: 0 auto
+    padding: 0px 144px
+    box-sizing: border-box
+
+    @media (max-width: 968.9px)
+        max-width: 900px
+        padding: 0px 50px
+
+.wrapper
+    min-height: 100%
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background-image: url('/img/elements/element_6/promo.jpg')
+    background-size: cover
+    min-height: 800px
+    background-position: center
+
+// CLOCK STYLES ------------------------------------------
+.digital
+
+.digital__title
+    font-family: 'Gothic Bold'
+    font-size: 60px
+    margin-bottom: 40px
+    text-align: center
+
+.clock
+    display: flex
+    gap: 20px
+
+.clock__item
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    width: 100px
+    height: 100px
+    background-color: rgba(115, 182, 224, .8)
+    border-radius: 5px
+
+.clock__time
+    font-size: 60px
+    margin-top: 25px
+
+.clock__text-wrapper
+    height: 30px
+    width: 100%
+    background-color: rgba(0, 64, 173, .8)
+    text-align: center
+
+.clock__text
+    text-transform: uppercase
+    letter-spacing: 2px
+    font-size: 14px
+
+.digital__wrapper
+    display: flex
+    align-items: center
+
+.digital__ampm
+    font-family: 'Gothic Bold'
+    font-size: 30px
