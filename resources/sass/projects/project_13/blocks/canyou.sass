@@ -1,0 +1,87 @@
+.canyou
+
+.canyou__container
+    padding: 0px 90px
+
+    @media (max-width: 840.9px)
+        padding: 0
+
+.canyou__title
+    font-size: 34px
+    line-height: calc(41/34*100%)
+    letter-spacing: -1%
+    font-weight: 700
+    margin-bottom: 40px
+
+    @media (max-width: 840.9px)
+        font-size: 28px
+        font-weight: 600
+    @media (max-width: 679.9px)
+        font-size: 20px
+        font-weight: 500
+
+.canyou__grid
+    display: grid
+    grid-template-columns: 210px 210px 210px
+    grid-template-rows: 1fr 1fr
+    grid-column-gap: 146px
+    grid-row-gap: 30px
+
+    @media (max-width: 1069.9px)
+        grid-template-columns: 210px 210px
+        grid-template-rows: 1fr 1fr 1fr
+        justify-content: center
+    @media (max-width: 686.9px)
+        grid-template-columns: 300px
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr
+        grid-row-gap: 15px
+
+.canyou__item
+    position: relative
+    top: 0
+    left: 0
+    width: 210px
+    height: 157px
+
+    @media (max-width: 840.9px)
+        width: 300px
+        height: 110px
+    @media (max-width: 380.9px)
+        width: 250px
+        height: 130px
+
+.canyou__bg
+    position: absolute
+    z-index: 2
+    top: -20px
+    left: 0
+
+.canyou__bg p
+    font-size: 96px
+    line-height: calc(140/96*100%)
+    letter-spacing: -2%
+    font-weight: 900
+    color: rgba(254, 180, 71, 0.1)
+
+.canyou__content
+    position: absolute
+    z-index: 20
+    top: 0
+    left: 0
+
+.canyou__img
+    width: 40px
+    height: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 16px
+
+.canyou__desc p
+    font-size: 20px
+    line-height: calc(30/20*100%)
+    letter-spacing: 0.15px
+    font-weight: 400
+
+    @media (max-width: 679.9px)
+        font-size: 16px

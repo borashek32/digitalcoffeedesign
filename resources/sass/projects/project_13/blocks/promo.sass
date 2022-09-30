@@ -1,0 +1,142 @@
+.promo
+    margin-bottom: 73px
+
+.promo__bg
+    background-color: var(--color-orange-pink)
+    position: relative
+    left: 0
+    top: 0
+    height: 735px
+    width: 100%
+
+    @media (max-width: 1319px)
+        height: 650px
+    @media (max-width: 1121.9px)
+        height: 680px
+    @media (max-width: 1121.9px)
+        height: 800px
+    @media (max-width: 938.9px)
+        height: 850px
+    @media (max-width: 432.9px)
+        height: 950px
+
+.promo__circle_yellow
+    position: absolute
+    z-index: 2
+    bottom: 0
+    right: 0
+
+.promo__circle_pink_above
+    position: absolute
+    z-index: 3
+    top: -123px
+    right: 0
+
+.promo__circle_orange
+    position: absolute
+    z-index: 4
+    top: -102px
+    right: 310px
+
+.promo__circle_pink_below
+    position: absolute
+    z-index: 2
+    bottom: 0
+    left: 0
+
+.promo__content
+    position: absolute
+    z-index: 5
+    top: 153px
+    left: 0
+    padding: 0px 40px
+    margin: 0 auto
+    // max-width: 1168px
+
+    @media (max-width: 3400px)
+        padding: 0px 500px
+    @media (max-width: 1600px)
+        padding: 0px 350px
+    @media (max-width: 1920px)
+        padding: 0px 126px
+    @media (max-width: 1319px)
+        padding: 0px 50px
+    @media (max-width: 1173.9px)
+        padding: 0px 10px
+
+.promo__title p
+    font-size: 48px
+    line-height: calc(58/48*100%)
+    color: var(--color-white)
+    font-weight: 800
+    margin-bottom: 16px
+    letter-spacing: -1%
+
+    @media (max-width: 1319px)
+        font-size: 40px
+        font-weight: 700
+    @media (max-width: 1173.9px)
+        font-size: 36px
+        font-weight: 600
+        margin-top: 0
+    @media (max-width: 709.9px)
+        font-size: 28px
+    @media (max-width: 432.9px)
+        font-size: 24px
+
+.promo__subtitle p
+    font-size: 24px
+    line-height: calc(14/12*100%)
+    color: var(--color-white)
+    font-weight: 700
+    letter-spacing: -1%
+
+    @media (max-width: 709.9px)
+        font-size: 18px
+
+.promo__items
+    margin-top: 60px
+    margin-bottom: 40px
+    display: flex
+    justify-content: space-between
+    letter-spacing: -1%
+    margin-bottom: 35px
+
+    @media (max-width: 1112.9px)
+        flex-direction: column
+        gap: 20px
+        align-items: center
+
+.item
+    display: flex
+    flex: 1 1 auto
+    overflow: scroll
+
+    @media (max-width: 1112.9px)
+        flwx-wrap: wrap
+    @media (max-width: 906.9px)
+        width: 400px
+    @media (max-width: 432.9px)
+        width: 300px
+    @media (max-width: 323.9px)
+        width: 250px
+
+.item__icon
+    width: 65px
+    height: 65px
+    display: flex
+    justify-content: center
+    align-items: start
+
+.item__desc
+    margin-left: 5px
+
+.item__desc p
+    font-size: 16px
+    letter-spacing: -1%
+    color: var(--color-white)
+    line-height: calc(26/16*100%)
+
+.promo__booking
+    margin-top: 65px
+    margin-bottom: 85px

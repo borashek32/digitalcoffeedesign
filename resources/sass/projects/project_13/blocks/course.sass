@@ -1,0 +1,427 @@
+.course__container
+    display: flex
+    flex-direction: column
+    align-items: center
+
+// TITLE -------------------------------------------------------
+.course__title
+    font-size: 44px
+    line-height: calc(59/44*100%)
+    letter-spacing: -1%
+    font-weight: 800
+    color: #8D8D8D
+    margin-bottom: 57px
+
+    @media (max-width: 1041px)
+        font-weight: 700
+        font-size: 36px
+    @media (max-width: 543.9px)
+        font-size: 24px
+
+.course__title_pink
+    color: var(--color-pink)
+
+.course__title_orange
+    color: var(--color-orange)
+
+// TABLE -------------------------------------------------------
+.comparison
+    @media (max-width: 999.9px)
+        margin-bottom: 0
+
+.comparison__table
+    margin-bottom: 100px
+    overflow-x: scroll
+
+    @media (max-width: 799.9px)
+        padding-bottom: 0
+
+td
+    text-align: left
+    vertical-align: top
+    padding-bottom: 80px
+
+    @media (max-width: 999.9px)
+        padding-bottom: 40px
+
+td:last-child
+    padding-bottom: 0
+
+.comparison__icon_sad
+    width: 60px
+    padding-right: 15px
+    position: relative
+
+    @media (max-width: 543.9px)
+        display: none
+
+.comparison__icon_sad_mask
+    width: 45px
+    height: 45px
+    border-radius: 30px
+    position: absolute
+    z-index: 3
+    top: 0
+    left: 0
+    background-color: rgba(0, 0, 0, 0.5)
+
+    @media (max-width: 799.9px)
+        width: 35px
+        height: 35px
+    @media (max-width: 626.9px)
+        width: 25px
+        height: 25px
+    @media (max-width: 543.9px)
+        display: none
+
+.comparison__icon_sad img
+    width: 45px
+    height: 45px
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+
+    @media (max-width: 799.9px)
+        width: 35px
+        height: 35px
+    @media (max-width: 626.9px)
+        width: 25px
+        height: 25px
+
+.comparison__icon_happy
+    width: 80px
+    padding-right: 20px
+
+    @media (max-width: 543.9px)
+        display: none
+
+.comparison__icon_happy_hands
+    width: 65px
+    padding-right: 15px
+
+.comparison__desc_sad
+    width: 379px
+    padding-right: 47px
+
+    @media (max-width: 767.9px)
+        width: 300px
+        padding-right: 20px
+
+.comparison__desc_happy
+    width: 420px
+
+    @media (max-width: 767.9px)
+        width: 380px
+
+.comparison__desc_sad p
+    font-size: 16px
+    line-height: calc(26/16*100%)
+    letter-spacing: -1%
+    font-weight: 400
+
+    @media (max-width: 1041px)
+        font-size: 14px
+    @media (max-width: 543.9px)
+        font-size: 12px
+
+.comparison__desc_happy p
+    font-size: 20px
+    line-height: calc(30/20*100%)
+    letter-spacing: 0.15%
+    font-weight: 600
+
+    @media (max-width: 1041px)
+        font-weight: 500
+        font-size: 16px
+    @media (max-width: 543.9px)
+        font-size: 12px
+
+// PRICE -------------------------------------------------------
+.price
+    border-top: 1px solid #F5F5F5
+    padding-top: 45px
+    display: flex
+    align-items: end
+    gap: 126px
+    width: 100%
+    padding-bottom: 116px
+
+    @media (max-width: 799.9px)
+        padding-bottom: 50px
+        padding-top: 30px
+        margin-top: -50px
+        gap: 50px
+    @media (max-width: 543.9px)
+        flex-direction: column
+        gap: 20px
+        align-items: start
+
+.price__column_ordinary
+    width: 40%
+
+.price__column_this
+    width: 60%
+
+.price__title_ordinary
+    color: #C4C4C4
+    font-size: 18px
+    line-height:  calc(21/18*100%)
+    font-weight: 600
+
+.price__price_ordinary
+    font-size: 36px
+    line-height: calc(45/36*100%)
+    letter-spacing: -5%
+    color: #C4C4C4
+
+    @media (max-width: 1041px)
+        font-size: 28px
+    @media (max-width: 799.9px)
+        font-size: 20px
+
+.price__price_ordinary span
+    color: #C4C4C4
+    letter-spacing: -5%
+    font-weight: 400
+    font-size: 59px
+    line-height: calc(72/59*100%)
+
+    @media (max-width: 1041px)
+        font-size: 46px
+    @media (max-width: 767.9px)
+        font-size: 30px
+
+.price__title_this
+    color: #FE840E
+    font-size: 34px
+    line-height: cal(50/34*100%)
+    letter-spacing: -1%
+    font-weight: 700
+
+    @media (max-width: 1041px)
+        font-weight: 600
+        font-size: 28px
+    @media (max-width: 799.9px)
+        font-size: 18px
+
+.price__price_this
+    color: #FE840E
+    font-size: 60px
+    line-height: calc(81/60*100%)
+    letter-spacing: -1%
+    font-weight: 900
+
+    @media (max-width: 1041px)
+        font-weight: 800
+        font-size: 40px
+    @media (max-width: 799.9px)
+        font-size: 28px
+
+.price__price_this span
+    color: #FE840E
+    font-size: 96px
+    letter-spacing: -2%
+    font-weight: 800
+
+    @media (max-width: 1041px)
+        font-weight: 700
+        font-size: 60px
+    @media (max-width: 799.9px)
+        font-size: 40px
+
+// BEGINNING -------------------------------------------------------
+.beginning
+    margin-bottom: 115px
+
+    @media (max-width: 949.9px)
+        margin-bottom: 50px
+
+.beginning__bg
+    overflow: hidden
+    position: relative
+    top: 0
+    left: 0
+    height: 346px
+    width: 1164px
+    border-radius: 40px
+    background-color: var(--color-orange)
+
+    @media (max-width: 1319px)
+        width: 1000px
+    @media (max-width: 1173.9px)
+        width: 900px
+        height: 400px
+    @media (max-width: 949.9px)
+        width: 750px
+        height: 520px
+    @media (max-width: 815.9px)
+        width: 600px
+    @media (max-width: 697.9px)
+        width: 450px
+    @media (max-width: 525.9px)
+        width: 350px
+        height: 490px
+    @media (max-width: 385.9px)
+        width: 290px
+        height: 450px
+
+.course__circle_pink
+    position: absolute
+    left: 0
+    z-index: 2
+
+    @media (max-width: 1173.9px)
+        height: 400px
+    @media (max-width: 949.9px)
+        height: 520px
+        z-index: 3
+
+.course__circle_pink_orange
+    position: absolute
+    right: 0
+    z-index: 2
+
+    @media (max-width: 1173.9px)
+        height: 400px
+    @media (max-width: 949.9px)
+        height: 520px
+
+.beginning__gradient
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 4
+    height: 160px
+    width: 1164px
+    background: linear-gradient(180deg, rgba(254, 180, 71, 1), rgba(254, 180, 71, 0))
+
+.beginning__content
+    position: absolute
+    z-index: 30
+    top: 0
+    left: 0
+    padding: 51px 78px
+
+    @media (max-width: 525.9px)
+        padding: 20px
+
+.beginning__title
+    font-size: 54px
+    line-height: calc(72/54*100%)
+    letter-spacing: -1%
+    font-weight: 800
+    color: var(--color-white)
+
+    @media (max-width: 1319px)
+        font-size: 40px
+        font-weight: 700
+    @media (max-width: 1173.9px)
+        font-size: 36px
+        font-weight: 600
+        margin-top: 0
+    @media (max-width: 709.9px)
+        font-size: 28px
+    @media (max-width: 432.9px)
+        font-size: 24px
+    @media (max-width: 385.9px)
+        font-size: 20px
+
+.beginning__subtitle
+    margin-top: 50px
+    margin-bottom: 38px
+
+.beginning__form
+    display: flex
+    flex-wrap: wrap
+    gap: 20px
+
+    @media (max-width: 949.9px)
+        flex-direction: column
+
+.beginning__input
+    border-radius: 30px
+    padding: 13px
+
+.beginning__input::placeholder
+    text-transform: uppercase
+    color: rgba(254, 132, 14, 0.5)
+    font-size: 14px
+    line-height: calc(17/14*100%)
+
+.beginning__input_name
+    width: 454px
+
+    @media (max-width: 1319px)
+        width: 290px
+    @media (max-width: 385.9px)
+        width: 217px
+
+.beginning__input_phone
+    width: 290px
+
+    @media (max-width: 385.9px)
+        width: 217px
+
+// DISCOUNT -------------------------------------------------------
+.discount
+    margin: 0px 0px 115px 0px
+    display: flex
+    gap: 43px
+    width: 100%
+    align-items: end
+
+    @media (max-width: 1290.9px)
+        flex-direction: column
+        gap: 60px
+    @media (max-width: 483.9px)
+        margin: 0
+
+.discount-item
+    width: 50%
+
+    @media (max-width: 1290.9px)
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+
+.discount-item_content
+    display: flex
+    margin-bottom: 57px
+    align-items: end
+
+.discount-item__img img
+    display: flex
+    align-self: end
+
+.discount-item__desc
+    margin-left: 8px
+
+.discount-item__percent_yellow
+    background-image: linear-gradient(180deg, rgba(245, 250, 114, 1), rgba(254, 132, 14, 1))
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    font-size: 120px
+    line-height: calc(175/120*100%)
+    font-weight: 900
+
+    @media (max-width: 600.9px)
+        font-size: 90px
+        font-weight: 800
+    @media (max-width: 443.9px)
+        font-size: 60px
+        font-weight: 700
+
+.discount-item__percent_orange_to_pink
+    background-image: linear-gradient(180deg, rgba(254, 132, 14, 1), rgba(200, 31, 86, 1))
+
+.discount-item__description
+    font-size: 20px
+    line-height: calc(31/24*100%)
+    letter-spacing: -1%
+    font-weight: 700
+
+    @media (max-width: 600.9px)
+        font-size: 16px
+        font-weight: 500

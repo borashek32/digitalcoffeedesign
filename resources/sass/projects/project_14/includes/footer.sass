@@ -1,0 +1,115 @@
+// FOOTER ---------------------------------------
+.footer__top
+    padding: 160px 0px
+    display: flex
+    flex-direction: column
+    background-image: linear-gradient(to right, var(--color-pink-dark), rgba(69, 14, 75, 1))
+
+.footer_container
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.footer__title
+    font-size: 38px
+    line-height: calc(48/38*100%)
+    color: var(--color-white)
+    text-align: center
+    margin-bottom: 20px
+
+    @media (max-width: 507.9px)
+        font-size: 30px
+
+.footer__buttons
+    margin-top: 40px
+    display: flex
+    gap: 10px
+
+    @media (max-width: 507.9px)
+        flex-direction: column
+
+.footer__bottom
+    background-color: var(--color-black-light)
+    padding: 160px 0px 80px 0px
+
+.footer__desc
+    margin-bottom: 40px
+    text-align: center
+
+.footer__form-wrapper
+    display: flex
+    justify-content: center
+
+.footer__form
+    @media (max-width: 569.9px)
+        display: flex
+        flex-direction: column
+        gap: 20px
+
+.footer__input
+    width: 310px
+    padding: 25px 20px
+    border-top-left-radius: 3px
+    border-bottom-left-radius: 3px
+    margin-right: -5px
+
+    @media (max-width: 569.9px)
+        width: 400px
+        border-top-right-radius: 3px
+        border-bottom-right-radius: 3px
+
+    @media (max-width: 520.9px)
+        width: 300px
+
+    @media (max-width: 357.9px)
+        width: 200px
+
+.footer__input:placeholder
+    font-size: 16px
+    line-height: calc(26/16*100%)
+
+.footer__button_radius
+    padding: 20px 40px
+    background-color: var(--color-pink)
+    border-top-right-radius: 3px
+    border-bottom-right-radius: 3px
+    transition: all .3s linear
+
+    @media (max-width: 569.9px)
+        width: 400px
+        border-top-left-radius: 3px
+        border-bottom-left-radius: 3px
+
+    @media (max-width: 520.9px)
+        width: 300px
+
+    @media (max-width: 357.9px)
+        width: 200px
+
+.footer__button_radius:hover
+    background-color: var(--color-pink-dark)
+
+.footer__button_radius p
+    color: var(--color-black)
+
+.footer__button_radius:hover p
+    color: var(--color-grey)
+
+.footer__logo-wrapper
+    display: flex
+    justify-content: center
+
+.footer__logo
+    margin-bottom: 30px
+    margin-top: 130px
+
+.footer__links
+    display: flex
+    gap: 30px
+    justify-content: center
+
+    @media (max-width: 1016.9px)
+        flex-wrap: wrap
+
+.footer__link:hover
+    color: var(--color-grey-light)

@@ -37,6 +37,12 @@ mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/projects/project_13/script.js', 'public/assets/projects/project_13/js')
     .sass('resources/sass/projects/project_13/style.sass', 'public/assets/projects/project_13/css')
 
+    .js('resources/js/projects/project_14/script.js', 'public/assets/projects/project_14/js')
+    .sass('resources/sass/projects/project_14/style.sass', 'public/assets/projects/project_14/css')
+
+    .js('resources/js/javascript/js_1/script.js', 'public/assets/javascript/js_1/js')
+    .sass('resources/sass/javascript/js_1/style.sass', 'public/assets/javascript/js_1/css')
+
 // ELEMENTS
     .sass('resources/sass/elements/element_1/style.sass', 'public/assets/elements/element_1/css')
 

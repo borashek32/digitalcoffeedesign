@@ -1,0 +1,132 @@
+// HEADER --------------------------------------------
+.header
+    width: 100%
+    left: 0
+    top: 0
+    z-index: 100
+    background-color: inherit
+
+    @media (max-width: 794.9px)
+        display: relative
+
+.header__container
+    display: flex
+    justify-content: end
+
+.header__body
+    height: 100px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0px
+
+    @media (max-width: 968.9px)
+        height: 70px
+        padding: 0
+
+.header__logo_img
+    fill: var(--color-white)
+
+.header__logo_img:hover
+    fill: var(--color-grey)
+
+.header__menu
+    display: flex
+    gap: 30px
+    height: 100px
+    align-items: center
+    justify-content: space-beetwen
+    margin: 0px 30px
+
+@media (max-width: 794.9px)
+    .header__menu
+        background-color: var(--color-pink)
+        padding: 0
+        margin: 0
+        transition: all .3s linear
+        justify-content: center
+        gap: 50px
+        padding: 50px
+        position: fixed
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 100
+        top: -100%
+    .header__menu.active
+        top: 0
+
+.header__list
+    display: flex
+    gap: 30px
+    padding: 40px 0px 40px 0px
+
+    @media (max-width: 794.9px)
+        flex-direction: column
+
+.header__li
+    padding: 15px 24px 19px
+    cursor: pointer
+
+.header__link
+    color: var(--color-white)
+    font-size: 15px
+    line-height: calc(20/18*100%)
+    transition: all .3s linear
+
+.header__link:hover
+    color: var(--color-grey)
+
+.header__link:active
+    color: var(--color-black)
+
+    @media (max-width: 794.9px)
+        color: var(--color-black)
+        font-size: 20px
+
+// BURGER --------------------------------------------
+.header__burger
+    display: none
+
+@media (max-width: 794.9px)
+    .header__burger
+        display: block
+        position: fixed
+        width: 40px
+        height: 20px
+        z-index: 300
+        right: 50px
+        cursor: pointer
+
+    .header__burger span
+        position: absolute
+        background-color: var(--color-white)
+        width: 100%
+        height: 2px
+        top: 9px
+        transition: all 0.3s ease-in-out 0s
+
+    .header__burger:before,
+    .header__burger:after
+        content: ''
+        background-color: var(--color-white)
+        position: absolute
+        width: 100%
+        height: 2px
+        transition: all 0.3s ease-in-out 0s
+    .header__burger:before
+        top: 0
+    .header__burger:after
+        bottom: 0
+
+    .header__burger.active:before
+        background-color: var(--color-white)
+        transform: rotate(45deg)
+        top: 9px
+    .header__burger.active:after
+        background-color: var(--color-white)
+        transform: rotate(-45deg)
+        bottom: 9px
+    .header__burger.active span
+        transform: scale(0)
+

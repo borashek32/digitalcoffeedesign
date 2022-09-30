@@ -110,4 +110,14 @@ class ProjectController extends Controller
     {
         return view('projects.project_13.index');
     }
+
+    public function momentum()
+    {
+        return view('projects.project_14.index');
+    }
+
+    public function digitalclock()
+    {
+        return view('javascript.js_1.index');
+    }
 }

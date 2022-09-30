@@ -3,5 +3,7 @@
 @section('content')
     @include('projects.project_13.includes.header')
     @include('projects.project_13.blocks.promo')
+    @include('projects.project_13.blocks.canyou')
+    @include('projects.project_13.blocks.course')
     @include('projects.project_13.blocks.contacts')
 @endsection

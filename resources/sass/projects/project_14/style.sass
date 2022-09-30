@@ -1,0 +1,138 @@
+@import variables
+@import reset
+@import includes/header
+@import includes/footer
+@import blocks/promo
+@import blocks/about
+@import blocks/features
+@import blocks/cards
+@import blocks/statistics
+@import blocks/advs
+@import blocks/reviews
+@import blocks/links
+
+// ----------------------------------FONTS-------------------------------------
+@font-face
+    font-family: 'Gothic Regular'
+    src: local('☺'), url('/assets/fonts/GothicA1-Regular.woff') format('woff'), url('/assets/fonts/GothicA1-Regular.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: 'Gothic Bold'
+    src: local('☺'), url('/assets/fonts/GothicA1-Bold.woff') format('woff'), url('/assets/fonts/GothicA1-Bold.ttf') format('truetype')
+    font-weight: bold
+    font-style: normal
+    font-display: swap
+
+// COMMON STYLES ------------------------------------------
+html,
+body
+    height: 100%
+    line-height: calc(30.01/18*100%)
+    font-size: 18px
+    font-weight: 400
+    font-family: 'Gothic Regular'
+    color: var(--color-grey)
+
+    @media (max-width: 794.9px)
+        font-size: 16px
+    @media (max-width: 589.9px)
+        font-size: 14px
+
+@media (max-width: 768px)
+    body.lock
+        overflow: hidden
+
+.main
+
+._container
+    max-width: 1440px
+    margin: 0 auto
+    padding: 0px 144px
+    box-sizing: border-box
+
+    @media (max-width: 968.9px)
+        max-width: 900px
+        padding: 0px 50px
+
+.wrapper
+    min-height: 100%
+    overflow: hidden
+    display: flex
+    flex-direction: column
+
+.main
+    flex: 1 1 auto
+
+// TEXT STYLES ------------------------------------------------
+.text-block
+    width: 450px
+    padding-left: 59px
+    padding-right: 80px
+
+    @media (max-width: 450.9px)
+        width: 350px
+
+.title-block
+
+.title-block_center
+    text-align: center
+
+.title-block__subtitle
+    margin-bottom: 25px
+    font-size: 12px
+    text-transform: uppercase
+    letter-spacing: 2px
+
+    @media (max-width: 579.9px)
+        text-align: center
+
+.title-block__title
+    font-size: 38px
+    line-height: calc(48/38*100%)
+    color: var(--color-black)
+
+    @media (max-width: 793.9px)
+        font-size: 26px
+
+    @media (max-width: 579.9px)
+        text-align: center
+
+    @media (max-width: 521.9px)
+        font-size: 18px
+
+.title-block__title_white
+    color: var(--color-white)
+
+.title-block__desc
+    font-size: 16px
+    line-height: calc(30/16*100%)
+    color: var(--color-grey)
+    margin-top: 22px
+
+    @media (max-width: 579.9px)
+        margin-bottom: 20px
+        text-align: center
+
+// BUTTONS STYLES ---------------------------------------------
+.button
+    padding: 20px 40px
+    border: 1px solid var(--color-white)
+    border-radius: 3px
+    transition: all .3s linear
+
+.button:hover
+    padding: 20px 40px
+    border: 1px solid var(--color-pink)
+    background-color: var(--color-pink)
+
+.button__text
+    color: var(--color-white)
+    line-height: calc(26/16*100%)
+    font-size: 16px
+    transition: all .3s linear
+
+.button:hover .button__text
+    color: var(--color-grey-light)

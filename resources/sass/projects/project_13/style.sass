@@ -2,8 +2,10 @@
 @import reset
 @import includes/header
 @import includes/footer
-@import blocks/contacts
 @import blocks/promo
+@import blocks/canyou
+@import blocks/course
+@import blocks/contacts
 
 // ---------------------------------- COMMON STYLES ------------------------------------
 html,
@@ -16,6 +18,10 @@ body
     color: var(--color-black)
     background-color: var(--color-bg)
 
+p
+    margin: 0
+    padding: 0
+
 @media (max-width: 768px)
     body.lock
         overflow: hidden
@@ -27,16 +33,15 @@ body
     flex-direction: column
 
 ._container
-    position: relative
-    max-width: 1188px
-    padding: 0px 5px
+    max-width: 1168px
+    padding: 0px 10px
     margin: 0 auto // put every block at horizontal center
 
     @media (max-width: 1000px)
         padding: 0px 30px
 
 .main
-    margin-top: 60px
+    margin-top: 80px
     flex: 1 1 auto
 
 // ---------------------------------- TEXT STYLES -------------------------------------
@@ -45,7 +50,6 @@ body
     font-weight: 700
     line-height: calc(50/34*100%)
     letter-spacing: -1%
-    text-transform: uppercase
 
     @media (max-width: 868.9px)
         font-size: 28px
@@ -79,11 +83,23 @@ p + p
     width: 217px
     cursor: pointer
     transition: all .3s linear
+    font-weight: 600
+
+.button_bigger
+    width: 230px
 
 .button_orange
     background-color: var(--color-orange)
-
 .button_orange:hover
     background-color: #ea7301
 .button_orange:active
     background-color: #c86301
+
+.button_yellow
+    background-color: var(--color-yellow)
+    color: var(--color-black)
+.button_yellow:hover
+    background-color: #ea7301
+.button_yellow:active
+    background-color: #c86301
+

@@ -94,6 +94,12 @@ Route::get('/organic/products', [App\Http\Controllers\Site\Projects\Project8\Org
 Route::get('/organic/contacts', [App\Http\Controllers\Site\Projects\Project8\OrganicController::class, 'organicContacts'])
     ->name('organic-contacts');
 
+Route::get('/momentum', [App\Http\Controllers\Site\ProjectController::class, 'momentum'])
+    ->name('momentum');
+
+Route::get('/digital-clock', [App\Http\Controllers\Site\ProjectController::class, 'digitalclock'])
+    ->name('digital-clock');
+
 // ELEMENTS
 Route::get('/flex-box', [App\Http\Controllers\Site\ProjectController::class, 'flexBox'])
     ->name('flex-box');

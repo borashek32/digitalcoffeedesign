@@ -1,0 +1,30 @@
+.statistics
+    padding: 80px 0px
+
+.statistics__flex
+    display: flex
+    justify-content: space-between
+
+    @media (max-width: 900.9px)
+        flex-wrap: wrap
+        row-gap: 60px
+
+.item
+    text-align: center
+
+    @media (max-width: 900.9px)
+        width: 50%
+
+    @media (max-width: 475.9px)
+        width: 100%
+
+.item__number
+    font-size: 59px
+    line-height: calc(90/58*100%)
+    color: var(--color-grey-dark)
+    margin-bottom: 10px
+
+.item__title
+    font-size: 18px
+    line-height: calc(24/18*100%)
+    color: var(--color-black)
