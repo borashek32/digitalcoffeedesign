@@ -32,7 +32,7 @@
             <ul class="menu__list">
                 <li class="menu__item" id="auto">
                     <a href="#" class="menu__link menu__link-auto">Автомобили</a>
-                    <div class="menu__auto-dropdown auto-dropdown dropdown dropdown-big closed">
+                    <div class="menu__auto-dropdown auto-dropdown dropdown closed">
                         <div class="auto-dropdown__left">
                             <ul class="auto-dropdown__list">
                                 <p>Купить</p>
@@ -52,6 +52,7 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="auto-divider"></div>
                         <div class="auto-dropdown__right">
                             <div class="auto-dropdown__title-wrapper">
                                 <h5>Найти автомобиль по марке</h5>

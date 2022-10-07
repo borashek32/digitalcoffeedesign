@@ -270,6 +270,14 @@ path {
   transition: all 0.2s ease;
 }
 
+.menu__item:hover .menu__link {
+  color: var(--color-blue-light);
+}
+
+.menu__link:hover {
+  color: var(--color-blue-light);
+}
+
 .logo {
   overflow: hidden;
   position: relative;
@@ -525,12 +533,49 @@ svg {
   }
 }
 
+.auto-dropdown {
+  display: none;
+}
+
 #auto:hover .auto-dropdown {
-  display: block;
+  display: flex;
+}
+
+.service-autoparts-dropdown {
+  display: none;
+}
+
+#service-autoparts:hover .service-autoparts-dropdown {
+  display: flex;
+}
+
+.tires-dropdown {
+  display: none;
+}
+
+#tires:hover .tires-dropdown {
+  display: flex;
+}
+
+.promotions-dropdown {
+  display: none;
+}
+
+#promotions:hover .promotions-dropdown {
+  display: flex;
+}
+
+.services-dropdown {
+  display: none;
+}
+
+#services:hover .services-dropdown {
+  display: flex;
 }
 
 .dropdown {
   max-width: 650px;
+  display: flex;
   width: auto;
   height: auto;
   background-color: var(--color-white);
@@ -539,8 +584,9 @@ svg {
   position: absolute;
   top: 65px;
   left: -5px;
-  display: flex;
   z-index: 500;
+  display: none;
+  padding: 15px 0px;
 }
 @media (max-width: 1439.9px) {
   .dropdown {
@@ -553,14 +599,9 @@ svg {
     width: 550px;
   }
 }
-@media (max-width: 499.9px) {
-  .dropdown {
-    flex-direction: column;
-  }
-}
 
 .auto-dropdown__left {
-  width: 40%;
+  width: 250px;
   border-right: 1px solid var(--color-grey-dark);
 }
 @media (max-width: 499.9px) {
@@ -593,7 +634,7 @@ svg {
 
 .auto-dropdown__right {
   padding: 0px 0px 20px 20px;
-  width: 60%;
+  width: 400px;
   flex-wrap: wrap;
 }
 @media (max-width: 499.9px) {
@@ -708,8 +749,4 @@ body {
 
 .main {
   flex: 1 1 auto;
-}
-
-.closed {
-  display: none;
 }
