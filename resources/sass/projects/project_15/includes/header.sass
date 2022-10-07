@@ -225,9 +225,11 @@
 
     .header__burger.active:before
         transform: rotate(45deg)
+        background-color: var(--color-grey)
         top: 15px
     .header__burger.active:after
         transform: rotate(-45deg)
+        background-color: var(--color-grey)
         bottom: 7px
     .header__burger.active span
         transform: scale(0)
@@ -360,8 +362,21 @@
 svg
     stroke: var(--color-blue)
 
-    @media (max-width: 1439.9px)
+svg:hover
+    stroke: var(--color-blue-light)
+
+svg:active
+    stroke: var(--color-blue-dark)
+
+@media (max-width: 1439.9px)
+    svg
         stroke: var(--color-grey-light)
+
+    svg:hover
+        stroke: var(--color-grey)
+
+    svg:active
+        stroke: var(--color-black)
 
 // ---------------------------------------DROPDOWN---------------------------------------
 .auto-dropdown
@@ -416,19 +431,14 @@ svg
     @media (max-width: 667.9px)
         width: 550px
 
-// .dropdown-big
-//     width: 650px
-//     display: flex
-//     flex-direction: row
-
-    @media (max-width: 499.9px)
+    @media (max-width: 599.9px)
         flex-direction: column
 
 .auto-dropdown__left 
-    width: 250px
+    width: 200px
     border-right: 1px solid var(--color-grey-dark)
 
-    @media (max-width: 499.9px)
+    @media (max-width: 599.9px)
         width: 100%
         border: none
 
@@ -452,12 +462,12 @@ svg
 
 .auto-dropdown__right
     padding: 0px 0px 20px 20px
-    width: 400px
+    width: 450px
     flex-wrap: wrap
 
-    @media (max-width: 499.9px)
+    @media (max-width: 599.9px)
         padding: 0px 0px 10px 10px
-        width: 90%
+        width: 100%
 
 .auto-dropdown__title-wrapper h5
     font-size: 14px
