@@ -15,7 +15,7 @@
         <main class="main">
             @yield('content')
         </main>
-        <footer></footer>
+        @include('projects.project_15.includes.footer')
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="{{ asset('assets/projects/project_15/js/script.js') }}"></script>

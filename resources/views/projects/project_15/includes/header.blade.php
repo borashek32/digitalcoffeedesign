@@ -224,8 +224,8 @@
                 <li class="personal__item">
                     <a href="#">
                         <div class="personal__icon">
-                            <svg width="25" height="25" fill="none" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.34791 4C4.08193 4 1.4897 6.91811 2.08575 11.1065C2.60306 14.7416 11.5107 22 12.5 22C13.4893 22 22.3969 14.7416 22.9142 11.1065C23.5103 6.91802 20.9181 4 17.6521 4C15.4748 4 13.7787 4.89165 12.5 6.67496C11.2213 4.89165 9.52523 4 7.34791 4Z" stroke="#0049B7" stroke-width="2"/>
+                            <svg class="personal__svg" width="25" height="25" fill="none" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.34791 4C4.08193 4 1.4897 6.91811 2.08575 11.1065C2.60306 14.7416 11.5107 22 12.5 22C13.4893 22 22.3969 14.7416 22.9142 11.1065C23.5103 6.91802 20.9181 4 17.6521 4C15.4748 4 13.7787 4.89165 12.5 6.67496C11.2213 4.89165 9.52523 4 7.34791 4Z" stroke-width="2"/>
                             </svg>
                             <div class="personal__quantity">10</div>
                         </div>
@@ -234,7 +234,7 @@
                 <li class="personal__item">
                     <a href="#">
                         <div class="personal__icon">
-                            <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="25" class="personal__svg" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 4V21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M5 11L5 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M19 8L19 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -246,7 +246,7 @@
                 <li class="personal__item">
                     <form action="#" method="POST">
                         @csrf
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="personal__user">
+                        <svg class="personal__user" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1_714)">
                             <path d="M12.45 15.5C15.9975 15.5 18.9 12.0125 18.9 7.75C18.9 3.4875 15.9975 0 12.45 0C8.9025 0 6 3.4875 6 7.75C6 12.0125 8.9025 15.5 12.45 15.5ZM12.45 1.9375C14.9655 1.9375 16.965 4.52083 16.965 7.75C16.965 10.9792 14.9655 13.5625 12.45 13.5625C9.9345 13.5625 7.935 10.9792 7.935 7.75C7.935 4.52083 9.9345 1.9375 12.45 1.9375Z" fill="#D7D9DF"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M1.96901 22.9348H12.5H23.031C22.5229 17.5388 17.8227 16.9392 17.5686 16.9392C17.0605 16.8726 16.6794 16.4062 16.7429 15.8733C16.8064 15.3403 17.251 14.9406 17.7591 15.0073C17.8227 15.0073 25 15.8733 25 24.0007C25 24.5337 24.5554 25 24.0473 25H12.5H0.952744C0.444614 25 0 24.5337 0 24.0007C0 15.8733 7.17734 15.0073 7.24086 15.0073C7.74899 14.9406 8.1936 15.3403 8.25711 15.8733C8.32063 16.4062 7.93954 16.8726 7.43141 16.9392C7.17734 16.9392 2.47714 17.5388 1.96901 22.9348Z"/>
