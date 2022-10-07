@@ -120,4 +120,9 @@ class ProjectController extends Controller
     {
         return view('projects.project_14.index');
     }
+
+    public function tts()
+    {
+        return view('projects.project_15.index');
+    }
 }

@@ -1,0 +1,65 @@
+@import variables
+@import reset
+@import includes/header
+
+// ----------------------------------FONTS-------------------------------------
+@font-face
+    font-family: 'Proxima Nova Rg'
+    src: url('/assets/fonts/ProximaNova-Regular.woff2') format('woff2'), url('/assets/fonts/ProximaNova-Regular.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: 'Proxima Nova Sm'
+    src: url('/assets/fonts/ProximaNova-Semibold.woff2') format('woff2'), url('/assets/fonts/ProximaNova-Semibold.woff') format('woff')
+    font-weight: 600
+    font-style: normal
+    font-display: swap
+
+// COMMON STYLES ------------------------------------------
+html,
+body
+    height: 100%
+    font-size: 16px
+    font-family: 'Proxima Nova Sm'
+    color: var(--color-grey)
+
+    @media (max-width: 794.9px)
+        font-size: 16px
+    @media (max-width: 589.9px)
+        font-size: 14px
+
+@media (max-width: 1439.9px)
+    body.lock
+        overflow: hidden
+
+.main
+
+._container
+    max-width: 1920px
+    margin: 0 auto
+    padding: 0px 376px
+    box-sizing: border-box
+
+    @media (max-width: 1919px)
+        padding: 0px 100px
+
+    @media (max-width: 1439.9px)
+        padding: 0px 21px
+
+.wrapper
+    // min-height: 100%
+    // overflow: hidden
+    display: flex
+    flex-direction: column
+
+.main
+    flex: 1 1 auto
+
+.closed
+    display: none
+
+// TEXT STYLES ------------------------------------------------
+
+// BUTTONS STYLES ---------------------------------------------

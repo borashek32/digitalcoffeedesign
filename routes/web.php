@@ -97,8 +97,8 @@ Route::get('/organic/contacts', [App\Http\Controllers\Site\Projects\Project8\Org
 Route::get('/momentum', [App\Http\Controllers\Site\ProjectController::class, 'momentum'])
     ->name('momentum');
 
-Route::get('/digital-clock', [App\Http\Controllers\Site\ProjectController::class, 'digitalclock'])
-    ->name('digital-clock');
+Route::get('/tts', [App\Http\Controllers\Site\ProjectController::class, 'tts'])
+    ->name('tts');
 
 // ELEMENTS
 Route::get('/flex-box', [App\Http\Controllers\Site\ProjectController::class, 'flexBox'])
@@ -115,6 +115,9 @@ Route::get('/grid-layout', [App\Http\Controllers\Site\ProjectController::class, 
 
 Route::get('/position', [App\Http\Controllers\Site\ProjectController::class, 'position'])
     ->name('position');
+
+Route::get('/digital-clock', [App\Http\Controllers\Site\ProjectController::class, 'digitalclock'])
+    ->name('digital-clock');
 
 // AUTH
 Route::group(['middleware' => ['role:admin']], function () {
