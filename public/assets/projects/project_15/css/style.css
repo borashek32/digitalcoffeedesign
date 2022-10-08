@@ -624,7 +624,7 @@ path {
 }
 @media (max-width: 667.9px) {
   .dropdown {
-    width: 550px;
+    max-width: 550px;
   }
 }
 @media (max-width: 599.9px) {
