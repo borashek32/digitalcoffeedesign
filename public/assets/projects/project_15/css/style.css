@@ -196,11 +196,15 @@ path {
 }
 
 .header__body {
-  margin-top: 20px;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 1439.9px) {
+  .header__body {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 1439.9px) {
@@ -1240,6 +1244,214 @@ path {
   }
 }
 
+.promo__right_bottom img {
+  position: absolute;
+  height: 325px;
+  width: 300px;
+  top: -325px;
+  right: 135px;
+}
+
+.content {
+  display: flex;
+  margin: 125px 135px 100px 135px;
+  justify-content: space-between;
+}
+@media (max-width: 1199.9px) {
+  .content {
+    margin: 125px 50px 100px 50px;
+    flex-wrap: wrap;
+  }
+}
+
+.content__left {
+  width: 470px;
+}
+@media (max-width: 1439.9px) {
+  .content__left {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+
+.possibility {
+  display: flex;
+  gap: 30px;
+  align-items: start;
+}
+@media (max-width: 1439.9px) {
+  .possibility {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.possibility:not(:last-child) {
+  margin-bottom: 130px;
+}
+@media (max-width: 1439.9px) {
+  .possibility:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+.possibility__img-wrapper {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  box-shadow: 0 2px 20px #E5E7EE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1439.9px) {
+  .possibility__img-wrapper {
+    width: 280px;
+    height: auto;
+    border-radius: 15px;
+    background-color: #F5F5F9;
+    box-shadow: none;
+    padding-top: 20px;
+  }
+}
+
+.possibility__big {
+  display: none;
+}
+@media (max-width: 1439.9px) {
+  .possibility__big {
+    display: block;
+  }
+}
+
+@media (max-width: 1439.9px) {
+  .possibility__small {
+    display: none;
+  }
+}
+
+.possibility__desc {
+  width: 380px;
+}
+@media (max-width: 1439.9px) {
+  .possibility__desc {
+    width: 280px;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+.possibility__title {
+  font-size: 25px;
+  letter-spacing: -2%;
+  margin-bottom: 14px;
+  line-height: 100%;
+}
+@media (max-width: 1439.9px) {
+  .possibility__title {
+    font-size: 18px;
+  }
+}
+
+.possibility__text {
+  font-size: 16px;
+  line-height: 150%;
+  font-family: "Proxima Nova Rg";
+}
+
+@media (max-width: 1439.9px) {
+  .content__right {
+    display: none;
+  }
+}
+
+.dontwork {
+  margin: 100px 9px 200px 9px;
+  background-color: #F5F5F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 40px 0px;
+  gap: 84px;
+}
+@media (max-width: 1439.9px) {
+  .dontwork {
+    flex-direction: column;
+    align-items: start;
+    padding-left: 30px;
+    gap: 15px;
+  }
+}
+@media (max-width: 767.9px) {
+  .dontwork {
+    padding: 30px 20px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .dontwork__left {
+    text-align: center;
+  }
+}
+
+.dontwork__title {
+  font-size: 20px;
+  line-height: 170%;
+}
+@media (max-width: 767.9px) {
+  .dontwork__title {
+    font-size: 18px;
+  }
+}
+
+.dontwork__desc {
+  font-family: "Proxima Nova Rg";
+  font-size: 14px;
+}
+@media (max-width: 767.9px) {
+  .dontwork__desc {
+    font-size: 17px;
+  }
+}
+
+.dontwork__buttons {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 767.9px) {
+  .dontwork__buttons {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .button_call svg {
+    display: none;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .button_dontwork {
+    width: 44px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .button_dontwork p {
+    display: none;
+  }
+}
+
+.dontwork__btn svg {
+  stroke: var(--color-blue);
+}
+
 @font-face {
   font-family: "Proxima Nova Rg";
   src: url("/assets/fonts/ProximaNova-Regular.woff2") format("woff2"), url("/assets/fonts/ProximaNova-Regular.woff") format("woff");
@@ -1317,6 +1529,7 @@ body {
   line-height: 120%;
   cursor: pointer;
   display: flex;
-  width: 180px;
-  height: 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
