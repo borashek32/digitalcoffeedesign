@@ -17,7 +17,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.banner__close').click(function (event) {
-    $('.banner').addClass('closed');
+    $('.banner').css('display', 'none');
   });
 });
 /******/ })()

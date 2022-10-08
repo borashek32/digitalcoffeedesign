@@ -157,6 +157,8 @@ path {
   left: 0;
   z-index: 3;
   width: 100%;
+  height: 84px;
+  box-shadow: 0px 4px 20px rgba(0, 14, 86, 0.1);
 }
 
 .header:before {
@@ -170,24 +172,35 @@ path {
   z-index: 2;
 }
 
+.header__container {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0px 5px;
+  box-sizing: border-box;
+}
+@media (max-width: 1719.9px) {
+  .header__container {
+    max-width: 80%;
+  }
+}
+@media (max-width: 1440.9px) {
+  .header__container {
+    max-width: 85%;
+  }
+}
+@media (max-width: 767.9px) {
+  .header__container {
+    max-width: 100%;
+    padding: 0px 21px;
+  }
+}
+
 .header__body {
+  margin-top: 20px;
   position: relative;
   display: flex;
   justify-content: space-between;
-  height: 84px;
   align-items: center;
-  box-shadow: 0px 4px 20px rgba(0, 14, 86, 0.1);
-  padding: 0px 376px;
-}
-@media (max-width: 1440px) {
-  .header__body {
-    padding: 0px 100px;
-  }
-}
-@media (max-width: 1439.9px) {
-  .header__body {
-    padding: 0px 21px;
-  }
 }
 
 @media (max-width: 1439.9px) {
@@ -218,7 +231,7 @@ path {
 }
 
 .menu__item {
-  padding: 30px 26px 30px 26px;
+  padding: 30px 22px 30px 22px;
   height: 100%;
   position: relative;
 }
@@ -231,11 +244,6 @@ path {
 
 .menu__item:first-child {
   margin: 0;
-}
-@media (max-width: 1439.9px) {
-  .menu__item:first-child {
-    margin: 0px 0px 0px 0px;
-  }
 }
 
 .menu__link:not(:nth-child(3)):after {
@@ -954,6 +962,284 @@ path {
   margin-bottom: 30px;
 }
 
+.nav {
+  margin: 40px 0px 0px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nav__item {
+  width: auto;
+  height: 25px;
+  background-color: rgb(245, 245, 249);
+  padding: 4px 10px;
+  position: relative;
+}
+
+.nav__item:after {
+  content: "";
+  border-top: 12.5px solid transparent;
+  border-left: 10px solid rgb(245, 245, 249);
+  border-bottom: 12.5px solid transparent;
+  position: absolute;
+  right: -10px;
+  bottom: 0px;
+}
+
+.nav__title_link,
+.nav__title {
+  font-size: 14px;
+  font-family: "Proxima Nova Rg";
+}
+
+.nav__title_link {
+  color: #48494D;
+}
+
+.nav__title {
+  color: rgba(72, 73, 77, 0.5);
+}
+
+.app__title {
+  margin: 50px 0px 45px 0px;
+  font-size: 30px;
+  line-height: 150%;
+}
+@media (max-width: 767.9px) {
+  .app__title {
+    text-align: center;
+    margin: 35px 0px 30px 0px;
+  }
+}
+
+.promo__container {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0px 5px;
+  box-sizing: border-box;
+}
+@media (max-width: 1719.9px) {
+  .promo__container {
+    max-width: 80%;
+  }
+}
+@media (max-width: 1440.9px) {
+  .promo__container {
+    max-width: 85%;
+  }
+}
+@media (max-width: 767.9px) {
+  .promo__container {
+    max-width: 100%;
+  }
+}
+
+.promo {
+  width: 100%;
+  background-color: #0055D4;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  height: 375px;
+}
+@media (max-width: 767.9px) {
+  .promo {
+    max-width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 290px;
+  }
+}
+
+.promo:before,
+.promo:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(215, 217, 223, 0.1);
+}
+
+.promo:before {
+  width: 781px;
+  height: 781px;
+  top: -26px;
+  left: -248px;
+}
+@media (max-width: 1439.9px) {
+  .promo:before {
+    width: 509px;
+    height: 509px;
+  }
+}
+
+.promo:after {
+  width: 509px;
+  height: 509px;
+  bottom: 108px;
+  right: -84px;
+}
+@media (max-width: 767.9px) {
+  .promo:after {
+    display: none;
+  }
+}
+
+.promo__left {
+  padding-left: 80px;
+}
+@media (max-width: 1439.9px) {
+  .promo__left {
+    padding-left: 40px;
+  }
+}
+@media (max-width: 767.9px) {
+  .promo__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
+.promo__title {
+  margin: 50px 0px 30px 0px;
+  color: var(--color-white);
+  font-size: 32px;
+  line-height: 150%;
+}
+@media (max-width: 1439.9px) {
+  .promo__title {
+    font-size: 25px;
+    line-height: 152%;
+    margin: 50px 0px 24px 0px;
+  }
+}
+@media (max-width: 767.9px) {
+  .promo__title {
+    margin: 35px 0px 24px 0px;
+    text-align: center;
+  }
+}
+
+.promo__stores {
+  display: flex;
+  gap: 15px;
+}
+@media (max-width: 767.9px) {
+  .promo__stores {
+    justify-content: center;
+  }
+}
+
+.promo__stores p {
+  display: none;
+}
+@media (max-width: 767.9px) {
+  .promo__stores p {
+    display: block;
+    font-family: "Proxima Nova Rg";
+    color: var(--color-white);
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .promo__store-wrapper {
+    display: none;
+  }
+}
+
+.promo__store-wrapper:hover {
+  cursor: pointer;
+}
+
+.promo__store-wrapper img {
+  border-radius: 7px;
+}
+
+.promo__qr-wrapper {
+  background-color: var(--color-white);
+  margin: 30px 0px 50px 0px;
+  border-radius: 10px;
+  width: 271px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 30px;
+}
+
+@media (max-width: 1439.9px) {
+  .promo__qr-wrapper {
+    padding: 15.5px 50px;
+    border-radius: 5px;
+    width: 207px;
+    height: 50px;
+    margin-bottom: 35px;
+  }
+  .promo__qr-wrapper:hover {
+    background-color: var(--color-white-dark);
+  }
+}
+@media (max-width: 1439.9px) {
+  .promo__qr-wrapper img {
+    display: none;
+  }
+}
+
+.promo__qr-desc {
+  font-size: 12px;
+  line-height: 150%;
+  font-family: "Proxima Nova Rg";
+  color: #48494D;
+}
+@media (max-width: 1439.9px) {
+  .promo__qr-desc {
+    display: none;
+  }
+}
+
+.promo__qr-wrapper h6 {
+  display: none;
+}
+@media (max-width: 1439.9px) {
+  .promo__qr-wrapper h6 {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    line-height: 100%;
+    color: #0049B7;
+  }
+}
+
+.promo__right {
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+@media (max-width: 877.9px) {
+  .promo__right {
+    display: none;
+  }
+}
+
+.promo__right img {
+  position: absolute;
+  height: 390px;
+  width: 225px;
+  top: -342px;
+  right: 135px;
+}
+@media (max-width: 1041.9px) {
+  .promo__right img {
+    right: 53px;
+  }
+}
+
 @font-face {
   font-family: "Proxima Nova Rg";
   src: url("/assets/fonts/ProximaNova-Regular.woff2") format("woff2"), url("/assets/fonts/ProximaNova-Regular.woff") format("woff");
@@ -982,27 +1268,55 @@ body {
   }
 }
 ._container {
-  max-width: 1920px;
+  max-width: 70%;
   margin: 0 auto;
-  padding: 0px 376px;
+  padding: 0px 5px;
   box-sizing: border-box;
 }
-@media (max-width: 1919px) {
+@media (max-width: 1719.9px) {
   ._container {
-    padding: 0px 100px;
+    max-width: 80%;
   }
 }
-@media (max-width: 1439.9px) {
+@media (max-width: 1440.9px) {
   ._container {
+    max-width: 85%;
+  }
+}
+@media (max-width: 767.9px) {
+  ._container {
+    max-width: 100%;
     padding: 0px 21px;
   }
 }
 
+@media (max-width: 767.9px) {
+  ._container_promo {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
 .wrapper {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .main {
   flex: 1 1 auto;
+}
+
+.button {
+  border: 1px solid var(--color-blue);
+  color: var(--color-blue);
+  background-color: var(--color-white);
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  line-height: 120%;
+  cursor: pointer;
+  display: flex;
+  width: 180px;
+  height: 36px;
 }

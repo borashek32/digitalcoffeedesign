@@ -57,6 +57,8 @@
     left: 0
     z-index: 3
     width: 100%
+    height: 84px
+    box-shadow: 0px 4px 20px rgb(0, 14, 86, .1)
 
 .header:before
     content: ''
@@ -68,20 +70,28 @@
     background-color: var(--color-white)
     z-index: 2
 
+.header__container
+    max-width: 70%
+    margin: 0 auto
+    padding: 0px 5px
+    box-sizing: border-box
+
+    @media (max-width: 1719.9px)
+        max-width: 80%
+        
+    @media (max-width: 1440.9px)
+        max-width: 85%
+
+    @media (max-width: 767.9px)
+        max-width: 100%
+        padding: 0px 21px
+
 .header__body
+    margin-top: 20px
     position: relative
     display: flex
     justify-content: space-between
-    height: 84px
     align-items: center
-    box-shadow: 0px 4px 20px rgb(0, 14, 86, .1)
-    padding: 0px 376px
-
-    @media (max-width: 1440px)
-        padding: 0px 100px
-
-    @media (max-width: 1439.9px)
-        padding: 0px 21px
 
 @media (max-width: 1439.9px)
     .menu
@@ -106,7 +116,7 @@
         padding: 0px 20px 0px 20px
 
 .menu__item
-    padding: 30px 26px 30px 26px
+    padding: 30px 22px 30px 22px
     height: 100%
     position: relative
 
@@ -116,9 +126,6 @@
 
 .menu__item:first-child
     margin: 0
-
-    @media (max-width: 1439.9px)
-        margin: 0px 0px 0px 0px
 
 .menu__link:not(:nth-child(3)):after
     content: ''

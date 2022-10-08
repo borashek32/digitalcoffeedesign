@@ -1,0 +1,33 @@
+.nav 
+    margin: 40px 0px 0px 0
+    display: flex
+    flex-wrap: wrap
+    gap: 20px
+
+.nav__item 
+    width: auto
+    height: 25px   
+    background-color: rgba(245, 245, 249, 1)
+    padding: 4px 10px 
+    position: relative
+
+.nav__item:after  
+    content: ''
+    border-top: 12.5px solid transparent    
+    border-left: 10px solid rgba(245, 245, 249, 1)    
+    border-bottom: 12.5px solid transparent 
+    position: absolute
+    right: -10px
+    bottom: 0px
+
+.nav__title_link,
+.nav__title
+    font-size: 14px
+    font-family: 'Proxima Nova Rg'
+
+.nav__title_link
+    color: #48494D
+
+.nav__title
+    color: rgba(72, 73, 77, 0.5)
+    

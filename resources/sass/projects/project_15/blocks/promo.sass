@@ -1,0 +1,182 @@
+.app__title 
+    margin: 50px 0px 45px 0px
+    font-size: 30px
+    line-height: calc(45/30*100%)
+
+    @media (max-width: 767.9px)
+        text-align: center
+        margin: 35px 0px 30px 0px
+
+.promo__container 
+    max-width: 70%
+    margin: 0 auto
+    padding: 0px 5px
+    box-sizing: border-box
+
+    @media (max-width: 1719.9px)
+        max-width: 80%
+        
+    @media (max-width: 1440.9px)
+        max-width: 85%
+
+    @media (max-width: 767.9px)
+        max-width: 100%
+
+.promo 
+    width: 100%
+    background-color: #0055D4
+    border-radius: 15px
+    overflow: hidden
+    position: relative
+    height: 375px
+
+    @media (max-width: 767.9px)
+        max-width: 100%
+        border-top-left-radius: 0
+        border-top-right-radius: 0
+        height: 290px
+
+.promo:before,
+.promo:after
+    content: ''
+    position: absolute
+    border-radius: 50%
+    background-color: rgba(215, 217, 223, 0.1)
+
+.promo:before
+    width: 781px
+    height: 781px
+    top: -26px
+    left: -248px
+
+    @media (max-width: 1439.9px)
+        width: 509px
+        height: 509px
+
+.promo:after
+    width: 509px
+    height: 509px
+    bottom: 108px
+    right: -84px
+
+    @media (max-width: 767.9px)
+        display: none
+
+.promo__left 
+    padding-left: 80px
+
+    @media (max-width: 1439.9px)
+        padding-left: 40px
+
+    @media (max-width: 767.9px)
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding-left: 0
+
+.promo__title 
+    margin: 50px 0px 30px 0px
+    color: var(--color-white)
+    font-size: 32px
+    line-height: calc(48/32*100%)
+
+    @media (max-width: 1439.9px)
+        font-size: 25px
+        line-height: calc(38/25*100%)
+        margin: 50px 0px 24px 0px
+
+    @media (max-width: 767.9px)
+        margin: 35px 0px 24px 0px
+        text-align: center
+
+.promo__stores 
+    display: flex
+    gap: 15px
+
+    @media (max-width: 767.9px)
+        justify-content: center
+
+.promo__stores p
+    display: none
+
+    @media (max-width: 767.9px)
+        display: block
+        font-family: 'Proxima Nova Rg'
+        color: var(--color-white)
+        font-size: 16px
+        line-height: calc(24/16*100%)
+
+.promo__store-wrapper
+    @media (max-width: 767.9px)
+        display: none
+
+.promo__store-wrapper:hover 
+    cursor: pointer 
+
+.promo__store-wrapper img
+    border-radius: 7px
+
+.promo__qr-wrapper 
+    background-color: var(--color-white)
+    margin: 30px 0px 50px 0px
+    border-radius: 10px
+    width: 271px
+    padding: 15px
+    display: flex
+    align-items: center
+    cursor: pointer
+    gap: 30px
+
+@media (max-width: 1439.9px)
+    .promo__qr-wrapper 
+        padding: 15.5px 50px
+        border-radius: 5px
+        width: 207px
+        height: 50px
+        margin-bottom: 35px
+
+    .promo__qr-wrapper:hover
+        background-color: var(--color-white-dark)
+
+.promo__qr-wrapper img
+    @media (max-width: 1439.9px)
+        display: none
+
+.promo__qr-desc 
+    font-size: 12px
+    line-height: calc(18/12*100%)
+    font-family: 'Proxima Nova Rg'
+    color: #48494D
+
+    @media (max-width: 1439.9px)
+        display: none
+
+.promo__qr-wrapper h6
+    display: none
+
+    @media (max-width: 1439.9px)
+        display: block
+        text-transform: uppercase
+        letter-spacing: 2px
+        font-size: 14px
+        line-height: 100%
+        color: #0049B7
+
+.promo__right
+    position: relative
+    display: flex
+    justify-content: end
+
+    @media (max-width: 877.9px)
+        display: none
+
+.promo__right img
+    position: absolute
+    height: 390px
+    width: 225px
+    top: -342px
+    right: 135px
+
+    @media (max-width: 1041.9px)
+        right: 53px

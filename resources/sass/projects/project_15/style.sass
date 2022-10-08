@@ -2,6 +2,10 @@
 @import reset
 @import includes/header
 @import includes/footer
+@import blocks/navbar
+@import blocks/promo
+@import blocks/content
+@import blocks/dontwork
 
 // ----------------------------------FONTS-------------------------------------
 @font-face
@@ -33,19 +37,28 @@ body
 .main
 
 ._container
-    max-width: 1920px
+    max-width: 70%
     margin: 0 auto
-    padding: 0px 376px
+    padding: 0px 5px
     box-sizing: border-box
 
-    @media (max-width: 1919px)
-        padding: 0px 100px
+    @media (max-width: 1719.9px)
+        max-width: 80%
+        
+    @media (max-width: 1440.9px)
+        max-width: 85%
 
-    @media (max-width: 1439.9px)
+    @media (max-width: 767.9px)
+        max-width: 100%
         padding: 0px 21px
 
+._container_promo
+    @media (max-width: 767.9px)
+        max-width: 100%
+        padding: 0
+
 .wrapper
-    // min-height: 100%
+    min-height: 100%
     // overflow: hidden
     display: flex
     flex-direction: column
@@ -56,3 +69,19 @@ body
 // TEXT STYLES ------------------------------------------------
 
 // BUTTONS STYLES ---------------------------------------------
+.button
+    border: 1px solid var(--color-blue)
+    color: var(--color-blue)
+    background-color: var(--color-white)
+    padding: 8px 15px
+    border-radius: 5px
+    font-size: 15px
+    line-height: calc(18/15*100%)
+    cursor: pointer
+    display: flex
+    width: 180px
+    height: 36px
+
+
+
+    
