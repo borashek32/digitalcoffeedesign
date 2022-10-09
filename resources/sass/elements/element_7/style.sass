@@ -1,0 +1,171 @@
+@import reset
+@import variables
+@import includes/header
+@import includes/footer
+@import blocks/promo
+@import blocks/portfolio
+@import blocks/services
+@import blocks/social
+
+// FONTS --------------------------------------------------
+
+// COMMON STYLES ------------------------------------------
+html,
+body
+    height: 100%
+    line-height: calc(30.01/18*100%)
+    font-size: 16px
+    font-weight: 400
+    font-family: 'Old Standard TT', serif
+    color: black
+    background-color: var(--color-black)
+
+.wrapper
+    min-height: 100%
+    overflow: hidden
+    display: flex
+    flex-direction: column
+
+._container
+    max-width: 1440px
+    margin: 0 auto
+    padding: 0px 115px
+    box-sizing: border-box
+
+    @media (max-width: 767.9px)
+        max-width: 100%
+        padding: 0px 50px
+
+.main
+    flex: 1 1 auto
+
+a
+    transition: all .4s linear
+
+a:hover
+    color: var(--color-yellow)
+
+a:active
+    color: var(--color-yellow-darker)
+
+// TEXT STYLES ------------------------------------------
+.title-block
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 10px
+    padding: 120px 0px 60px 0px
+
+.title
+    color: var(--color-yellow)
+    font-size: 60px
+    line-height: calc(70/60*100%)
+
+    @media (max-width: 767.9px)
+        font-size: 40px
+
+.subtitle
+    font-size: 12px
+    line-height: calc(22/12*100%)
+    text-transform: uppercase
+    letter-spacing: 2px
+
+// BUTTON STYLES ------------------------------------------
+.button
+    width: 145px
+    height: 50px
+    padding: 15px 25px
+    background-color: var(--color-black)
+    border: 1px solid var(--color-yellow)
+    display: flex
+    justify-content: center
+    align-items: center
+    color: var(--color-yellow)
+    transition: all .4s linear
+    text-transform: uppercase
+    font-size: 11px
+
+.button:hover
+    border: 1px solid var(--color-yellow)
+    background-color: var(--color-yellow)
+    color: var(--color-black)
+
+.button:active
+    background-color: var(--color-yellow-darker)
+
+// ANIMATION STYLES ------------------------------------------
+.fixed
+    position: fixed
+    z-index: 5
+    top: 0
+    left: 0
+    width: 100%
+
+.scroll-item
+    opacity: 0
+    transform: translateY(50px)
+    transition: all .3s ease-in-out
+
+.scroll-item.animation-class
+    opacity: 1
+    transform: translateY(0)
+    transition: all .4s ease-in-out
+
+.services__card
+    opacity: 0
+    transform: translateX(-90px)
+    transition: all .3s ease-in-out
+
+.services__card.animation-class
+    opacity: 1
+    transform: translateX(0)
+    transition: all .4s ease-in-out
+
+.services__card.animation-class:nth-child(1)
+    transition-delay: .1s
+
+.services__card.animation-class:nth-child(2)
+    transition-delay: .3s
+
+.services__card.animation-class:nth-child(3)
+    transition-delay: .6s
+
+.social-item:nth-child(1),
+.social-item:nth-child(2)
+    opacity: 0
+    transform: translateX(-90px)
+    transition: all .3s ease-in-out
+
+.social-item:nth-child(3),
+.social-item:nth-child(4)
+    opacity: 0
+    transform: translateX(90px)
+    transition: all .3s ease-in-out
+
+.social-item.animation-class
+    opacity: 1
+    transform: translateX(0)
+    transition: all .3s ease-in-out
+
+.social-item.animation-class:nth-child(1)
+    transition-delay: .3s
+
+.social-item.animation-class:nth-child(2)
+    transition-delay: .1s
+
+.social-item.animation-class:nth-child(3)
+    transition-delay: .3s
+
+.social-item.animation-class:nth-child(4)
+    transition-delay: .1s
+
+.social-follow
+    opacity: 0
+    transform: translateY(-90px)
+    transition: all .3s ease-in-out
+
+.social-follow.animation-class
+    opacity: 1
+    transform: translateY(0)
+    transition: all .3s ease-in-out

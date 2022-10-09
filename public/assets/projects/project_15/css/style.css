@@ -125,6 +125,7 @@ path {
 
 .banner__right {
   padding-top: 5px;
+  padding-right: 10px;
 }
 @media (max-width: 371.9px) {
   .banner__right {

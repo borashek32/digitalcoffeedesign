@@ -60,6 +60,9 @@ mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/elements/element_6/script.js', 'public/assets/elements/element_6/js')
     .sass('resources/sass/elements/element_6/style.sass', 'public/assets/elements/element_6/css')
 
+    .js('resources/js/elements/element_7/script.js', 'public/assets/elements/element_7/js')
+    .sass('resources/sass/elements/element_7/style.sass', 'public/assets/elements/element_7/css')
+
 .postCss('resources/css/app.css', 'public/css', [
     require('tailwindcss'),
 ]);

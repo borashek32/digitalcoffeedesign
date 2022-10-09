@@ -119,6 +119,9 @@ Route::get('/position', [App\Http\Controllers\Site\ProjectController::class, 'po
 Route::get('/digital-clock', [App\Http\Controllers\Site\ProjectController::class, 'digitalclock'])
     ->name('digital-clock');
 
+Route::get('/js-animation', [App\Http\Controllers\Site\ProjectController::class, 'jsanimation'])
+    ->name('js-animation');
+
 // AUTH
 Route::group(['middleware' => ['role:admin']], function () {
     Route::prefix('admin')->group(function () {

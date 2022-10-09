@@ -125,4 +125,9 @@ class ProjectController extends Controller
     {
         return view('projects.project_15.index');
     }
+
+    public function jsanimation()
+    {
+        return view('elements.element_7.index');
+    }
 }

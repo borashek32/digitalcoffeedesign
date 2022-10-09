@@ -1,0 +1,131 @@
+.footer
+    background-color: var(--color-black)
+    padding-top: 120px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.footer__title-block
+    text-align: center
+
+.footer__title
+    margin-bottom: 20px
+
+.footer__subtitle
+    color: #ACA592
+    font-size: 12px
+    line-height: calc(28/12*100%)
+
+.footer__subscribe
+    margin-top: 83px
+    margin-bottom: 32px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.footer__input
+    height: 54px
+    width: 420px
+    background-color: var(--color-black)
+    color: var(--color-white)
+    border: 1px solid #4B4136
+    padding: 10px
+    font-family: 'Old Standard TT'
+
+    @media (max-width: 767.9px)
+        width: 300px
+
+.footer__button
+    height: 54px
+    width: 420px
+    background-color: var(--color-yellow)
+
+    @media (max-width: 767.9px)
+        width: 300px
+
+.footer__button:hover
+    background-color: var(--color-yellow-darker)
+
+.footer__button:active
+    background-color: var(--color-yellow-dark)
+
+.footer__desc
+    font-size: 14px
+    line-height: calc(20/14*100%)
+    color: var(--color-grey)
+
+.footer__desc span
+    color: var(--color-yellow)
+
+.social-bar
+    display: flex
+    justify-content: center
+    padding-top: 15px
+    gap: 8px
+    padding-bottom: 40px
+
+.social-bar__item
+    width: 48px
+    height: 48px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 1px solid #4B4136
+    transition: all .3s linear
+    cursor: pointer
+
+.social-bar__item:hover
+    border: 1px solid var(--color-yellow)
+
+.social-bar__item:active
+    border: 1px solid var(--color-yellow-darker)
+
+.social-bar__item:hover svg
+    stroke: var(--color-yellow)
+    fill: var(--color-yellow)
+
+.social-bar__item:active svg
+    stroke: var(--color-yellow-darker)
+    fill: var(--color-yellow-darker)
+
+.social-bar__item svg
+    stroke: var(--color-white)
+    fill: var(--color-white)
+
+.footer__container
+    padding: 0px 115px
+
+    @media (max-width: 767.9px)
+        padding: 0px 50px
+
+.footer__last-line
+    display: flex
+    justify-content: space-between
+    padding: 20px 0px
+    border-top: 1px solid #4B4136
+    color: #ACA592
+
+    @media (max-width: 767.9px)
+        flex-direction: column
+
+.footer__left
+    font-size: 12px
+    line-height: calc(22/12*100%)
+
+.footer__left span
+    color: var(--color-yellow)
+
+.footer__right
+    display: flex
+
+.footer__last-item
+    color: var(--color-yellow)
+    font-size: 11px
+    line-height: cacl(30/11*100%)
+
+.footer__last-item:not(:first-child)
+    padding-left: 10px
+
+.footer__last-item:not(:last-child)
+    border-right: 1px solid #4B4136
+    padding-right: 10px

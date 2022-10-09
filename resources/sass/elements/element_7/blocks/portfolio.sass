@@ -1,0 +1,41 @@
+.portfolio
+    background-color: var(--color-black)
+    padding-bottom: 120px
+
+.portfolio__subtitle
+    color: var(--color-grey)
+
+.portfolio__flex
+    display: flex
+    gap: 20px
+    flex-wrap: wrap
+    justify-content: center
+
+.item
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    border: 1px solid #4B4136
+    padding: 41px
+    width: 387px
+    height: 315px
+
+    @media (max-width: 500.9px)
+        width: 300px
+        height: 270px
+        padding: 0px
+
+.item:hover .item__title
+    color: var(--color-white)
+
+.item:hover .item__image
+    filter: brightness(130%)
+
+.item__image
+    box-shadow: 0px 8px 24px rgb(0, 0, 0, .6)
+
+.item__title
+    margin-top: 20px
+    color: var(--color-grey)
+    transition: all .3s linear
