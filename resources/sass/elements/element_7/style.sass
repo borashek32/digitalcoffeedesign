@@ -20,6 +20,10 @@ body
     color: black
     background-color: var(--color-black)
 
+    @media (max-width: 767.9px)
+        body.lock
+            overflow: hidden
+
 .wrapper
     min-height: 100%
     overflow: hidden
@@ -32,7 +36,7 @@ body
     padding: 0px 115px
     box-sizing: border-box
 
-    @media (max-width: 767.9px)
+    @media (max-width: 1439.9px)
         max-width: 100%
         padding: 0px 50px
 
@@ -95,13 +99,6 @@ a:active
     background-color: var(--color-yellow-darker)
 
 // ANIMATION STYLES ------------------------------------------
-.fixed
-    position: fixed
-    z-index: 5
-    top: 0
-    left: 0
-    width: 100%
-
 .scroll-item
     opacity: 0
     transform: translateY(50px)

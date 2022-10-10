@@ -2,11 +2,16 @@
     width: 100%
     height: 80px
     background-color: var(--color-black)
-    box-shadow: 0 4px 20px rgb(0, 0, 0, 0.5)
+    // padding-top: 15px
+
+    @media (max-width: 767.9px)
+        position: relative
+        z-index: 30
 
 .header__flex
     display: flex
     justify-content: space-between
+    align-items: center
 
 .header__left
     display: flex
@@ -14,6 +19,14 @@
 
 .header__company-wrapper
     margin-right: 42px
+
+    @media (max-width: 767.9px)
+        position: absolute
+        z-index: 33
+        top: 25px
+
+    @media (max-width: 420.9px)
+        display: none
 
 .header__company-name
     color: var(--color-yellow)
@@ -29,15 +42,101 @@
     display: flex
     align-items: center
     justify-content: start
-    gap: 28px
 
 .header__item
     color: var(--color-grey)
     font-size: 11px
     line-height: calc(24/11*100%)
     text-transform: uppercase
+    cursor: pointer
+    padding: 28px 20px
+    transition: all .2s linear
 
-.header__right
-    height: 80px
-    display: flex
-    align-items: center
+    @media (max-width: 767.9px)
+        font-size: 14px
+
+.header__item:first-child
+    margin-right: 10px
+
+.header__item:hover > a
+    color: var(--color-yellow)
+
+@media (max-width: 767.9px)
+    .header__right
+        position: absolute
+        z-index: 33
+        right: 20px
+        top: 15px
+
+// ANIMATION STYLES ------------------------------------------
+.fixed
+    position: fixed
+    z-index: 40
+    top: 0
+    left: 0
+    width: 100%
+// ---------------------------------------BURGER---------------------------------------
+.header__burger
+    display: none
+
+@media (max-width: 767.9px)
+    .header__burger
+        display: block
+        position: relative
+        width: 30px
+        height: 20px
+        z-index: 40
+        top: 30px
+
+    .header__burger span
+        position: absolute
+        background-color: var(--color-yellow)
+        width: 100%
+        height: 2px
+        left: 90px
+        top: 9px
+        transition: all 0.3s ease-in-out 0s
+
+    .header__burger:before,
+    .header__burger:after
+        content: ''
+        background-color: var(--color-yellow)
+        position: absolute
+        left: 90px
+        width: 100%
+        height: 2px
+        transition: all 0.3s ease-in-out 0s
+    .header__burger:before
+        top: 0
+    .header__burger:after
+        bottom: 0
+
+    .header__burger.active:before
+        transform: rotate(45deg)
+        top: 9px
+    .header__burger.active:after
+        transform: rotate(-45deg)
+        bottom: 9px
+    .header__burger.active span
+        transform: scale(0)
+
+    .header__list
+        flex-direction: column
+        position: absolute
+        z-index: 3
+        top: -550%
+        left: 0
+        width: 100%
+        height: 100vh
+        transition: all .3s linear
+
+    .header__list.active
+        top: 80px
+        left: 0
+        background-color: var(--color-black)
+
+@media (max-width: 420.9px)
+    .header__burger span,
+    .header__burger:before,
+    .header__burger:after
+        left: 0px

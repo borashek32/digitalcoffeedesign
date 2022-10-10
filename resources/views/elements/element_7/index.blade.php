@@ -18,5 +18,4 @@
         @include('elements.element_7.includes.footer')
     </footer>
 </div>
-<script src="{{ asset('assets/elements/element_7/js/script.js') }}"></script>
 @endsection

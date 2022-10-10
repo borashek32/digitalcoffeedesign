@@ -7,11 +7,11 @@
                         <h3 class="header__company-name">Atelier.</h3>
                     </a>
                 </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
                 <nav>
                     <ul class="header__list">
-                        <li class="header__item">
-                            <a href="#overview">Overview</a>
-                        </li>
                         <li class="header__item">
                             <a href="#portfolio">Portfolio</a>
                         </li>
@@ -22,7 +22,7 @@
                             <a href="#social">Contact</a>
                         </li>
                         <li class="header__item">
-                            <a href="#sudscribe">Subscribe</a>
+                            <a href="#subscribe">Subscribe</a>
                         </li>
                     </ul>
                 </nav>
