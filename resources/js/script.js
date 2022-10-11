@@ -106,10 +106,33 @@ function updateClock() {
 
 updateClock()
 
-// editor on admin panel
-tinymce.init({
-    selector: 'textarea',
-    plugins: 'advlist autolink lists link image charmap preview anchor pagebreak',
-    toolbar_mode: 'floating',
-    forced_root_block : "",
+// animation scroll
+document.addEventListener('DOMContentLoaded', () => {
+    const scrollItems = document.querySelectorAll('.scroll-item');
+
+    const scrollAnimation = () => {
+        let windowCenter = window.innerHeight + scrollY;
+        scrollItems.forEach(el => {
+            let scrollOffset = el.offsetTop + (el.offsetHeight / 2);
+
+            if (windowCenter >= scrollOffset) {
+                el.classList.add('animation-class');
+            } else {
+                el.classList.remove('animation-class');
+            }
+        });
+    };
+
+    scrollAnimation();
+    window.addEventListener('scroll', () => {
+        scrollAnimation();
+    });
 });
+
+// editor on admin panel
+// tinymce.init({
+//     selector: 'textarea',
+//     plugins: 'advlist autolink lists link image charmap preview anchor pagebreak',
+//     toolbar_mode: 'floating',
+//     forced_root_block : "",
+// });

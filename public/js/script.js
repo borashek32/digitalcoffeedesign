@@ -104,13 +104,34 @@ function updateClock() {
   }, 1000);
 }
 
-updateClock(); // editor on admin panel
+updateClock(); // animation scroll
 
-tinymce.init({
-  selector: 'textarea',
-  plugins: 'advlist autolink lists link image charmap preview anchor pagebreak',
-  toolbar_mode: 'floating',
-  forced_root_block: ""
-});
+document.addEventListener('DOMContentLoaded', function () {
+  var scrollItems = document.querySelectorAll('.scroll-item');
+
+  var scrollAnimation = function scrollAnimation() {
+    var windowCenter = window.innerHeight + scrollY;
+    scrollItems.forEach(function (el) {
+      var scrollOffset = el.offsetTop + el.offsetHeight / 2;
+
+      if (windowCenter >= scrollOffset) {
+        el.classList.add('animation-class');
+      } else {
+        el.classList.remove('animation-class');
+      }
+    });
+  };
+
+  scrollAnimation();
+  window.addEventListener('scroll', function () {
+    scrollAnimation();
+  });
+}); // editor on admin panel
+// tinymce.init({
+//     selector: 'textarea',
+//     plugins: 'advlist autolink lists link image charmap preview anchor pagebreak',
+//     toolbar_mode: 'floating',
+//     forced_root_block : "",
+// });
 /******/ })()
 ;

@@ -130,4 +130,9 @@ class ProjectController extends Controller
     {
         return view('elements.element_7.index');
     }
+
+    public function parallax()
+    {
+        return view('elements.element_8.index');
+    }
 }

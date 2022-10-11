@@ -35,8 +35,8 @@ Route::get('/relvise', [App\Http\Controllers\Site\ProjectController::class, 'rel
 Route::get('/go-corona', [App\Http\Controllers\Site\ProjectController::class, 'gocorona'])
     ->name('go-corona');
 
-Route::get('/designer-portfolio-site', [App\Http\Controllers\Site\ProjectController::class, 'designerPortfolioSite'])
-    ->name('designer-portfolio-site');
+Route::get('/designer-portfolio', [App\Http\Controllers\Site\ProjectController::class, 'designerPortfolioSite'])
+    ->name('designer-portfolio');
 
 Route::get('/velocity', [App\Http\Controllers\Site\ProjectController::class, 'velocity'])
     ->name('velocity');
@@ -121,6 +121,9 @@ Route::get('/digital-clock', [App\Http\Controllers\Site\ProjectController::class
 
 Route::get('/js-animation', [App\Http\Controllers\Site\ProjectController::class, 'jsanimation'])
     ->name('js-animation');
+
+Route::get('/parallax-effect', [App\Http\Controllers\Site\ProjectController::class, 'parallax'])
+    ->name('parallax-effect');
 
 // AUTH
 Route::group(['middleware' => ['role:admin']], function () {

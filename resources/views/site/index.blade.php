@@ -41,7 +41,7 @@
         {{-- portfolio SECTION 3 blocks --}}
         @include('site.parts.blocks')
         {{-- separate --}}
-        <div class="separate">
+        <div class="separate scroll-item">
             <img src="{{ asset('img/main/separate.jpg') }}" alt="separate">
         </div>
         {{-- about me --}}

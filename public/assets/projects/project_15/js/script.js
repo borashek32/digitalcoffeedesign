@@ -19,6 +19,33 @@ $(document).ready(function () {
   $('.banner__close').click(function (event) {
     $('.banner').css('display', 'none');
   });
+}); // animation scroll
+
+document.addEventListener('DOMContentLoaded', function () {
+  var scrollItems = document.querySelectorAll('.scroll-item');
+
+  var scrollAnimation = function scrollAnimation() {
+    if (window.innerWidth >= 767.9) {
+      var windowCenter = window.innerHeight + window.scrollY;
+      scrollItems.forEach(function (el) {
+        var scrollTop = el.offsetTop,
+            scrollOffset = scrollTop + el.offsetHeight / 2;
+
+        if (windowCenter >= scrollOffset) {
+          el.classList.add('animation-class');
+        } else {
+          el.classList.remove('animation-class');
+        }
+      });
+    }
+
+    ;
+  };
+
+  scrollAnimation();
+  window.addEventListener('scroll', function () {
+    scrollAnimation();
+  });
 });
 /******/ })()
 ;
