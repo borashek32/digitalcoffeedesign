@@ -1,0 +1,134 @@
+@import technical-files/variables
+@import technical-files/reset
+@import includes/header
+@import includes/footer
+@import blocks/promo
+@import blocks/digital
+
+html,
+body
+    max-width: 1600px
+    height: 100%
+    font-size: 16px
+    font-family: Montserrat
+    color: var(--color-typography)
+    line-height: calc(20/16 * 100%)
+
+    @media (max-width: 767.9px)
+        font-size: 12px
+
+@media (max-width: 1439.9px)
+    body.lock
+        overflow: hidden
+
+.wrapper
+    min-height: 100%
+    display: flex
+    flex-direction: column
+
+._container 
+    margin: 0 auto
+    box-sizing: border-box
+    max-width: 1200px
+
+    @media (max-width: 1439.9px)
+        max-width: 85%
+
+    @media (max-width: 767.9px)
+        max-width: 90%
+
+.main
+    margin-top: 104px
+    flex: 1 1 auto
+
+    @media (max-width: 538.9px)
+        margin-top: 154px
+
+// TEXT STYLES --------------------------------------------------
+.title-block
+    padding: 120px 0px 60px 0px
+
+.title
+    font-size: 38px
+    line-height: calc(46/38 * 100%)
+    font-weight: 700
+
+    @media (max-width: 767.9px)
+        font-size: 30px
+
+    @media (max-width: 538.9px)
+        font-size: 20px
+        font-weight: 400
+
+.title_white
+    color: var(--color-white)
+
+.title span
+    color: var(--color-orange)
+
+.desc_white
+    color: var(--color-white)
+
+// BUTTONS STYLES -----------------------------------------------
+.button
+    padding: 16px 28px
+    border-radius: 100px
+    transition: all .3s linear
+
+.button_orange
+    border: 1px solid var(--color-orange)
+    background-color: var(--color-orange)
+    color: var(--color-white)
+    transition: all .3s linear
+
+    &:hover
+        border: 1px solid var(--color-orange-dark)
+        background-color: var(--color-orange-dark)
+
+    &:active
+        border: 1px solid var(--color-orange)
+        background-color: var(--color-orange)
+    
+.button_border
+    padding: 16px 28px
+    border: 1px solid var(--color-orange)
+    border-radius: 100px
+    color: var(--color-orange)
+    transition: all .3s linear
+
+    &:hover
+        background-color: var(--color-orange)
+        color: var(--color-white)
+
+    &:active
+        background-color: var(--color-orange-dark)
+        color: var(--color-white)
+
+.button_white
+    border: 1px solid var(--color-white)
+    color: var(--color-white)
+    transition: all .3s linear
+
+    &:hover
+        background-color: var(--color-white)
+        color: var(--color-orange)
+
+    &:active
+        background-color: var(--color-gray-light)
+
+.button_border:hover svg
+    stroke: var(--color-white)
+
+// INPUT STYLES -----------------------------------------------
+.input
+    background-color: transparent
+    border-bottom: 1px solid rgb(51, 51, 51, .7)
+    padding: 10px 0px
+    width: auto
+
+.header__input
+    width: 538px
+
+.input::placeholder
+    color: rgb(51, 51, 51, .7)
+    

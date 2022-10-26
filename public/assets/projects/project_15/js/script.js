@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
             scrollOffset = scrollTop + el.offsetHeight / 2;
 
         if (windowCenter >= scrollOffset) {
-          el.classList.add('animation-class');
+          el.classList.add('animate__animated', 'animate__fadeInUp');
         } else {
-          el.classList.remove('animation-class');
+          el.classList.remove('animate__animated', 'animate__fadeInUp'); // el.classList.add('animate__animated', 'animate__fadeOutUp');
         }
       });
     }

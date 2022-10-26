@@ -1,0 +1,66 @@
+.header
+    position: relative
+
+.header::after
+    content: ""
+    position: absolute
+    z-index: 100
+    width: 100%
+    height: calc(var(--index) * 10)
+    background-image: url('/img/elements/element_8/ground.png')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    bottom: calc(var(--index) * -4.37)
+
+.layers
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    position: relative
+    overflow: hidden
+
+.layers__title-block
+    z-index: 1
+    transform: translate3d(0, calc( var(--scrollTop) / 2), 0)
+    will-change: transform
+    text-transform: uppercase
+    color: var(--text)
+    text-shadow: 0 0 15px #9e7d35
+    line-height: 2
+    transition: var(--transition)
+    margin-top: -20px
+
+.layers__caption
+    font-size: calc(var(--index) / 1.175)
+    letter-spacing: calc(var(--index) / 3.5)
+    font-family: 'Raleway Rg'
+
+.layers__title
+    font-size: calc(var(--index) * 2.5)
+    letter-spacing: calc(var(--index) * .6)
+    margin-top: calc(var(--index) * -.75)
+
+.layers__layer
+    height: 100%
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-size: cover
+    background-position: center
+    will-change: transform
+    z-index: 2
+    transition: var(--transition)
+
+.layer__base
+    z-index: 0
+    transform: translate3d(0, calc( var(--scrollTop) / 1.6), 0)
+
+.layer__middle
+    transform: translate3d(0, calc( var(--scrollTop) / 2.5), 0)
+
+.layer__front
+    transform: translate3d(0, calc( var(--scrollTop) / 5.7), 0)

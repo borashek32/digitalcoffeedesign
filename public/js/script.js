@@ -12,8 +12,9 @@ var __webpack_exports__ = {};
 // })
 // animation on scroll
 AOS.init({
-  once: true,
-  disable: 'mobile'
+  once: false,
+  duration: 2000,
+  delay: 500
 }); // show hide burger menu
 
 $(document).ready(function () {

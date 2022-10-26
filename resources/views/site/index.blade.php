@@ -3,35 +3,35 @@
 @section('title')DigitalCoffeeeDesign.com @endsection
 
 @section('content')
-    <main class="page">
-        {{-- promo-block --}}
-        <section class="page__main-block main-block" id="home">
-            <div class="main-block__image_small">
-                <img src="{{ asset('img/main/promo_small.jpg') }}" alt="digitalcoffeedesign.com">
-            </div>
-            <div class="main-block__container">
-                <div class="main-block__body">
-                    <div class="main-block__title">
-                        <h2>Зуева Наталья</h2>
-                        <br>
-                        <h1>Digital Coffee Design</h1>
-                        <h3>Digital<br>Coffee Design</h3>
-                        <h4>Digital<br>Coffee<br>Design</h4>
-                    </div>
-                    <div class="main-block__desc-wrapper">
-                        <div class="main-block__desc">
-                            <a href="#about" class="main-block__me">
-                                <img src="{{ asset('img/main/me.jpg') }}" class="main-block__img" alt="coffee">
-                            </a>
-                            <div class="main-block__text">
-                                <p>fullstack developer portfolio</p>
-                            </div>
+    {{-- promo-block --}}
+    <section class="page__main-block main-block" id="home">
+        <div class="main-block__image_small">
+            <img src="{{ asset('img/main/promo_small.jpg') }}" alt="digitalcoffeedesign.com">
+        </div>
+        <div class="main-block__container">
+            <div class="main-block__body">
+                <div class="main-block__title">
+                    <h2 data-aos="fade-left">Зуева Наталья</h2>
+                    <br>
+                    <h1 data-aos="fade-left">Digital Coffee Design</h1>
+                    <h3 data-aos="fade-left">Digital<br>Coffee Design</h3>
+                    <h4 data-aos="fade-left">Digital<br>Coffee<br>Design</h4>
+                </div>
+                <div class="main-block__desc-wrapper">
+                    <div class="main-block__desc">
+                        <a href="#about" class="main-block__me" data-aos="zoom-in">
+                            <img src="{{ asset('img/main/me.jpg') }}" class="main-block__img" alt="coffee">
+                        </a>
+                        <div class="main-block__text">
+                            <p>fullstack developer portfolio</p>
                         </div>
-                        @include('site.parts.digital-clock')
                     </div>
+                    @include('site.parts.digital-clock')
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <main class="page">
         {{-- main project --}}
         @include('site.parts.main-project')
         {{-- portfolio SECTION 1  landings--}}
@@ -41,9 +41,11 @@
         {{-- portfolio SECTION 3 blocks --}}
         @include('site.parts.blocks')
         {{-- separate --}}
-        <div class="separate scroll-item">
-            <img src="{{ asset('img/main/separate.jpg') }}" alt="separate">
-        </div>
+    </main>
+    <div class="separate scroll-item">
+        <img src="{{ asset('img/main/separate.jpg') }}" alt="separate">
+    </div>
+    <main class="page">
         {{-- about me --}}
         @include('site.parts.about')
         {{-- contacts --}}

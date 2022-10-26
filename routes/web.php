@@ -63,7 +63,7 @@ Route::get('/personal-blog/{$search}', [App\Http\Controllers\Site\Projects\Proje
     ->name('personalblog-search');
 Route::post('/personal-blog/add-post', [App\Http\Controllers\Site\Projects\Project11\ProjectController::class, 'personalBlogStore'])
     ->name('personalblog-addpost');
-Route::post('/personal-blog/add-comment', [App\Http\Controllers\Site\Projects\Project11\ProjectController::class, 'personalBlogStore'])
+Route::post('/personal-blog/add-comment', [App\Http\Controllers\Site\Projects\Project11\CommentController::class, 'addComment'])
     ->name('personalblog-addcomment');
 
 // Route::get('/personal-blog/works', [App\Http\Controllers\Site\Projects\Project11Controller::class, 'personalBlogWorks'])
@@ -100,6 +100,9 @@ Route::get('/momentum', [App\Http\Controllers\Site\ProjectController::class, 'mo
 Route::get('/tts', [App\Http\Controllers\Site\ProjectController::class, 'tts'])
     ->name('tts');
 
+Route::get('/auto', [App\Http\Controllers\Site\ProjectController::class, 'auto'])
+    ->name('auto');
+
 // ELEMENTS
 Route::get('/flex-box', [App\Http\Controllers\Site\ProjectController::class, 'flexBox'])
     ->name('flex-box');
@@ -124,6 +127,12 @@ Route::get('/js-animation', [App\Http\Controllers\Site\ProjectController::class,
 
 Route::get('/parallax-effect', [App\Http\Controllers\Site\ProjectController::class, 'parallax'])
     ->name('parallax-effect');
+
+Route::get('/parallax-scroll', [App\Http\Controllers\Site\ProjectController::class, 'parallaxScroll'])
+    ->name('parallax-scroll');
+
+Route::get('/internet-marketing', [App\Http\Controllers\Site\ProjectController::class, 'internetMarketing'])
+    ->name('internet-marketing');
 
 // AUTH
 Route::group(['middleware' => ['role:admin']], function () {

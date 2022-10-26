@@ -6,7 +6,7 @@
         <h4 class="subtitle">Действующий проет, интернет-магазин автозавпчастей</h4>
         <div class="main-project__row">
             <div class="main-project__column">
-                <div class="main-project__img item">
+                <div class="main-project__img item" data-aos="flip-up">
                     <a href="https://lemma-auto.ru/" target="_blank">
                         <img src="img/main/la.jpg" alt="lemma-auto.ru">
                     </a>

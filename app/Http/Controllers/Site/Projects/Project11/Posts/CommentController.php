@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Site\Projects\Project11\Posts;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Projects\Project11\Comment;
+use App\Models\Projects\Project11\Post;
 
 class CommentController extends Controller
 {
@@ -14,6 +15,8 @@ class CommentController extends Controller
             'post_id'  => $request->post_id,
             'text'     => $request->text
         ]);
-        // return redirect('/personal-blog' . '/' . $comment->post_id);
+        $post = Post::find($request->post_id);
+        
+        return redirect('/personal-blog' . '/' . $request->post_id, compact('post'));
     }
 }

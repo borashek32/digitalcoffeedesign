@@ -69,6 +69,7 @@ small
 
 .page
     flex: 1 1 auto
+    padding: 0px 20px
 
 .button_white
     border-radius: 50px
@@ -116,6 +117,19 @@ small
     grid-template: minmax(50px, auto) 1fr minmax(auto, auto) / 1fr
 
 // ANIMATION STYLES ------------------------------------------
+[data-aos="new-animation"]
+  opacity: 0
+  transition-property: transform, opacity
+
+  &.aos-animate
+    opacity: 1
+
+  @media screen and (min-width: 768px)
+    transform: translateX(100px)
+
+    &.aos-animate
+      transform: translateX(0)
+
 .scroll-item
     opacity: 0
     transform: translateY(50px)

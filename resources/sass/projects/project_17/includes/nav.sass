@@ -1,0 +1,119 @@
+.nav
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 75px
+    background-color: var(--color-purple)
+
+.nav__wrap
+    display: flex
+    justify-content: space-between
+    height: 100%
+
+// BURGER ------------------------------------------------------------
+.burger
+    display: none
+
+@media (max-width: 767.9px)
+    .burger
+        display: flex
+        align-items: center
+        justify-content: center
+
+    .burger__field
+        padding: 10px 20px
+        cursor: pointer
+
+    .burger__line
+        display: block
+        margin: 6px auto
+        background-color: var(--color-white)
+        width: 30px
+        height: 2px
+        transition: all 0.3s ease-in-out
+
+@media (max-width: 767.9px)
+    .burger__field.active .burger__line:nth-child(2)
+        opacity: 0
+    .burger__field.active .burger__line:nth-child(1)
+        transform: translateY(8px) rotate(45deg)
+    .burger__field.active .burger__line:nth-child(3)
+        transform: translateY(-8px) rotate(-45deg)
+
+// --------------------------------------------------------------
+.nav__logo
+    display: flex
+    align-items: center
+    height: 75px
+
+.nav__logo p
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 30px
+    color: var(--color-white)
+
+    @media (max-width: 767.9px)
+        margin-right: 15px
+
+.menu
+    display: flex
+
+    @media (max-width: 767.9px)
+        display: none
+
+.menu__item
+    display: flex
+    align-items: stretch
+
+.menu__link
+    display: flex
+    align-items: center
+    padding: 0 20px
+    color: rgba(255, 255, 255, .7)
+    transition: all .3s linear
+
+    &:hover
+        color: rgba(255, 255, 255)
+
+.popup
+    display: none
+
+@media (max-width: 767.9px)
+    .popup
+        position: fixed
+        z-index: 100
+        display: flex
+        left: -100%
+        top: 75px
+        width: 100%
+        height: 100%
+        background-color: var(--color-white)
+        transition: all .4s linear
+
+    .popup.active
+        left: 0
+
+    .popup .menu
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 50px 0px
+        overflow: auto
+
+    .popup .menu .menu__item
+        width: 100%
+
+    .popup .menu .menu__item .menu__link
+        width: 100%
+        color: grey
+        display: flex
+        justify-content: center
+        padding: 20px 0px
+        font-size: 20px
+        font-weight: 700
+
+    .popup .menu .menu__item .menu__link:hover
+        background-color: rgba(122, 82, 179, .1)

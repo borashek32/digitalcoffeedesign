@@ -1,4 +1,4 @@
-<div class="digital__clock clock">
+<div class="digital__clock clock" data-aos="zoom-in">
     <div class="clock__item">
         <span class="clock__time" id="hours"></span>
         <div class="clock__text-wrapper">

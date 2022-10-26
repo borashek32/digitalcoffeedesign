@@ -1,0 +1,30 @@
+@import technical-files/variables
+@import technical-files/reset
+@import includes/nav
+@import includes/header
+@import includes/footer
+@import blocks/products
+@import blocks/shopping
+
+html,
+body
+    height: 100%
+    font-family: 'Roboto'
+    line-height: 1.7rem
+    background-color: #f8f9fa
+
+body.lock
+    overflow: hidden
+
+.wrapper
+    min-height: 100%
+    display: flex
+    flex-direction: column
+
+.container
+    margin: 0 auto
+    box-sizing: border-box
+    max-width: 1200px
+
+.main
+    flex: 1 1 auto

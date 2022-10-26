@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calm</title>
-    <link rel="stylesheet" href="{{ asset('assets/projects/project_10/css/style.css') }}">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    {{-- <link rel="stylesheet" href="{{ asset('assets/common/css/animate.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('assets/projects/project_10/css/css.css') }}">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
 </head>
 <body>
     <div class="wrapper">
@@ -39,14 +43,14 @@
             </div>
         </header>
         <main class="main">
-            <div class="main__promo promo" id="main">
+            <div class="main__promo promo anim-js-down-down" id="main">
                 <div class="container">
-                    <div class="promo__logo">
+                    <div class="promo__logo ">
                         <a href="#">
                             <img src="{{ asset('/img/projects/project_10/logo.svg') }}" alt="logo" width="50px">
                         </a>
                     </div>
-                    <div class="promo__description">
+                    <div class="promo__description ">
                         <p>
                             Welcome to Calm – a lifestyle blog about<br>minimalism, technology, design & travel.
                         </p>
@@ -56,7 +60,7 @@
             <div class="main__grid grid" id="about">
                 <div class="container">
                     <div class="grid__1">
-                        <div class="grid__item item item__travel">
+                        <div class="grid__item item item__travel anim-js-down">
                             <img src="{{ asset('img/projects/project_10/img1.jpg') }}" alt="travel" class="item__img">
                             <div class="item__flex">
                                 <h3 class="item__title">travel</h3>
@@ -67,7 +71,7 @@
                                 <p class="item__date">November 24, 2021</p>
                             </div>
                         </div>
-                        <div class="grid__item item item__climb">
+                        <div class="grid__item item item__climb anim-js-down">
                             <img src="{{ asset('img/projects/project_10/img2.jpg') }}" alt="climb" class="item__img">
                             <div class="item__flex">
                                 <h3 class="item__title">Exercise</h3>
@@ -77,7 +81,7 @@
                                 <p class="item__date">November 24, 2021</p>
                             </div>
                         </div>
-                        <div class="grid__item item item__photo">
+                        <div class="grid__item item item__photo anim-js-down">
                             <img src="{{ asset('img/projects/project_10/img3.jpg') }}" alt="photo" class="item__img">
                             <div class="item__flex">
                                 <h3 class="item__title">tech</h3>
@@ -89,7 +93,7 @@
                         </div>
                     </div>
                     <div class="grid__2">
-                        <div class="grid__item item item__helicopter">
+                        <div class="grid__item item item__helicopter anim-js-down">
                             <img src="{{ asset('img/projects/project_10/img4.jpg') }}" alt="travel" class="item__img">
                             <div class="item__flex">
                                 <h3 class="item__title">tech</h3>
@@ -99,7 +103,7 @@
                                 <p class="item__date">November 24, 2021</p>
                             </div>
                         </div>
-                        <div class="grid__item item item__ppl">
+                        <div class="grid__item item item__ppl anim-js-down">
                             <img src="{{ asset('img/projects/project_10/img5.jpg') }}" alt="travel" class="item__img">
                             <div class="item__flex">
                                 <h3 class="item__title">tutorial</h3>
@@ -111,7 +115,7 @@
                         </div>
                     </div>
                     <div class="grid__3">
-                        <div class="grid__item item item__pen">
+                        <div class="grid__item item item__pen anim-js-down">
                             <img src="{{ asset('img/projects/project_10/img6.jpg') }}" alt="review" class="item__img">
                             <div class="item__flex">
                                 <h3 class="item__title">review</h3>
@@ -121,7 +125,7 @@
                                 <p class="item__date">November 24, 2021</p>
                             </div>
                         </div>
-                        <div class="grid__item item item__man">
+                        <div class="grid__item item item__man anim-js-down">
                             <img src="{{ asset('img/projects/project_10/img7.jpg') }}" alt="review" class="item__img">
                             <div class="item__flex">
                                 <h3 class="item__title">review</h3>
@@ -131,7 +135,7 @@
                                 <p class="item__date">November 24, 2021</p>
                             </div>
                         </div>
-                        <div class="grid__item item item__tv">
+                        <div class="grid__item item item__tv anim-js-down">
                             <img src="{{ asset('img/projects/project_10/img8.jpg') }}" alt="review" class="item__img">
                             <div class="item__flex">
                                 <h3 class="item__title">review</h3>
@@ -364,7 +368,8 @@
             </div>
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="{{ asset('assets/common/js/jquery.js') }}"></script>
+    <script src="{{ asset('assets/common/js/wow.min.js') }}"></script>
     <script src="{{ asset('assets/projects/project_10/js/script.js') }}"></script>
 </body>
 </html>

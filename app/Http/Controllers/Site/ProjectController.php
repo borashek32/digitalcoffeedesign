@@ -135,4 +135,19 @@ class ProjectController extends Controller
     {
         return view('elements.element_8.index');
     }
+
+    public function parallaxScroll()
+    {
+        return view('elements.element_9.index');
+    }
+
+    public function internetMarketing()
+    {
+        return view('projects.project_16.index');
+    }
+
+    public function auto()
+    {
+        return view('projects.project_17.index');
+    }
 }

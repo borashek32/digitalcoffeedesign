@@ -1,0 +1,52 @@
+.digital__container 
+    display: flex
+    gap: 60px
+    flex-wrap: wrap
+    justify-content: center
+
+.digital__item 
+    width: 360px
+    background-size: cover
+    background-position: center
+    display: flex
+    flex-direction: column
+    padding: 40px 22px
+
+    @media (max-width: 538.9px)
+        padding: 20px 10px
+        width: 370px
+    
+    @media (max-width: 538.9px)
+        width: 300px
+
+.item__title
+    font-weight: 700
+    font-size: 18px
+    line-height: calc(25/18 *100%)
+    color: var(--color-white)
+    padding-bottom: 28px
+
+.item__border
+    border-bottom: 1px solid rgb(255, 255, 255, .2)
+
+.item__desc 
+    padding: 20px 0px
+    color: var(--color-white)
+    line-height: calc(22/16 * 100%)
+
+.item__desc_opacity 
+    color: rgb(255, 255, 255, .5)
+    border-bottom: none
+    flex: 1 1 auto
+
+.digital__button-wrapper
+    display: flex
+    justify-content: center
+    width: 100%
+    margin-top: 16px
+
+.item__button 
+    width: 296px
+
+    @media (max-width: 538.9px)
+        width: 200px

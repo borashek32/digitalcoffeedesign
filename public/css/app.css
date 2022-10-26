@@ -894,6 +894,7 @@ small {
 
 .page {
   flex: 1 1 auto;
+  padding: 0px 20px;
 }
 
 .button_white {
@@ -942,6 +943,22 @@ small {
   border: 1px solid #000;
   padding: 20px;
   grid-template: minmax(50px, auto) 1fr minmax(auto, auto)/1fr;
+}
+
+[data-aos=new-animation] {
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+[data-aos=new-animation].aos-animate {
+  opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  [data-aos=new-animation] {
+    transform: translateX(100px);
+  }
+  [data-aos=new-animation].aos-animate {
+    transform: translateX(0);
+  }
 }
 
 .scroll-item {
@@ -2753,6 +2770,9 @@ select {
 }
 .uppercase {
   text-transform: uppercase;
+}
+.italic {
+  font-style: italic;
 }
 .leading-5 {
   line-height: 1.25rem;

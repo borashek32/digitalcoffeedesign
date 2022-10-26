@@ -1,0 +1,41 @@
+.main
+
+.article
+    position: relative
+    min-height: 100vh
+    background-size: cover
+    background-position: center
+    color: var(--text)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.article__content
+    text-align: center
+
+.article__header
+    text-transform: uppercase
+    font-size: calc(var(--index) * 1.8)
+    letter-spacing: calc(var(--index) / 7.5)
+    transform: var(--main-article-transform)
+    will-change: transform
+    transition: var(--transition)
+
+.article__desc
+    font-family: 'Raleway Rg'
+    max-width: calc(var(--index) * 30)
+    font-size: calc(var(--index) * .9)
+    margin-top: calc(var(--index) / 1.25)
+    transform: var(--main-article-transform)
+    will-change: transform
+    transition: var(--transition)
+
+.article__copy
+    position: absolute
+    bottom: calc(var(--index) * 2.5)
+    opacity: 0.45
+    font-size: calc(var(--index) *.75)
+    font-family: 'Raleway Rg'
+    letter-spacing: calc(var(--index) / 37.5)
+

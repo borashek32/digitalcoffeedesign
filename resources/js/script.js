@@ -9,21 +9,22 @@
 
 // animation on scroll
 AOS.init({
-    once: true,
-    disable: 'mobile'
+    once: false,
+    duration: 2000,
+    delay: 500,
 })
 
 // show hide burger menu
 $(document).ready(function() {
     $('.header__burger').click(function(event) {
-        $('.header__burger, .header__menu').toggleClass('active')
-        $('body').toggleClass('lock')
-    })
+        $('.header__burger, .header__menu').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
     $('.header__link').click(function(event) {
-        $('.header__burger, .header__menu').toggleClass('active')
-        $('body').toggleClass('lock')
-    })
-})
+        $('.header__burger, .header__menu').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+});
 
 // to upload images in admin panel
 function elFinderBrowser (callback, value, meta) {
