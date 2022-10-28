@@ -65,12 +65,10 @@ Route::post('/personal-blog/add-post', [App\Http\Controllers\Site\Projects\Proje
     ->name('personalblog-addpost');
 Route::post('/personal-blog/add-comment', [App\Http\Controllers\Site\Projects\Project11\CommentController::class, 'addComment'])
     ->name('personalblog-addcomment');
-
 // Route::get('/personal-blog/works', [App\Http\Controllers\Site\Projects\Project11Controller::class, 'personalBlogWorks'])
 //     ->name('personalblog-works');
 Route::get('/personal-blog/works/{id}', [App\Http\Controllers\Site\Projects\Project11\ProjectController::class, 'personalBlogOneWork'])
     ->name('personalblog-onework');
-
 Route::get('/personal-blog/dashboard/profile', [App\Http\Controllers\Site\Projects\Project11\Auth\ProfileController::class, 'personalBlogProfile'])
     ->name('personalblog-profile');
 // Route::get('/personal-blog/login', [App\Http\Controllers\Site\Projects\Project11\Auth\AuthController::class, 'personalBlogLogin'])
@@ -102,6 +100,10 @@ Route::get('/tts', [App\Http\Controllers\Site\ProjectController::class, 'tts'])
 
 Route::get('/auto', [App\Http\Controllers\Site\ProjectController::class, 'auto'])
     ->name('auto');
+
+// react app
+Route::get('/react-app', [App\Http\Controllers\Site\Projects\Project18\ProjectController::class, 'index'])
+    ->name('react-app');
 
 // ELEMENTS
 Route::get('/flex-box', [App\Http\Controllers\Site\ProjectController::class, 'flexBox'])
